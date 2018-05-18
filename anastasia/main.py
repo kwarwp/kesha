@@ -9,7 +9,7 @@ def historia():
    cena1 = Cena(img=gatoecachorro)
    rato1 = Elemento(img=rato, txt="RATO",style=dict(top=100,left=100,width=200))
    SOS= Texto("voce")
-   input=("Cachorro fala: Vou comer você!)
+   input=("Cachorro fala: Vou comer vocÃª!)
    rato1.entra(cena1)
    rato1.vai=SOS.vai
    cena1.vai()
