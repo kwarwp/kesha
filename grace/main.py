@@ -5,7 +5,7 @@ linkBackdropcena = "https://universoracionalista.org/wp-content/uploads/2017/05/
 linkmarilyn = "https://activufrj.nce.ufrj.br/file/pedropeclat/WhatsApp_Image_2018-05-22_at_11.54.54.jpeg?disp=inline"
 
 
-def Defumado():
+def historia():
     galaxia = cena(img = linkBackdropcena)
     marilyn = elemento(img = linkmarilyn,tit="marilyn")
     marilyn.entra(galaxia)
@@ -16,5 +16,5 @@ def Defumado():
 
     galaxia.vai()
     
-    Defumado()
+    historia()
     
