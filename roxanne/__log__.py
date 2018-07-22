@@ -483,3 +483,10 @@ IndentationError: unexpected indent
                                                                                                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Jul 22 2018 15:59:50.1 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  self.fase2.vai()
+  ^
+IndentationError: unexpected indent
+'''},
