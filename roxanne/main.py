@@ -20,13 +20,12 @@ QVERDE = "https://i.imgur.com/hd3ofzP.png"
 QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
 QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
 
-
-def tela1():
-    noite = Cena(img = NOITE)
-    noite.vai()
-    fase1 = Elemento(img = FASE1, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
-    fase1.entra (noite)
-      
-tela1 ()
+class Tabuleiro:
+    def __init__(self):
+        self.noite = Cena(img = NOITE)
+        #noite.vai()
+        self.fase1 = Elemento(img = FASE1, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
+        self.fase1.entra(self.noite)
+Tabuleiro ()
 
 
