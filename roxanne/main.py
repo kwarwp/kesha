@@ -19,17 +19,32 @@ QVERDE = "https://i.imgur.com/hd3ofzP.png"
 QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
 QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
 
-#O aparecimento das cenas no era condicional? Achei que construiriamos a cena um 
-
 
 class Tabuleiro:
     def __init__(self):
+           
 
         self.fase1 = Cena(img = FASE1)
-        self.cobre1 = Elemento(QBRANCO, for cobre in range(5):
-        style = dict( 
-        left= cobre + 100, top= "100px", width=40, height="40px"))
-        self.cobre1.entra(self.fase1)
+        self.linha = Elemento(QBRANCO, style = dict(
+            left= 165, 
+            top= "127px", 
+            width=95, 
+            height="72px"))
+        self.linha2 = Elemento(QBRANCO, style = dict(
+            left= 2*165, 
+            top= "127px", 
+            width=95, 
+            height="72px"))
+        self.linha3 = Elemento(QBRANCO, style = dict(
+            left= 3*165, 
+            top= "127px", 
+            width=95, 
+            height="72px"))
+             
+            
+        self.linha.entra(self.fase1)
+        self.linha1.entra(self.fase1)
+        self.linha2.entra(self.fase1)
         self.fase1.vai()
 
 
