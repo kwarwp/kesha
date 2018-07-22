@@ -96,3 +96,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Jul 22 2018 11:45:48.752 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  self..fase1.qverde = Elemento(img=QVERDE,style = dict(left=200, top="100px", width=20, height="20px"))
+        ^
+SyntaxError: invalid syntax
+'''},
