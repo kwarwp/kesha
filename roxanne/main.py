@@ -13,7 +13,7 @@ FASE6 = "https://i.imgur.com/VgB7jA0.png"
 FASE7 = "https://i.imgur.com/BKbYEGn.png"
 FASE8 = "https://i.imgur.com/zFlVIXy.png"
 FASE9 = "https://i.imgur.com/HyW0l5d.png"
-QBRANCO ="https://i.imgur.com/9PMJ1tD.png"
+QBRANCO ="https://image.freepik.com/icones-gratis/esboco-relogio-quadrado-com-borda-preta-grossa_318-33886.jpg"
 QAZUL = "https://i.imgur.com/HUkZFHm.png"
 QVERDE = "https://i.imgur.com/hd3ofzP.png"
 QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
@@ -24,81 +24,79 @@ class Tabuleiro:
     def __init__(self):
         self.fase1 = Cena(img = FASE1)
         self.linhaA1 = Elemento(QBRANCO, style = dict(
-            left= 165, 
+            left= 160, 
             top= "127px", 
-            width=95, 
-            height="72px"))
+            width=101, 
+            height="74px"))
         self.linhaB1 = Elemento(QBRANCO, style = dict(
-            left= 265, 
+            left= 261, 
             top= "127px", 
-            width=95, 
-            height="72px"))
+            width=101, 
+            height="74px"))
         self.linhaC1 = Elemento(QBRANCO, style = dict(
-            left= 365, 
+            left= 362, 
             top= "127px", 
-            width=95, 
-            height="75px"))
+            width=101, 
+            height="74px"))
         self.linhaA1.entra(self.fase1)
         self.linhaB1.entra(self.fase1)
         self.linhaC1.entra(self.fase1)
-       # self.fase1.vai()
         
         self.linhaA2 = Elemento(QBRANCO, style = dict(
-            left= 165, 
-            top= "202px", 
-            width=95, 
-            height="72px"))
+            left= 160, 
+            top= "201px", 
+            width=101, 
+            height="74px"))
         self.linhaB2 = Elemento(QBRANCO, style = dict(
-            left= 265, 
-            top= "202px", 
-            width=95, 
-            height="72px"))
+            left= 261, 
+            top= "201px", 
+            width=101, 
+            height="74px"))
         self.linhaC2 = Elemento(QBRANCO, style = dict(
-            left= 365, 
-            top= "202px", 
-            width=95, 
-            height="75px"))
+            left= 362, 
+            top= "201px", 
+            width=101, 
+            height="74px"))
         self.linhaA2.entra(self.fase1)
         self.linhaB2.entra(self.fase1)
         self.linhaC2.entra(self.fase1)
-        #self.fase1.vai()
-
+        
+        
         self.linhaA3 = Elemento(QBRANCO, style = dict(
-            left= 165, 
-            top= "277px", 
-            width=95, 
-            height="72px"))
+            left= 160, 
+            top= "275px", 
+            width=101, 
+            height="74px"))
         self.linhaB3 = Elemento(QBRANCO, style = dict(
-            left= 265, 
-            top= "277px", 
-            width=95, 
-            height="72px"))
+            left= 261, 
+            top= "275px", 
+            width=101, 
+            height="74px"))
         self.linhaC3 = Elemento(QBRANCO, style = dict(
-            left= 365, 
-            top= "277px", 
-            width=95, 
-            height="75px"))
-
+            left= 362, 
+            top= "275px", 
+            width=101, 
+            height="74px"))
         self.linhaA3.entra(self.fase1)
         self.linhaB3.entra(self.fase1)
         self.linhaC3.entra(self.fase1)
         
         self.linhaA4 = Elemento(QBRANCO, style = dict(
-            left= 165, 
+            left= 160, 
             top= "349px", 
-            width=95, 
-            height="72px"))
+            width=101, 
+            height="74px"))
         self.linhaB4 = Elemento(QBRANCO, style = dict(
-            left= 265, 
+            left= 261, 
             top= "349px", 
-            width=95, 
-            height="72px"))
+            width=101, 
+            height="74px"))
         self.linhaC4 = Elemento(QBRANCO, style = dict(
-            left= 365, 
+            left= 362, 
             top= "349px", 
-            width=95, 
-            height="75px"))
-
+            width=101, 
+            height="74px"))
+            
         self.linhaA4.entra(self.fase1)
         self.linhaB4.entra(self.fase1)
         self.linhaC4.entra(self.fase1)
