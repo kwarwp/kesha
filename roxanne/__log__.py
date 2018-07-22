@@ -42,3 +42,10 @@ IndentationError: expected an indented block
     imagem, kwargs = (imagem, {}) if isinstance(imagem, str) \
 KeyError: img
 '''},
+{'date': 'Sun Jul 22 2018 11:21:49.516 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  self.fase1= Cena(img=FASE1, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
+  ^
+IndentationError: expected an indented block
+'''},
