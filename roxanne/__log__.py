@@ -89,3 +89,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sun Jul 22 2018 11:37:20.336 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  """ self.fase2= Cena(img=FASE2, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
+  ^
+IndentationError: unexpected indent
+'''},
