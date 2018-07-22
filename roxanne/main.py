@@ -28,6 +28,26 @@ class Tabuleiro:
         self.fase1.entra(self.noite)
         self.qsimbolo = Elemento(img = QSIMBOLO, style = dict(left=100, top="50px", width=40, height="40px"))
         self.qsimbolo.entra(self.fase1)
+HELLO 
+"""### TABULEIRO RESPOSTA ####
+        TBRX, TBRY = 200, 100
+        self.r0= Elemento(QBRANCO,style=dict(width=TBRX, height=TBRY, left=751, top=55))
+        self.r = Elemento(QAZUL,style=dict(width=TBRX, height=TBRY, left=800, top=55))
+        for qbranco in range(3):
+        for qbranco in range(4):
+        self.tabuleiro_respostas = {}
+        
+inicio_resp_x, inicio_resp_y = 754, 62
+for coluna in range(3):
+for linha in range(4):
+nome = "{}_{}".format(linha, coluna)
+self.tabuleiro_respostas[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
+width=TBRX-11, height="{}px".format(TBRY-52), left=inicio_resp_x+coluna*TBRX, top=inicio_resp_y+linha*TBRY))
+self.tabuleiro_respostas[nome].entra(tabelafase1)
+self.tabuleiro_respostas[nome].img.id = nome
+self.tabuleiro_respostas[nome].elt.onclick = move_carta
+
+
 Tabuleiro ()
 
 
