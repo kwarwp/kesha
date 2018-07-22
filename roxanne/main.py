@@ -22,26 +22,23 @@ QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
 
 class Tabuleiro:
     def __init__(self):
-           
-
         self.fase1 = Cena(img = FASE1)
         self.linha = Elemento(QBRANCO, style = dict(
             left= 165, 
             top= "127px", 
             width=95, 
             height="72px"))
-        self.linha2 = Elemento(QBRANCO, style = dict(
-            left= 2*165, 
+        self.linha1 = Elemento(QBRANCO, style = dict(
+            left= 265, 
             top= "127px", 
             width=95, 
             height="72px"))
-        self.linha3 = Elemento(QBRANCO, style = dict(
+        self.linha2 = Elemento(QBRANCO, style = dict(
             left= 3*165, 
             top= "127px", 
             width=95, 
             height="72px"))
              
-            
         self.linha.entra(self.fase1)
         self.linha1.entra(self.fase1)
         self.linha2.entra(self.fase1)
