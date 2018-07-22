@@ -82,3 +82,10 @@ KeyError: img
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sun Jul 22 2018 11:36:39.985 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.noite = Cena(img = NOITE)
+  ^
+IndentationError: expected an indented block
+'''},
