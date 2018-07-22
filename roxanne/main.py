@@ -1,6 +1,6 @@
 # kesha.roxanne.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
-from browser import html, doc
+from browser import html, document
 
 STYLE ["width"] = 1200
 STYLE ["height"] = "600px"
@@ -19,7 +19,6 @@ QAZUL = "https://i.imgur.com/HUkZFHm.png"
 QVERDE = "https://i.imgur.com/hd3ofzP.png"
 QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
 QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
-
 
 class Tabuleiro:
     def __init__(self):
@@ -40,8 +39,6 @@ class Tabuleiro:
             width=101, 
             height="74px"))
         self.linhaA1.entra(self.fase1)
-       # self.txterro = Texto(linhaA1,"Ops!!")
-
         self.linhaB1.entra(self.fase1)
         self.linhaC1.entra(self.fase1)
         
@@ -106,9 +103,11 @@ class Tabuleiro:
         self.linhaB4.entra(self.fase1)
         self.linhaC4.entra(self.fase1)
         self.fase1.vai()
-
-
 """
+def resposta():
+             alert ("Ops")
+        self.cliqueaqui.elt.onclick = resposta
+
 self.fase2 = Cena(img = Fase2)
         self.fase2.vai()
         self.fase3 = Cena(img = Fase3)
@@ -126,16 +125,7 @@ self.fase2 = Cena(img = Fase2)
         self.fase9 = Cena(img = Fase9)
         self.fase9.vai()
         
-              
-        self.fase1 = Elemento(img = FASE1, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
-        self.fase1.entra(self.noite)
-        self.qsimbolo = Elemento(img = QSIMBOLO, style = dict(for  simbol in range(4):
-        	left=100+ simbol, 
-            top="50px",
-            width=40, 
-            height="40px"))
-     self.qsimbolo.entra(self.fase1)
-
+          
 ### TABULEIRO RESPOSTA ####
         TBRX, TBRY = 200, 100
         self.r0= Elemento(QBRANCO,style=dict(width=TBRX, height=TBRY, left=751, top=55))
