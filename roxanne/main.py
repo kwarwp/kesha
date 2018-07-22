@@ -19,12 +19,43 @@ QVERDE = "https://i.imgur.com/hd3ofzP.png"
 QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
 QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
 
+#O aparecimento das cenas no era condicional? Achei que construiriamos a cena um 
+
+
 class Tabuleiro:
     def __init__(self):
+
         self.fase1 = Cena(img = FASE1)
+        self.cobre1 = Elemento(QBRANCO, for cobre in range(5):
+        style = dict( 
+        left= cobre + 100, top= "100px", width=40, height="40px"))
+        self.cobre1.entra(self.fase1)
         self.fase1.vai()
+
+
+
+
+
+
+"""
+self.fase2 = Cena(img = Fase2)
+        self.fase2.vai()
+        self.fase3 = Cena(img = Fase3)
+        self.fase3.vai()
+        self.fase4 = Cena(img = Fase4)
+        self.fase4.vai()
+        self.fase5 = Cena(img = Fase5)
+        self.fase5.vai()
+        self.fase6 = Cena(img = Fase6)
+        self.fase6.vai()
+        self.fase7 = Cena(img = Fase7)
+        self.fase7.vai()
+        self.fase8 = Cena(img = Fase8)
+        self.fase8.vai()
+        self.fase9 = Cena(img = Fase9)
+        self.fase9.vai()
         
-"""        
+              
         self.fase1 = Elemento(img = FASE1, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
         self.fase1.entra(self.noite)
         self.qsimbolo = Elemento(img = QSIMBOLO, style = dict(for  simbol in range(4):
@@ -33,8 +64,8 @@ class Tabuleiro:
             width=40, 
             height="40px"))
      self.qsimbolo.entra(self.fase1)
-"""
-"""### TABULEIRO RESPOSTA ####
+
+### TABULEIRO RESPOSTA ####
         TBRX, TBRY = 200, 100
         self.r0= Elemento(QBRANCO,style=dict(width=TBRX, height=TBRY, left=751, top=55))
         self.r = Elemento(QAZUL,style=dict(width=TBRX, height=TBRY, left=800, top=55))
@@ -51,7 +82,7 @@ width=TBRX-11, height="{}px".format(TBRY-52), left=inicio_resp_x+coluna*TBRX, to
 self.tabuleiro_respostas[nome].entra(tabelafase1)
 self.tabuleiro_respostas[nome].img.id = nome
 self.tabuleiro_respostas[nome].elt.onclick = move_carta
-
+"""
 
 Tabuleiro ()
 
