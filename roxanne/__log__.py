@@ -134,3 +134,10 @@ AttributeError: 'Elemento' object has no attribute 'nome'
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sun Jul 22 2018 12:20:57.123 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  noite = Cena(img = NOITE)
+  ^
+IndentationError: expected an indented block
+'''},
