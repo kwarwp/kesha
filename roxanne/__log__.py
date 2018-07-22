@@ -508,3 +508,10 @@ IndentationError: unexpected indent
     self.cobre.entra(self.fase1)
 AttributeError: 'Tabuleiro' object has no attribute 'cobre'
 '''},
+{'date': 'Sun Jul 22 2018 16:03:31.25 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.cobre1 = Elemento(QBRANCO,style = dict( for cobre in range(5):
+                                                                     ^
+SyntaxError: invalid syntax
+'''},
