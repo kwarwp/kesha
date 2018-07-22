@@ -455,3 +455,10 @@ SyntaxError: invalid syntax
   ^
 SyntaxError: invalid syntax : triple string end not found
 '''},
+{'date': 'Sun Jul 22 2018 15:36:56.851 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 37
+  """### TABULEIRO RESPOSTA ####
+  ^
+SyntaxError: invalid syntax : triple string end not found
+'''},
