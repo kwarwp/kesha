@@ -565,3 +565,10 @@ NameError: name 'cobre' is not defined
     	self.cobre1 = Elemento(QBRANCO, style = dict(
 NameError: name 'cobre1' is not defined
 '''},
+{'date': 'Sun Jul 22 2018 16:30:20.493 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  self.cobre1 = Elemento(QBRANCO, style = dict(
+  ^
+IndentationError: unexpected indent
+'''},
