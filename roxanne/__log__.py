@@ -579,3 +579,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Jul 22 2018 16:31:22.470 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  self.linha = Elemento(QBRANCO, style = dict(
+  ^
+IndentationError: unexpected indent
+'''},
