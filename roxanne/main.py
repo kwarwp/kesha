@@ -1,7 +1,7 @@
 # kesha.roxanne.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto
 from _spy.vitollino.main import STYLE
-STYLE ["width"] = 1150
+STYLE ["width"] = 1200
 STYLE ["height"] = "600px"
 
 FASE1 = "https://i.imgur.com/pmlIiGt.png"
@@ -22,7 +22,7 @@ QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
 class Tabuleiro:
     def __init__(self):
         self.fase1 = Cena(img = FASE1)
-        self.noite.vai()
+        self.fase1.vai()
         #self.fase1 = Elemento(img = FASE1, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
         #self.fase1.entra(self.noite)
         #self.qsimbolo = Elemento(img = QSIMBOLO, style = dict(left=100, top="50px", width=40, height="40px"))
