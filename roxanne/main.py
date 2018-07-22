@@ -1,6 +1,7 @@
 # kesha.roxanne.main.py
-from _spy.vitollino.main import Cena, Elemento, Texto
-from _spy.vitollino.main import STYLE
+from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
+from browser import html, doc
+
 STYLE ["width"] = 1200
 STYLE ["height"] = "600px"
 
@@ -39,6 +40,8 @@ class Tabuleiro:
             width=101, 
             height="74px"))
         self.linhaA1.entra(self.fase1)
+       # self.txterro = Texto(linhaA1,"Ops!!")
+
         self.linhaB1.entra(self.fase1)
         self.linhaC1.entra(self.fase1)
         
@@ -47,6 +50,8 @@ class Tabuleiro:
             top= "201px", 
             width=101, 
             height="74px"))
+            
+
         self.linhaB2 = Elemento(QBRANCO, style = dict(
             left= 261, 
             top= "201px", 
@@ -61,7 +66,7 @@ class Tabuleiro:
         self.linhaB2.entra(self.fase1)
         self.linhaC2.entra(self.fase1)
         
-        
+    
         self.linhaA3 = Elemento(QBRANCO, style = dict(
             left= 160, 
             top= "275px", 
