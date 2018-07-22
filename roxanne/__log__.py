@@ -469,3 +469,10 @@ SyntaxError: invalid syntax : triple string end not found
   ^
 SyntaxError: invalid syntax : triple string end not found
 '''},
+{'date': 'Sun Jul 22 2018 15:39:30.792 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 38
+  TBRX, TBRY = 200, 100
+  ^
+IndentationError: unexpected indent
+'''},
