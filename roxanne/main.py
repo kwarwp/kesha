@@ -14,6 +14,12 @@ FASE6 = "https://i.imgur.com/NyPMdqD.png"
 FASE7 = "https://i.imgur.com/4dK7L1A.png"
 FASE8 = "https://i.imgur.com/Aw6x1kC.png"
 FASE9 = "https://i.imgur.com/uqRq6nc.png"
+QBRANCO ="https://i.imgur.com/9PMJ1tD.png"
+QAZUL = "https://i.imgur.com/HUkZFHm.png"
+QVERDE = "https://i.imgur.com/hd3ofzP.png"
+QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
+QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
+
 
 def tela1():
     noite = Cena(img = NOITE)
