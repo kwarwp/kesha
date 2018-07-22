@@ -515,3 +515,10 @@ AttributeError: 'Tabuleiro' object has no attribute 'cobre'
                                                                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Jul 22 2018 16:04:36.281 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.cobre1 = Elemento(QBRANCO, style = dict( for cobre in range(5):
+                                                                      ^
+SyntaxError: invalid syntax
+'''},
