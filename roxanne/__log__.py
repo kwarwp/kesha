@@ -476,3 +476,10 @@ SyntaxError: invalid syntax : triple string end not found
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Jul 22 2018 15:59:16.830 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.cobre1 = Elemento(QSIMBOLO,style = dict( left=100, top="100px", width=540, height="320px"))self.cobre1.
+                                                                                                   ^
+SyntaxError: invalid syntax
+'''},
