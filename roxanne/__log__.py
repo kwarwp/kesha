@@ -427,3 +427,10 @@ SyntaxError: invalid syntax
                                                                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Jul 22 2018 14:57:50.478 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  self.qsimbolo = Elemento(img = QSIMBOLO,style = dict(
+                                                                                         ^
+SyntaxError: invalid syntax
+'''},
