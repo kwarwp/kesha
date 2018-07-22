@@ -24,8 +24,10 @@ class Tabuleiro:
     def __init__(self):
         self.noite = Cena(img = NOITE)
         #noite.vai()
-        self.fase1 = Elemento(img = FASE1, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
-        self.fase1.entra(self.noite)
+        #self.fase1 = Elemento(img = FASE1, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
+        #self.fase1.entra(self.noite)
+        self.qverde = Elemento(img = QVERDE, style = dict(left=100, top="50px", width=40, height="40px"))
+        self.qverde.entra(self.noite)
 Tabuleiro ()
 
 
