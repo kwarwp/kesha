@@ -413,3 +413,10 @@ AttributeError: 'Elemento' object has no attribute 'nome'
     self.scorer.update(valor=cena.nome, move=self.xy,
 AttributeError: 'Elemento' object has no attribute 'nome'
 '''},
+{'date': 'Sun Jul 22 2018 14:55:59.261 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  self.qsimbolo = Elemento(img = QSIMBOLO, style = dict(for simbolo in range (4):
+                                                                                 ^
+SyntaxError: invalid syntax
+'''},
