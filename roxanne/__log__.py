@@ -522,3 +522,10 @@ SyntaxError: invalid syntax
                                                                       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Jul 22 2018 16:05:30.366 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.cobre1 = Elemento(QBRANCO,for cobre in range(5):
+                                  ^
+SyntaxError: invalid syntax
+'''},
