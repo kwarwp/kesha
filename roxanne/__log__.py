@@ -708,3 +708,10 @@ NameError: name 'linhaA1' is not defined
     alert(linhaA1,"Ops!!")
 NameError: name 'linhaA1' is not defined
 '''},
+{'date': 'Sun Jul 22 2018 20:16:57.813 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 110
+  self.cliqueaqui.elt.onclick = resposta
+  ^
+IndentationError: unexpected indent
+'''},
