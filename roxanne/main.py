@@ -23,30 +23,86 @@ QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
 class Tabuleiro:
     def __init__(self):
         self.fase1 = Cena(img = FASE1)
-        self.linha = Elemento(QBRANCO, style = dict(
+        self.linhaA1 = Elemento(QBRANCO, style = dict(
             left= 165, 
             top= "127px", 
             width=95, 
             height="72px"))
-        self.linha1 = Elemento(QBRANCO, style = dict(
+        self.linhaB1 = Elemento(QBRANCO, style = dict(
             left= 265, 
             top= "127px", 
             width=95, 
             height="72px"))
-        self.linha2 = Elemento(QBRANCO, style = dict(
-            left= 3*165, 
+        self.linhaC1 = Elemento(QBRANCO, style = dict(
+            left= 365, 
             top= "127px", 
             width=95, 
+            height="75px"))
+        self.linhaA1.entra(self.fase1)
+        self.linhaB1.entra(self.fase1)
+        self.linhaC1.entra(self.fase1)
+       # self.fase1.vai()
+        
+        self.linhaA2 = Elemento(QBRANCO, style = dict(
+            left= 165, 
+            top= "202px", 
+            width=95, 
             height="72px"))
-             
-        self.linha.entra(self.fase1)
-        self.linha1.entra(self.fase1)
-        self.linha2.entra(self.fase1)
+        self.linhaB2 = Elemento(QBRANCO, style = dict(
+            left= 265, 
+            top= "202px", 
+            width=95, 
+            height="72px"))
+        self.linhaC2 = Elemento(QBRANCO, style = dict(
+            left= 365, 
+            top= "202px", 
+            width=95, 
+            height="75px"))
+        self.linhaA2.entra(self.fase1)
+        self.linhaB2.entra(self.fase1)
+        self.linhaC2.entra(self.fase1)
+        #self.fase1.vai()
+
+        self.linhaA3 = Elemento(QBRANCO, style = dict(
+            left= 165, 
+            top= "277px", 
+            width=95, 
+            height="72px"))
+        self.linhaB3 = Elemento(QBRANCO, style = dict(
+            left= 265, 
+            top= "277px", 
+            width=95, 
+            height="72px"))
+        self.linhaC3 = Elemento(QBRANCO, style = dict(
+            left= 365, 
+            top= "277px", 
+            width=95, 
+            height="75px"))
+
+        self.linhaA3.entra(self.fase1)
+        self.linhaB3.entra(self.fase1)
+        self.linhaC3.entra(self.fase1)
+        
+        self.linhaA4 = Elemento(QBRANCO, style = dict(
+            left= 165, 
+            top= "349px", 
+            width=95, 
+            height="72px"))
+        self.linhaB4 = Elemento(QBRANCO, style = dict(
+            left= 265, 
+            top= "349px", 
+            width=95, 
+            height="72px"))
+        self.linhaC4 = Elemento(QBRANCO, style = dict(
+            left= 365, 
+            top= "349px", 
+            width=95, 
+            height="75px"))
+
+        self.linhaA4.entra(self.fase1)
+        self.linhaB4.entra(self.fase1)
+        self.linhaC4.entra(self.fase1)
         self.fase1.vai()
-
-
-
-
 
 
 """
