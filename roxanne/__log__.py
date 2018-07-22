@@ -127,3 +127,10 @@ SyntaxError: invalid syntax
     self.scorer.update(valor=cena.nome, move=self.xy,
 AttributeError: 'Elemento' object has no attribute 'nome'
 '''},
+{'date': 'Sun Jul 22 2018 12:20:27.488 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  def cenario(cenario):
+  ^
+IndentationError: expected an indented block
+'''},
