@@ -23,6 +23,8 @@ class Tabuleiro:
     def __init__(self):
         self.fase1 = Cena(img = FASE1)
         self.fase1.vai()
+        
+"""        
         self.fase1 = Elemento(img = FASE1, tit = "SIMETRICO 3 X 4", style = dict(left=200, top="100px", width=540, height="320px"))
         self.fase1.entra(self.noite)
         self.qsimbolo = Elemento(img = QSIMBOLO, style = dict(for  simbol in range(4):
@@ -30,8 +32,8 @@ class Tabuleiro:
             top="50px",
             width=40, 
             height="40px"))
-        self.qsimbolo.entra(self.fase1)
-
+     self.qsimbolo.entra(self.fase1)
+"""
 """### TABULEIRO RESPOSTA ####
         TBRX, TBRY = 200, 100
         self.r0= Elemento(QBRANCO,style=dict(width=TBRX, height=TBRY, left=751, top=55))
