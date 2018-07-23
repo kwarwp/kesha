@@ -104,3 +104,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Jul 23 2018 19:32:23.758 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 190
+  Desafio_Cor_Fase1 = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+  ^
+IndentationError: unexpected indent
+'''},
