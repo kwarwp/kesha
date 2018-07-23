@@ -136,3 +136,10 @@ IndentationError: unexpected indent
     self.escolha_cria()
 AttributeError: 'Tabuleiro' object has no attribute 'escolha_cria'
 '''},
+{'date': 'Mon Jul 23 2018 19:34:01.382 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 193
+  self.escolha_cria(self):
+                          ^
+SyntaxError: invalid syntax
+'''},
