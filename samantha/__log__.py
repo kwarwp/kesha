@@ -90,3 +90,10 @@ KeyError: img
     divesq.style.width = width // 3  # 100
 TypeError: unsupported operand type(s) for //: 'str' and 'int'
 '''},
+{'date': 'Sun Jul 22 2018 21:36:20.999 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 27
+  self.linhaA1 = Elemento(QBRANCO, style = dict(
+  ^
+IndentationError: unexpected indent
+'''},
