@@ -150,3 +150,10 @@ SyntaxError: invalid syntax
                       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Jul 23 2018 19:34:45.449 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 193
+  self.escolha():
+                 ^
+SyntaxError: invalid syntax
+'''},
