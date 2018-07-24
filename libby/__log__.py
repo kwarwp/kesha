@@ -31,3 +31,10 @@ NameError: name 'shapes' is not defined
     s = shapes.rectangle(width=10, height=10)
 NameError: name 'shapes' is not defined
 '''},
+{'date': 'Tue Jul 24 2018 16:48:52.695 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  """
+  ^
+SyntaxError: invalid syntax : triple string end not found
+'''},
