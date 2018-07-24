@@ -472,3 +472,9 @@ IndexError: list index out of range
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Jul 23 2018 23:52:36.581 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+Exception: self.$events is undefined
+  module '$exec_8873' line 158
+Tabuleiro ()
+'''},
