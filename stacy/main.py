@@ -1,17 +1,20 @@
 # kesha.stacy.main.py
+from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
+from browser import html, document
+
 STYLE["width"]=1100
 STYLE["height"]="600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg"
 FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
 FASE1 = "https://i.imgur.com/X3oxHIz.png"
-FASE2 = "https://i.imgur.com/DailNDQ.png"
-FASE3 = "https://i.imgur.com/XWPxvYy.png"
-FASE4 = "https://i.imgur.com/KN4hH9Z.png"
-FASE5 = "https://i.imgur.com/mlBejyP.png"
-FASE6 = "https://i.imgur.com/VgB7jA0.png"
-FASE7 = "https://i.imgur.com/BKbYEGn.png"
-FASE8 = "https://i.imgur.com/zFlVIXy.png"
-FASE9 = "https://i.imgur.com/HyW0l5d.png"
+#FASE2 = "https://i.imgur.com/DailNDQ.png"
+#FASE3 = "https://i.imgur.com/XWPxvYy.png"
+#FASE4 = "https://i.imgur.com/KN4hH9Z.png"
+#FASE5 = "https://i.imgur.com/mlBejyP.png"
+#FASE6 = "https://i.imgur.com/VgB7jA0.png"
+#FASE7 = "https://i.imgur.com/BKbYEGn.png"
+#FASE8 = "https://i.imgur.com/zFlVIXy.png"
+#FASE9 = "https://i.imgur.com/HyW0l5d.png"
 QBRANCO ="https://i.imgur.com/EzWk7Jl.jpg"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 QVERDE = "https://i.imgur.com/hd3ofzP.png"
