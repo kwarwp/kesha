@@ -49,3 +49,10 @@ NameError: name 'STYLE' is not defined
     self.tabuleiro[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
 NameError: name 'FUNDO_BRANCO' is not defined
 '''},
+{'date': 'Tue Jul 24 2018 15:41:03.843 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 80
+  "self.casa0 = Elemento(QAZUL, tit='0_0', style=dict(width=TBX, height=TBY, left=220, top=120))
+                                                                                                ^
+SyntaxError: EOL while scanning string literal
+'''},
