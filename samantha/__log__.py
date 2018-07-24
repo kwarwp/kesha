@@ -784,3 +784,9 @@ AttributeError: 'Tabuleiro' object has no attribute 'cliqueaqui'
     self.tabuleiro[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
 UnboundLocalError: local variable 'coluna' referenced before assignment
 '''},
+{'date': 'Tue Jul 24 2018 11:57:59.920 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+Exception: self.$events is undefined
+  module '$exec_7836' line 115
+Tabuleiro()
+'''},
