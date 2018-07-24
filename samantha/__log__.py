@@ -465,3 +465,10 @@ NameError: name 'colorir' is not defined
     self.linhaC4 = Elemento(Cor_Fase1[12], style = dict(left= 288, top= "390px", width=80, height="80px"))
 IndexError: list index out of range
 '''},
+{'date': 'Mon Jul 23 2018 23:52:16.891 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 109
+  self.fase1.vai()
+  ^
+IndentationError: unexpected indent
+'''},
