@@ -86,3 +86,10 @@ NameError: name 'rec2' is not defined
     simetria = [rec0, rec1, rec2]
 NameError: name 'rec2' is not defined
 '''},
+{'date': 'Tue Jul 24 2018 17:01:27.488 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  sup.rotate(angle=0.02,
+                                         ^
+SyntaxError: invalid syntax : triple string end not found
+'''},
