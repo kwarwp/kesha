@@ -506,3 +506,9 @@ Tabuleiro()
     Tabuleiro (self)
 TypeError: __init__() takes 1 positional argument but more were given
 '''},
+{'date': 'Tue Jul 24 2018 01:31:08.222 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+Exception: self.$events is undefined
+  module '$exec_9052' line 161
+Tabuleiro ()
+'''},
