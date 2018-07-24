@@ -2,11 +2,11 @@
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
 from browser import html, document
 
-STYLE["width"]=1100
+STYLE["width"]=800
 STYLE["height"]="600px"
-FUNDO = "https://i.imgur.com/EzWk7Jl.jpg"
+FUNDO = "https://i.imgur.com/EzWk7Jl.jpg" #quadradinho branco
 FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
-FASE1 = "https://i.imgur.com/X3oxHIz.png"
+FASE1 = "https://i.imgur.com/X3oxHIz.png" #imagem estrelas
 #FASE2 = "https://i.imgur.com/DailNDQ.png"
 #FASE3 = "https://i.imgur.com/XWPxvYy.png"
 #FASE4 = "https://i.imgur.com/KN4hH9Z.png"
@@ -19,7 +19,7 @@ QBRANCO ="https://i.imgur.com/EzWk7Jl.jpg"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 QVERDE = "https://i.imgur.com/hd3ofzP.png"
 QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
-QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
+#QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
 TRANSP = "https://i.imgur.com/UXD0mzp.png"
 
 class Tabuleiro:
@@ -35,7 +35,9 @@ class Tabuleiro:
             cx, cy =  carta_a_mover.posicao_certa
             tx, ty =  self.tabuleiro[casa_destino].posicao_certa
             pontos = (1 if cx == tx else 0) + (1 if ty == cy else 0)
+         
             #alert(pontos)
+            
             carta_a_mover.elt.style.left = x = elemento_casa_do_tabuleiro.style.left
             carta_a_mover.elt.style.top = y = elemento_casa_do_tabuleiro.style.top
             pos = elemento_casa_do_tabuleiro.title
@@ -46,6 +48,7 @@ class Tabuleiro:
                width="80px", height="80px", left= TBRESPX+(ordem_da_carta%4)*TBRX, top= TBRESPY+(ordem_da_carta//4)*TBRY ))            
             dica_do_valor.entra(self.tabela_fase1)
             alert ("Dependendo da carta e da posição escolhida, você receberá uma resposta na tabela numerada.")
+            
         
         self.tabela_fase1 = tabelafase1 = Cena(img=FUNDO)
         
@@ -54,15 +57,17 @@ class Tabuleiro:
         Pilha_Cartas = [QAZUL, QAZUL, QAZUL, QAZUL,\
         QAZUL, QAZUL, QAZUL,QAZUL,\
         QAZUL, QAZUL, QAZUL, QAZUL]
+        
         Resposta_Cartas = [(QAZUL,"0_1","0_2 0_3 0_0"), (QAZUL, "3_0","0_2 0_3 0_0"),\
         (QAZUL, "2_2","0_2 0_3 0_0"), (QAZUL, "1_3","0_2 0_3 0_0")]
+        
         respostas= "1_3,2_2,3_0,0_1,1_3,2_2,3_0,0_1,1_3,2_2,3_0,0_1,1_3,2_2,3_0,0_1"
         self.resposta_certa = {nome:pos.split("_") for nome,pos in zip(Pilha_Cartas,respostas.split(","))}
                                  
         
         ### PILHA DE CARTAS ###
         for carta in Pilha_Cartas:
-            a_carta_a_ser_empilhada = Elemento (carta, tit= carta, style=dict(
+            a_carta_a_ser_empilhada = Elemento (carta, tit= "carta", style=dict(
             width="65px", height="70px", left=0, top=0))
             a_carta_a_ser_empilhada.posicao_certa = self.resposta_certa[carta]
             self.lista_de_cartas.append(a_carta_a_ser_empilhada)
