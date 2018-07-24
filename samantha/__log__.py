@@ -373,3 +373,21 @@ NameError: name 'linhaA1' is not defined
                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Jul 23 2018 23:21:42.825 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 168
+    Tabuleiro ()
+  module <module> line 32
+    quadros = [linhaA1,linhaB1,linhaC1,linhaA2,linhaB2,linhaC2,linhaA3,linhaB3,linhaC3,linhaA4,linhaB4,linhaC4]
+NameError: name 'linhaA1' is not defined
+'''},
