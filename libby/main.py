@@ -8,23 +8,14 @@ scene=canvas()
 scene.background= color.black #"rgba(0, 0, 200, 0.5)"
 scene.width = 600
 scene.height = 600
-silv = dict(color=color.blue, opacity=0.4)
+silv = dict(color=color.blue)
 hull = dict(color=color.yellow)
-#s = shapes.rectangle(width=10, height=6)
-#h1=box(pos=(1.5, -0.5, 0),size=(1,0.1,0.5), axis=(0,1,0), color=color.blue)
-
 """
-#h2=sphere(pos=(1.5, 0.5, 0),size=(1,0.1,0.5), axis=(0,1,0), color=color.black)
-#pyramid(pos=(1, -0.5, 0),size=(0.5,0.1,1), axis=(0,1,0), color=color.black)
-# --- hull ---
-aft=sphere(pos=(2, 0, 0), size=(1,1,2), color=color.yellow)
-fr=sphere(pos=(6, 0, 0), size=(1,1,2), color=color.yellow)
 body=cylinder(pos=(2, 0, 0), size=(4,1,2) , color=color.yellow)
-# --- cockpit ---
 """
-rec0=box(pos=(5, 0.2, 0), size=(1,1,2), **silv)
-rec1=box(pos=(6.2, 0.2, 0), size=(1,1,2), **silv)
-rec1=box(pos=(6.2, 0.2, 0), size=(1,1,2), **silv)
+rec0=box(pos=(5, 0.2, 0), size=(4,4,4), **silv)
+rec1=box(pos=(6.2, 0.2, 0), size=(4,4,4), **silv)
+rec1=box(pos=(7.2, 0.2, 0), size=(4,4,4), **silv)
 simetria = [rec0, rec1, rec2]
 
 """
