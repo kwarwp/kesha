@@ -640,3 +640,21 @@ NameError: name 'RESP_SORRISOMAIS_FASE1' is not defined
     self.casa = Elemento(RESP_SORRISOMAIS_FASE1, tit='0_1', style=dict(
 NameError: name 'RESP_SORRISOMAIS_FASE1' is not defined
 '''},
+{'date': 'Tue Jul 24 2018 02:04:39.726 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 226
+    Tabuleiro()
+  module <module> line 76
+    self.tabuleiro_respostas[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
+NameError: name 'FUNDO_BRANCO' is not defined
+'''},
