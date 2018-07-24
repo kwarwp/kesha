@@ -6,7 +6,7 @@ STYLE["width"]=800
 STYLE["height"]="600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg" #quadradinho branco
 FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
-FASE1 = "https://i.imgur.com/X3oxHIz.png" #imagem estrelas
+#FASE1 = "https://i.imgur.com/X3oxHIz.png" #imagem estrelas
 #FASE2 = "https://i.imgur.com/DailNDQ.png"
 #FASE3 = "https://i.imgur.com/XWPxvYy.png"
 #FASE4 = "https://i.imgur.com/KN4hH9Z.png"
@@ -15,12 +15,12 @@ FASE1 = "https://i.imgur.com/X3oxHIz.png" #imagem estrelas
 #FASE7 = "https://i.imgur.com/BKbYEGn.png"
 #FASE8 = "https://i.imgur.com/zFlVIXy.png"
 #FASE9 = "https://i.imgur.com/HyW0l5d.png"
-QBRANCO ="https://i.imgur.com/EzWk7Jl.jpg"
+#QBRANCO ="https://i.imgur.com/EzWk7Jl.jpg"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
-QVERDE = "https://i.imgur.com/hd3ofzP.png"
-QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
+#QVERDE = "https://i.imgur.com/hd3ofzP.png"
+#QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
 #QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
-TRANSP = "https://i.imgur.com/UXD0mzp.png"
+#TRANSP = "https://i.imgur.com/UXD0mzp.png"
 
 class Tabuleiro:
 
@@ -56,7 +56,7 @@ class Tabuleiro:
         self.lista_de_cartas =[]
         Pilha_Cartas = [QAZUL, QAZUL, QAZUL, QAZUL,\
         QAZUL, QAZUL, QAZUL,QAZUL,\
-        QAZUL, QAZUL, QAZUL, QAZUL]
+        QAZUL, QAZUL, QAZUL, QAZUL] #lista das cartas
         
         Resposta_Cartas = [(QAZUL,"0_1","0_2 0_3 0_0"), (QAZUL, "3_0","0_2 0_3 0_0"),\
         (QAZUL, "2_2","0_2 0_3 0_0"), (QAZUL, "1_3","0_2 0_3 0_0")]
@@ -68,32 +68,30 @@ class Tabuleiro:
         ### PILHA DE CARTAS ###
         for carta in Pilha_Cartas:
             a_carta_a_ser_empilhada = Elemento (carta, tit= "carta", style=dict(
-            width="65px", height="70px", left=0, top=0))
+            width="65px", height="70px", left=30, top="30px")) #formatação cartinha azul da pilha
             a_carta_a_ser_empilhada.posicao_certa = self.resposta_certa[carta]
             self.lista_de_cartas.append(a_carta_a_ser_empilhada)
             a_carta_a_ser_empilhada.entra(tabelafase1)
         self.cliqueaqui = Elemento (QAZUL, style=dict(width="1px", height="1px", left=0, top=0))
         self.cliqueaqui.entra (tabelafase1)
         
-        ### TABULEIRO ####
+        ### TABULEIRO DA ESQUERDA E DA DIREITA####
         TBX, TBY = 80, 80
-        self.casa0 = Elemento(QAZUL, tit='0_0', style=dict(
-            width=TBX, height=TBY, left=220, top=114))
-        self.casa = Elemento(QAZUL, tit='0_1', style=dict(
-            width=TBX, height=TBY, left=400, top=140))
+        #self.casa0 = Elemento(QAZUL, tit='0_0', style=dict(width=TBX, height=TBY, left=220, top=120))
+        #self.casa = Elemento(QAZUL, tit='0_1', style=dict(width=TBX, height=TBY, left=400, top=140))
         self.tabuleiro = {}
-        inicio_x, inicio_y = 114, 218
-        for coluna_ in range(3):
-            for linha_ in range(4):
+        inicio_x, inicio_y = 120, 218 #o tabuleiro inteiro anda em x ou y
+        for coluna_ in range(3): #3 colunas da tabela da esquerda
+            for linha_ in range(4): #4 linhas
                 nome = "{}_{}".format(linha_, coluna_)
                 self.tabuleiro[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
-                    width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY-90))
+                    width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY-90))#-15 o quadradinho diminui na largura
                 self.tabuleiro[nome].entra(tabelafase1)
                 self.tabuleiro[nome].posicao_certa = nome.split("_")
                 self.tabuleiro[nome].img.id = nome
                 
                 
-            for coluna in range(3):
+            for coluna in range(3): #3 colunas da tabela da direita
                 for linha in range(4):
                     nome = "{}_{}".format(linha, coluna)
                     self.tabuleiro[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
@@ -103,10 +101,10 @@ class Tabuleiro:
                     self.tabuleiro[nome].img.id = nome
                     self.tabuleiro[nome].elt.onclick = move_carta     
 
-                            
+                 
         def remove_clique_aqui(_):
-            self.cliqueaqui.elt.style.left=-1000
-            alert ("Observe as figuras da tabela maior e escolha uma posição para a carta da vez")
+            self.cliqueaqui.elt.style.left = -1000
+            alert ("OK SERÁ REMOVIDO")
         self.cliqueaqui.elt.onclick = remove_clique_aqui        
                
         def recoloca_clique_aqui(_):
