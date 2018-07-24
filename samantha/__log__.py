@@ -366,3 +366,10 @@ TypeError: unsupported operand type(s) for //: 'str' and 'int'
     quadros = [linhaA1,linhaB1,linhaC1,linhaA2,linhaB2,linhaC2,linhaA3,linhaB3,linhaC3,linhaA4,linhaB4,linhaC4]
 NameError: name 'linhaA1' is not defined
 '''},
+{'date': 'Mon Jul 23 2018 23:21:27.806 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  for quadro in range(3)):
+                        ^
+SyntaxError: invalid syntax
+'''},
