@@ -1,5 +1,4 @@
 # kesha.libby.main.py
-# ada.parisa.main.py
 from browser import doc, html
 #doc["glowscript"] <= html.H1('XXXXXXXXX -------------- XXXXXXXXXXX')
 from _spy.vpython.main import *
