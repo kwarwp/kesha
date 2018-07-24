@@ -478,3 +478,9 @@ Exception: self.$events is undefined
   module '$exec_8873' line 158
 Tabuleiro ()
 '''},
+{'date': 'Tue Jul 24 2018 01:27:29.958 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+Exception: self.$events is undefined
+  module '$exec_8931' line 161
+Tabuleiro ()
+'''},
