@@ -455,3 +455,10 @@ SyntaxError: EOL while scanning string literal
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Jul 25 2018 16:22:53.903 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 14
+  def remover_carta(_*):
+                      ^
+SyntaxError: invalid syntax
+'''},
