@@ -42,20 +42,12 @@ class Tabuleiro:
             elemento_casa_do_tabuleiro = self.tabuleiro[tabuleiro_target][casa_destino].elt
             cx, cy =  carta_a_mover.posicao_certa
             tx, ty =  self.tabuleiro[tabuleiro_target][casa_destino].posicao_certa
-            pontos = (1 if cx == tx else 0) + (1 if ty == cy else 0)
+            #pontos = (1 if cx == tx else 0) + (1 if ty == cy else 0)
          
             #alert(pontos)
-            
             carta_a_mover.elt.style.left = x = elemento_casa_do_tabuleiro.style.left
             carta_a_mover.elt.style.top = y = elemento_casa_do_tabuleiro.style.top
             pos = elemento_casa_do_tabuleiro.title
-            print(elemento_casa_do_tabuleiro.style.left, elemento_casa_do_tabuleiro.style.top)
-            print(carta_a_mover.elt.style.left, carta_a_mover.elt.style.top)
-            ordem_da_carta = 15 - len(self.lista_de_cartas)
-            dica_do_valor = Elemento(RESPOSTA[pontos], style=dict(
-               width="80px", height="80px", left= TBRESPX+(ordem_da_carta%4)*TBRX, top= TBRESPY+(ordem_da_carta//4)*TBRY ))            
-            dica_do_valor.entra(self.tabela_fase1)
-            alert ("Dependendo da carta e da posição escolhida, você receberá uma resposta na tabela numerada.")
             
         
         self.tabela_fase1 = tabelafase1 = Cena(img=FUNDO)
