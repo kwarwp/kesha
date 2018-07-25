@@ -14,4 +14,4 @@ simetria1=box(pos=(2.1, 0.2, 0), size=(0.4,0.4,0.4) , **silv)
 simetria2=box(pos=(3.6, 0.2, 1.5), size=(0.4,0.4,0.4) , **silv)
 simetria = [box(pos=(x/2+2.2, 0.15, 0.9), size=(0.4,0.4,0.4), **silv) for x in range(4)]
 
-#Q1 = [simetria]+simetria1+simetria2
+Q1 = [simetria]+simetria1+simetria2
