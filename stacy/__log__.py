@@ -183,3 +183,10 @@ AttributeError: 'Tabuleiro' object has no attribute 'tabuleiro'
     self.tabuleiro[nome].elt.onclick = recoloca_clique_aqui
 AttributeError: 'Tabuleiro' object has no attribute 'tabuleiro'
 '''},
+{'date': 'Wed Jul 25 2018 14:53:46.806 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 91
+  self.tabuleiro = {esquerda = {}, direita = {}}
+                                                ^
+SyntaxError: invalid syntax
+'''},
