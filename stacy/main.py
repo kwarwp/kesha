@@ -35,14 +35,13 @@ class Tabuleiro:
 
     def __init__ (self):
         def move_carta(casa):
-            print(casa.target.id)
-            print(list(self.tabuleiro.keys()))
             carta_a_mover = self.lista_de_cartas.pop()
             casa_destino = casa.target.id
+            tabuleiro_target = casa.target.tabuleiro
             self.cliqueaqui.elt.style.left=40
-            elemento_casa_do_tabuleiro = self.tabuleiro[casa_destino].elt
+            elemento_casa_do_tabuleiro = self.tabuleiro[tabuleiro_target][casa_destino].elt
             cx, cy =  carta_a_mover.posicao_certa
-            tx, ty =  self.tabuleiro[casa_destino].posicao_certa
+            tx, ty =  self.tabuleiro[tabuleiro_target][casa_destino].posicao_certa
             pontos = (1 if cx == tx else 0) + (1 if ty == cy else 0)
          
             #alert(pontos)
@@ -99,6 +98,7 @@ class Tabuleiro:
                 self.tabuleiro["esquerda"][nome].entra(tabelafase1)
                 self.tabuleiro["esquerda"][nome].posicao_certa = nome.split("_")
                 self.tabuleiro["esquerda"][nome].img.id = nome
+                self.tabuleiro["esquerda"][nome].img.tabuleiro = "esquerda"
                 self.tabuleiro["esquerda"][nome].elt.onclick = move_carta   
         #self.tabuleiro = {}        
         inicio_x, inicio_y = 420, 128  
@@ -112,6 +112,7 @@ class Tabuleiro:
                 self.tabuleiro["direita"][nome].entra(tabelafase1)
                 self.tabuleiro["direita"][nome].posicao_certa = nome.split("_")
                 self.tabuleiro["direita"][nome].img.id = nome
+                self.tabuleiro["direita"][nome].img.tabuleiro = "direita"
                 self.tabuleiro["direita"][nome].elt.onclick = move_carta    
                  
         def remove_clique_aqui(_):
