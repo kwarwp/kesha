@@ -334,3 +334,10 @@ KeyError: direita
     self.tabuleiro[nome].elt.onclick = recoloca_clique_aqui
 KeyError: 3_2
 '''},
+{'date': 'Wed Jul 25 2018 15:04:33.105 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 121
+  self.cliqueaqui.entra(self.tabelafase1)
+  ^
+IndentationError: unexpected indent
+'''},
