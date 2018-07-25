@@ -441,3 +441,10 @@ NameError: name 'QZUL' is not defined
     a_carta_a_ser_empilhada.posicao_certa = self.resposta_certa[carta]
 AttributeError: 'Tabuleiro' object has no attribute 'resposta_certa'
 '''},
+{'date': 'Wed Jul 25 2018 16:05:33.632 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 85
+  """"      
+            ^
+SyntaxError: EOL while scanning string literal
+'''},
