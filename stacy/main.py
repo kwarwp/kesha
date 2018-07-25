@@ -88,28 +88,31 @@ class Tabuleiro:
         TBX, TBY = 80, 80
         #self.casa0 = Elemento(QAZUL, tit='0_0', style=dict(width=TBX, height=TBY, left=220, top=120))
         #self.casa = Elemento(QAZUL, tit='0_1', style=dict(width=TBX, height=TBY, left=400, top=140))
-        self.tabuleiro = {}
-        inicio_x, inicio_y = 120, 218 #o tabuleiro inteiro anda em x ou y
+        self.tabuleiro = dict(esquerda = {}, direita = {})
+        inicio_x, inicio_y = 120, 128 #o tabuleiro inteiro anda em x ou y
+        
         for coluna_ in range(3): #3 colunas da tabela da esquerda
             for linha_ in range(4): #4 linhas
                 nome = "{}_{}".format(linha_, coluna_)
-                self.tabuleiro[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
-                    width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY-90))#-15 o quadradinho diminui na largura
-                self.tabuleiro[nome].entra(tabelafase1)
-                self.tabuleiro[nome].posicao_certa = nome.split("_")
-                self.tabuleiro[nome].img.id = nome
-                
-                
-        for coluna in range(3): #3 colunas da tabela da direita
-             for linha in range(4):
-                nome = "{}_{}".format(linha, coluna)
-                self.tabuleiro[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
-                    width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna*TBX+300, top=inicio_y+linha*TBY-90))
-                self.tabuleiro[nome].entra(tabelafase1)
-                self.tabuleiro[nome].posicao_certa = nome.split("_")
-                self.tabuleiro[nome].img.id = nome
-                self.tabuleiro[nome].elt.onclick = move_carta     
-
+                self.tabuleiro["esquerda"][nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
+                    width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY))#-15 o quadradinho diminui na largura
+                self.tabuleiro["esquerda"][nome].entra(tabelafase1)
+                self.tabuleiro["esquerda"][nome].posicao_certa = nome.split("_")
+                self.tabuleiro["esquerda"][nome].img.id = nome
+                self.tabuleiro["esquerda"][nome].elt.onclick = move_carta   
+        #self.tabuleiro = {}        
+        inicio_x, inicio_y = 420, 128  
+        
+        for coluna_ in range(3): #3 colunas da tabela da direita
+            for linha_ in range(4):
+                nome = "{}_{}".format(linha_, coluna_)
+                self.tabuleiro["direita"][nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
+                    width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY))
+         
+                self.tabuleiro["direita"][nome].entra(tabelafase1)
+                self.tabuleiro["direita"][nome].posicao_certa = nome.split("_")
+                self.tabuleiro["direita"][nome].img.id = nome
+                self.tabuleiro["direita"][nome].elt.onclick = move_carta    
                  
         def remove_clique_aqui(_):
             self.cliqueaqui.elt.style.left = -1000
@@ -118,8 +121,12 @@ class Tabuleiro:
                
         def recoloca_clique_aqui(_):
             self.cliqueaqui.entra(tabelafase1)
-        self.tabuleiro[nome].elt.onclick = recoloca_clique_aqui
-        
+            
+        for nome in self.tabuleiro["direita"]:
+        	self.tabuleiro["direita"][nome].elt.onclick = recoloca_clique_aqui
+        for nome in self.tabuleiro["esquerda"]:
+        	self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
+
         
         
         tabelafase1.vai()
