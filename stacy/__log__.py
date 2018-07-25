@@ -384,3 +384,10 @@ KeyError: 0_0
                           ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Jul 25 2018 15:46:47.114 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 41
+  if((tabuleiro_target == "esquerda" && self.tabuleiro["direita"][casa_destino].ocupado == 1) 
+                                       ^
+SyntaxError: invalid syntax
+'''},
