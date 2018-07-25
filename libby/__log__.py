@@ -477,3 +477,10 @@ TypeError: can only concatenate list (not "box") to list
     Q1 = [simetria]+simetria1+simetria2
 TypeError: can only concatenate list (not "box") to list
 '''},
+{'date': 'Wed Jul 25 2018 06:52:00.699 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  simetria1=box(pos=(2.1, 0.2, 0), size=(0.4,0.4,0.4) , silv)
+                                                            ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
