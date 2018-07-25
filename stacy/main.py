@@ -21,14 +21,14 @@ QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 #QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
 #QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
 #TRANSP = "https://i.imgur.com/UXD0mzp.png"
-cliques_altos = [""] 
-cliques_altos ==  3
-cliques_medios = ["bat", "gir", "colo", "manipul", "mov", "surg", "peg", "levant", "bat"]
-cliques_medios ==  2
+#cliques_altos = [""] 
+#cliques_altos ==  3
+#cliques_medios = ["bat", "gir", "colo", "manipul", "mov", "surg", "peg", "levant", "bat"]
+#cliques_medios ==  2
 
-cliques_fracos = ["rod", "bot", "sub", "pux", "form", "tent", "cli", "abaix", "mex", "encost", "rel"] 
-cliques_fracos ==  1
-cliques = [ (3,verbos_altos),(2,verbos_medios),(1,verbos_fracos)]
+#cliques_fracos = ["rod", "bot", "sub", "pux", "form", "tent", "cli", "abaix", "mex", "encost", "rel"] 
+#cliques_fracos ==  1
+#cliques = [ (3,verbos_altos),(2,verbos_medios),(1,verbos_fracos)]
 
 
 class Tabuleiro:
@@ -100,15 +100,15 @@ class Tabuleiro:
                 self.tabuleiro[nome].img.id = nome
                 
                 
-            for coluna in range(3): #3 colunas da tabela da direita
-                for linha in range(4):
-                    nome = "{}_{}".format(linha, coluna)
-                    self.tabuleiro[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
-                        width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna*TBX+300, top=inicio_y+linha*TBY-90))
-                    self.tabuleiro[nome].entra(tabelafase1)
-                    self.tabuleiro[nome].posicao_certa = nome.split("_")
-                    self.tabuleiro[nome].img.id = nome
-                    self.tabuleiro[nome].elt.onclick = move_carta     
+        for coluna in range(3): #3 colunas da tabela da direita
+             for linha in range(4):
+                nome = "{}_{}".format(linha, coluna)
+                self.tabuleiro[nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
+                    width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna*TBX+300, top=inicio_y+linha*TBY-90))
+                self.tabuleiro[nome].entra(tabelafase1)
+                self.tabuleiro[nome].posicao_certa = nome.split("_")
+                self.tabuleiro[nome].img.id = nome
+                self.tabuleiro[nome].elt.onclick = move_carta     
 
                  
         def remove_clique_aqui(_):
