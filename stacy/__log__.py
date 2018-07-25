@@ -377,3 +377,10 @@ NameError: name 'tabuleiro' is not defined
     self.tabuleiro["direita"][nome].elt.onclick = move_carta   
 KeyError: 0_0
 '''},
+{'date': 'Wed Jul 25 2018 15:38:04.425 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 38
+  if(casa.target.ocupado = False):
+                          ^
+SyntaxError: invalid syntax
+'''},
