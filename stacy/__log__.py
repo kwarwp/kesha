@@ -74,3 +74,10 @@ SyntaxError: EOL while scanning string literal
     self.tabela_fase1 = tabelafase1 = Cena(img=FUNDO)
 NameError: name 'FUNDO' is not defined
 '''},
+{'date': 'Wed Jul 25 2018 06:31:48.225 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 66
+  self.resposta_certa = {nome:pos.split("_") for nome,pos in zip(Pilha_Cartas,respostas.split(","))}
+  ^
+IndentationError: unexpected indent
+'''},
