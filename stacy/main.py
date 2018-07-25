@@ -21,6 +21,15 @@ QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 #QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
 #QSIMBOLO = "https://i.imgur.com/XnMRw3u.png"
 #TRANSP = "https://i.imgur.com/UXD0mzp.png"
+cliques_altos = [""] 
+cliques_altos ==  3
+cliques_medios = ["bat", "gir", "colo", "manipul", "mov", "surg", "peg", "levant", "bat"]
+cliques_medios ==  2
+
+cliques_fracos = ["rod", "bot", "sub", "pux", "form", "tent", "cli", "abaix", "mex", "encost", "rel"] 
+cliques_fracos ==  1
+cliques = [ (3,verbos_altos),(2,verbos_medios),(1,verbos_fracos)]
+
 
 class Tabuleiro:
 
