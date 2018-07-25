@@ -97,3 +97,10 @@ IndentationError: unexpected indent
     cliques = [ (3,verbos_altos),(2,verbos_medios),(1,verbos_fracos)]
 NameError: name 'verbos_altos' is not defined
 '''},
+{'date': 'Wed Jul 25 2018 14:39:40.183 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 115
+  def remove_clique_aqui(_):
+  ^
+IndentationError: unexpected indent
+'''},
