@@ -42,9 +42,7 @@ class Tabuleiro:
             elemento_casa_do_tabuleiro = self.tabuleiro[tabuleiro_target][casa_destino].elt
             cx, cy =  carta_a_mover.posicao_certa
             tx, ty =  self.tabuleiro[tabuleiro_target][casa_destino].posicao_certa
-            #pontos = (1 if cx == tx else 0) + (1 if ty == cy else 0)
-         
-            #alert(pontos)
+            
             carta_a_mover.elt.style.left = x = elemento_casa_do_tabuleiro.style.left
             carta_a_mover.elt.style.top = y = elemento_casa_do_tabuleiro.style.top
             pos = elemento_casa_do_tabuleiro.title
