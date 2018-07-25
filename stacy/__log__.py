@@ -448,3 +448,10 @@ AttributeError: 'Tabuleiro' object has no attribute 'resposta_certa'
             ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Wed Jul 25 2018 16:18:10.175 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  def move_carta(casa):
+  ^
+IndentationError: unexpected indent
+'''},
