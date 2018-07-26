@@ -4,7 +4,7 @@ from browser import html, document, alert
 
 STYLE["width"]=800
 STYLE["height"]="600px"
-FUNDO = "https://i.imgur.com/EzWk7Jl.jpg" #quadradinho branco
+FUNDO = "https://i.imgur.com/EzWk7Jl.jpg" 
 FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 
@@ -45,7 +45,7 @@ class Tabuleiro:
         self.cartas_no_tabuleiro = []
         Pilha_Cartas = []
         for f in range (24):
-            Pilha_Cartas.append(QAZUL)#lista das cartas
+            Pilha_Cartas.append(QAZUL)
         
         ### PILHA DE CARTAS ###
         
@@ -53,10 +53,10 @@ class Tabuleiro:
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         TBX, TBY = 80, 80
         self.tabuleiro = dict(esquerda = {}, direita = {})
-        inicio_x, inicio_y = 390, 128 #o tabuleiro inteiro anda em x ou y
+        inicio_x, inicio_y = 390, 128 
         
-        for coluna_ in range(3): #3 colunas da tabela da esquerda
-            for linha_ in range(4): #4 linhas
+        for coluna_ in range(3): 
+            for linha_ in range(4): 
                 nome = "{}_{}".format(linha_, coluna_)
                 self.tabuleiro["esquerda"][nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x - coluna_*TBX - (TBX-15), top=inicio_y+linha_*TBY))#-15 o quadradinho diminui na largura
@@ -65,15 +65,15 @@ class Tabuleiro:
                 self.tabuleiro["esquerda"][nome].img.tabuleiro = "esquerda"
                 self.tabuleiro["esquerda"][nome].img.ocupado = 0
                 self.tabuleiro["esquerda"][nome].elt.onclick = move_carta   
-        #self.tabuleiro = {}        
+
         inicio_x, inicio_y = 430, 128  
         
-        for coluna_ in range(3): #3 colunas da tabela da direita
+        for coluna_ in range(3): 
             for linha_ in range(4):
                 nome = "{}_{}".format(linha_, coluna_)
                 self.tabuleiro["direita"][nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY))
-         
+
                 self.tabuleiro["direita"][nome].entra(tabelafase1)
                 self.tabuleiro["direita"][nome].img.id = nome
                 self.tabuleiro["direita"][nome].img.tabuleiro = "direita"
@@ -83,7 +83,7 @@ class Tabuleiro:
         Pilha_Cartas_left = 30
         for carta in Pilha_Cartas:
             a_carta_a_ser_empilhada = Elemento (carta, tit= "carta", style=dict(
-            width="65px", height="70px", left=Pilha_Cartas_left, top=Pilha_Cartas_top)) #formatação cartinha azul da pilha
+            width="65px", height="70px", left=Pilha_Cartas_left, top=Pilha_Cartas_top)) 
             a_carta_a_ser_empilhada.img.casa = "null"
             a_carta_a_ser_empilhada.img.tabuleiro = "null"
         
@@ -94,9 +94,9 @@ class Tabuleiro:
             self.cliqueaqui.entra(tabelafase1)
             
         for nome in self.tabuleiro["direita"]:
-        	self.tabuleiro["direita"][nome].elt.onclick = recoloca_clique_aqui
+            self.tabuleiro["direita"][nome].elt.onclick = recoloca_clique_aqui
         for nome in self.tabuleiro["esquerda"]:
-        	self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
+            self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
 
         
         
