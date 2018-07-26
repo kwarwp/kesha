@@ -480,3 +480,10 @@ SyntaxError: invalid syntax
     Pilha_Cartas.top = "30px"
 AttributeError: 'list' object has no attribute 'top'
 '''},
+{'date': 'Thu Jul 26 2018 10:51:43.367 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  pontos_altos =
+                 ^
+SyntaxError: invalid syntax
+'''},
