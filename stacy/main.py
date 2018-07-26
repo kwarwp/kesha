@@ -11,7 +11,7 @@ QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 pontos_altos = ""
 pontos_medios = ""
 pontos_fracos = ""
-
+#deixar errar
 
 class Tabuleiro:
 
