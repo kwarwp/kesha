@@ -8,9 +8,9 @@ FUNDO = "https://i.imgur.com/EzWk7Jl.jpg"
 FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 #crivo#
-pontos_altos =
-pontos_medios = 
-pontos_fracos =
+pontos_altos = ""
+pontos_medios = ""
+pontos_fracos = ""
 
 
 class Tabuleiro:
