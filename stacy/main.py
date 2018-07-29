@@ -7,6 +7,8 @@ STYLE["height"]="600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg" 
 FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
+QVERMELHO = ""
+QVERDE = ""
 #crivo#
 pontos_altos = ""
 pontos_medios = ""
