@@ -127,25 +127,23 @@ class Tabuleiro:
                 #or tabuleiro_target == "direita"):
                 #casa.target.ocupado = 1
                     
-                        carta_a_mover = self.lista_de_cartas.pop()
-                        self.cartas_no_tabuleiro.append(carta_a_mover)
-                        elemento_casa_do_tabuleiro = self.tabuleiro[tabuleiro_target][casa_destino].elt
-            
-                        carta_a_mover.elt.style.left  = elemento_casa_do_tabuleiro.style.left
-                        carta_a_mover.elt.style.top  = elemento_casa_do_tabuleiro.style.top
-                        carta_a_mover.elt.onclick = remover_carta
-                        carta_a_mover.img.casa = casa_destino
-                        carta_a_mover.img.tabuleiro = tabuleiro_target
+                    carta_a_mover = self.lista_de_cartas.pop()
+                    self.cartas_no_tabuleiro.append(carta_a_mover)
+                    elemento_casa_do_tabuleiro = self.tabuleiro[tabuleiro_target][casa_destino].elt
+                    carta_a_mover.elt.style.left  = elemento_casa_do_tabuleiro.style.left
+                    carta_a_mover.elt.style.top  = elemento_casa_do_tabuleiro.style.top
+                    carta_a_mover.elt.onclick = remover_carta
+                    carta_a_mover.img.casa = casa_destino
+                    carta_a_mover.img.tabuleiro = tabuleiro_target
         
-                self.tabela_fase2 = tabelafase2 = Cena(img=FUNDO)
-                self.lista_de_cartas =[]
-                self.cartas_no_tabuleiro = []
-                Pilha_Cartas = []
-                for f in range (36):
-                    Pilha_Cartas.append(QAZUL)
+                    self.tabela_fase2 = tabelafase2 = Cena(img=FUNDO)
+                    self.lista_de_cartas =[]
+                    self.cartas_no_tabuleiro = []
+                    Pilha_Cartas = []
+                    for f in range (36):
+                        Pilha_Cartas.append(QAZUL)
         
-                
-        
+                       
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
                 TBX, TBY = 80, 80
                 self.tabuleiro = dict(esquerda = {}, direita = {})
