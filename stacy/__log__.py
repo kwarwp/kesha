@@ -599,3 +599,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Jul 29 2018 19:28:12.813 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 100
+  class Tabuleiro2:
+  ^
+IndentationError: unexpected indent
+'''},
