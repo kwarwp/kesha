@@ -522,3 +522,10 @@ IndentationError: unexpected indent
                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Jul 29 2018 18:49:22.241 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 109
+  def segunda_fase(self)
+                         ^
+SyntaxError: invalid syntax
+'''},
