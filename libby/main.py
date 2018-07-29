@@ -15,7 +15,7 @@ simetria2=box(pos=(1.8, 1.6, 0), size=(1,1,1) , **bloco)
 simetria = [box(pos=(3, x*(1.2)-2, 0), size=(1,1,1), **bloco) for x in range(4)]
 
 pts = [simetria1, simetria2]+simetria
-sup = compound(pts, pos=vec(2,0,0), axis=vec(1,0,-1))
+sup = compound(pts, pos=vec(2,0,0), axis=vec(4,0,-1))
 
 #def sail():
     #rate(2, sail)
