@@ -1205,3 +1205,9 @@ TypeError: can only concatenate list (not "box") to list
     Q1 = [simetria]+simetria1+simetria2
 TypeError: can only concatenate list (not "box") to list
 '''},
+{'date': 'Sun Jul 29 2018 14:13:22.565 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: object.rotate() requires an angle.
+  module '$exec_820' line 25
+sail()
+'''},
