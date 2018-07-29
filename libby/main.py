@@ -15,11 +15,11 @@ simetria2=box(pos=(1.8, 1.6, 0), size=(1,1,1) , **silv)
 simetria = [box(pos=(3, x*(1.2)-2, 0), size=(1,1,1), **silv) for x in range(4)]
 
 pts = [simetria1, simetria2]+simetria
-sup = compound(pts, pos=(-1,0,0))
+sup = compound(pts, pos=(2,0,0), axis=vec(1,1,0) )
 
-def sail():
+#def sail():
     #rate(2, sail)
     #sup.pos += vec(0.2,0,0)
-    sup.rotate(angle=0.02, axis=vec(1,1,0))
+#   sup.rotate(angle=0.02, axis=vec(1,1,0))
 
-sail()
+#sail()
