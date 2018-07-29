@@ -182,11 +182,11 @@ class Tabuleiro2:
                     self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
 
 
-                tabelafase2.direita = segunda_fase.vai()
-                if tabelafase1.direita(self):
-                    self.segunda_fase()        
-Tabuleiro2()   
+                #tabelafase2.direita = segunda_fase.vai()
+                #if tabelafase1.direita(self):
+                 #   self.segunda_fase()        
+#Tabuleiro2()   
             
-#        tabelafase1.vai()
+        tabelafase2.vai()
 
-#Tabuleiro()
+Tabuleiro2()
