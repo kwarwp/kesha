@@ -106,7 +106,7 @@ class Tabuleiro:
         for nome in self.tabuleiro["esquerda"]:
             self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
 
-        def segunda_fase(self)
+        def segunda_fase(self):
             
             class Tabuleiro2:
 
