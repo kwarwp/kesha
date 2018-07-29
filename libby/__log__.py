@@ -1218,3 +1218,10 @@ sail()
                                                         ^
 SyntaxError: keyword argument repeated
 '''},
+{'date': 'Sun Jul 29 2018 15:15:51.218 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  simetria1=box(pos=(4.2, -2, 0), size=(1,1,1) , silv)
+                                                     ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
