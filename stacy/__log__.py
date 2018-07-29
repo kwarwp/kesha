@@ -494,3 +494,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Jul 29 2018 15:52:15.286 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  carta_a_mover = self.lista_de_cartas.pop()
+  ^
+IndentationError: unexpected indent
+'''},
