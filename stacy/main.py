@@ -111,14 +111,15 @@ class Tabuleiro:
             class Tabuleiro2:
 
                 def __init__ (self):
-                """def remover_carta(carta):
+"""
+                def remover_carta(carta):
             self.lista_de_cartas.append(carta)
             carta.elt.style.left = Pilha_cartas_left
             carta.elt.style.top = Pilha_cartas_top
             self.tabuleiro[carta.img.tabuleiro][casa.img.casa].img.ocupado = 0
             carta.img.tabuleiro = "null"
             carta.img.casa = "null"
-               """ 
+""" 
                    def move_carta(casa):
                        casa_destino = casa.target.id
                        tabuleiro_target = casa.target.tabuleiro
