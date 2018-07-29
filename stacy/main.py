@@ -15,17 +15,18 @@ pontos_fracos = ""
 TABELAFASE2 ="https://i.imgur.com/EzWk7Jl.jpg"
 tabelafase2 = Cena(img=TABELAFASE2)
 
+"""
 class Tabuleiro:
 
     def __init__ (self):
-        """def remover_carta(carta):
+            def remover_carta(carta):
             self.lista_de_cartas.append(carta)
             carta.elt.style.left = Pilha_cartas_left
             carta.elt.style.top = Pilha_cartas_top
             self.tabuleiro[carta.img.tabuleiro][casa.img.casa].img.ocupado = 0
             carta.img.tabuleiro = "null"
             carta.img.casa = "null"
-           """ 
+            
         def move_carta(casa):
             casa_destino = casa.target.id
             tabuleiro_target = casa.target.tabuleiro
@@ -43,25 +44,16 @@ class Tabuleiro:
             carta_a_mover.elt.onclick = remover_carta
             carta_a_mover.img.casa = casa_destino
             carta_a_mover.img.tabuleiro = tabuleiro_target
-        
-            
-        
         self.tabela_fase1 = tabelafase1 = Cena(img=FUNDO)
-        
-            
         self.lista_de_cartas =[]
         self.cartas_no_tabuleiro = []
         Pilha_Cartas = []
         for f in range (24):
             Pilha_Cartas.append(QAZUL)
-        
-                
-        
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         TBX, TBY = 80, 80
         self.tabuleiro = dict(esquerda = {}, direita = {})
         inicio_x, inicio_y = 390, 128 
-        
         for coluna_ in range(3): 
             for linha_ in range(4): 
                 nome = "{}_{}".format(linha_, coluna_)
@@ -72,21 +64,17 @@ class Tabuleiro:
                 self.tabuleiro["esquerda"][nome].img.tabuleiro = "esquerda"
                 self.tabuleiro["esquerda"][nome].img.ocupado = 0
                 self.tabuleiro["esquerda"][nome].elt.onclick = move_carta   
-
         inicio_x, inicio_y = 430, 128  
-        
         for coluna_ in range(3): 
             for linha_ in range(4):
                 nome = "{}_{}".format(linha_, coluna_)
                 self.tabuleiro["direita"][nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY))
-
                 self.tabuleiro["direita"][nome].entra(tabelafase1)
                 self.tabuleiro["direita"][nome].img.id = nome
                 self.tabuleiro["direita"][nome].img.tabuleiro = "direita"
                 self.tabuleiro["direita"][nome].img.ocupado = 0
                 self.tabuleiro["direita"][nome].elt.onclick = move_carta    
-        
         ###PILHA DE CARTAS###
         Pilha_Cartas_top = 30
         Pilha_Cartas_left = 30
@@ -108,11 +96,11 @@ class Tabuleiro:
             self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
 
         def segunda_fase(self):
-            
+"""            
             class Tabuleiro2:
 
                 def __init__ (self):
-                    """def remover_carta(carta):
+                    def remover_carta(carta):
                     self.lista_de_cartas.append(carta)
                     carta.elt.style.left = Pilha_cartas_left
                     carta.elt.style.top = Pilha_cartas_top
@@ -126,7 +114,7 @@ class Tabuleiro:
                 #if(casa.target.ocupado == 0):
                 #if((tabuleiro_target == "esquerda" and self.tabuleiro["direita"][casa_destino].img.ocupado == 1)
                 #or tabuleiro_target == "direita"):
-                #casa.target.ocupado = 1
+                #casa.target.ocupado = 1"""
                     
                     carta_a_mover = self.lista_de_cartas.pop()
                     self.cartas_no_tabuleiro.append(carta_a_mover)
