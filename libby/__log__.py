@@ -1211,3 +1211,10 @@ Exception: object.rotate() requires an angle.
   module '$exec_820' line 25
 sail()
 '''},
+{'date': 'Sun Jul 29 2018 14:29:57.125 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  sup = compound(pts, pos=(2,0,0), axis=vec(0,1,-1), pos=vec(0,1,0))
+                                                        ^
+SyntaxError: keyword argument repeated
+'''},
