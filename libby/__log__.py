@@ -957,3 +957,23 @@ TypeError: can only concatenate list (not "box") to list
     Q1 = [simetria]+simetria1+simetria2
 TypeError: can only concatenate list (not "box") to list
 '''},
+{'date': 'Sun Jul 29 2018 13:11:10.388 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 15
+    simetria = [box(pos=(x*1,1+2.2, 0.15, 0.9), size=(1,1,1), **silv) for x in range(4)]
+  module _spy.vpython.primitive line 156
+    primitive.__init__(self, window.glowscript.box, **kwargs)
+  module _spy.vpython.primitive line 10
+    kwargs[_key] = vec(*kwargs[_key])._vec
+TypeError: __init__() takes 4 positional argument but more were given
+'''},
