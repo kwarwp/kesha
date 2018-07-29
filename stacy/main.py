@@ -183,8 +183,8 @@ class Tabuleiro:
                     a_carta_a_ser_empilhada.img.casa = "null"
                     a_carta_a_ser_empilhada.img.tabuleiro = "null"
         
-                self.lista_de_cartas.append(a_carta_a_ser_empilhada)
-                   a_carta_a_ser_empilhada.entra(tabelafase1)
+                    self.lista_de_cartas.append(a_carta_a_ser_empilhada)
+                    a_carta_a_ser_empilhada.entra(tabelafase1)
 
                 def recoloca_clique_aqui(_):
                     self.cliqueaqui.entra(tabelafase2)
@@ -195,9 +195,9 @@ class Tabuleiro:
                     self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
 
 
-            tabelafase1.direita = segunda_fase.vai()
-            if tabelafase1.direita(self):
-                self.segunda_fase()        
+                tabelafase1.direita = segunda_fase.vai()
+                if tabelafase1.direita(self):
+                    self.segunda_fase()        
             Tabuleiro2()   
             
         tabelafase1.vai()
