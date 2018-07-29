@@ -14,6 +14,7 @@ pontos_fracos = ""
 #deixar errar
 TABELAFASE2 ="https://i.imgur.com/EzWk7Jl.jpg"
 tabelafase2 = Cena(img=TABELAFASE2)
+
 class Tabuleiro:
 
     def __init__ (self):
@@ -184,7 +185,7 @@ class Tabuleiro:
                     a_carta_a_ser_empilhada.img.tabuleiro = "null"
         
                     self.lista_de_cartas.append(a_carta_a_ser_empilhada)
-                    a_carta_a_ser_empilhada.entra(tabelafase1)
+                    a_carta_a_ser_empilhada.entra(tabelafase2)
 
                 def recoloca_clique_aqui(_):
                     self.cliqueaqui.entra(tabelafase2)
@@ -195,7 +196,7 @@ class Tabuleiro:
                     self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
 
 
-                tabelafase1.direita = segunda_fase.vai()
+                tabelafase2.direita = segunda_fase.vai()
                 if tabelafase1.direita(self):
                     self.segunda_fase()        
             Tabuleiro2()   
