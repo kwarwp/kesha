@@ -26,21 +26,21 @@ class Tabuleiro:
            """ 
         def move_carta(casa):
             casa_destino = casa.target.id
-            """tabuleiro_target = casa.target.tabuleiro
-            if(casa.target.ocupado == 0):
-                if((tabuleiro_target == "esquerda" and self.tabuleiro["direita"][casa_destino].img.ocupado == 1)
-                or tabuleiro_target == "direita"):
-                    casa.target.ocupado = 1
-               """     
-                    carta_a_mover = self.lista_de_cartas.pop()
-                    self.cartas_no_tabuleiro.append(carta_a_mover)
-                    elemento_casa_do_tabuleiro = self.tabuleiro[tabuleiro_target][casa_destino].elt
+            tabuleiro_target = casa.target.tabuleiro
+            #if(casa.target.ocupado == 0):
+             #   if((tabuleiro_target == "esquerda" and self.tabuleiro["direita"][casa_destino].img.ocupado == 1)
+                #  or tabuleiro_target == "direita"):
+                #     casa.target.ocupado = 1
+                    
+            carta_a_mover = self.lista_de_cartas.pop()
+            self.cartas_no_tabuleiro.append(carta_a_mover)
+            elemento_casa_do_tabuleiro = self.tabuleiro[tabuleiro_target][casa_destino].elt
             
-                    carta_a_mover.elt.style.left  = elemento_casa_do_tabuleiro.style.left
-                    carta_a_mover.elt.style.top  = elemento_casa_do_tabuleiro.style.top
-                    carta_a_mover.elt.onclick = remover_carta
-                    carta_a_mover.img.casa = casa_destino
-                    carta_a_mover.img.tabuleiro = tabuleiro_target
+            carta_a_mover.elt.style.left  = elemento_casa_do_tabuleiro.style.left
+            carta_a_mover.elt.style.top  = elemento_casa_do_tabuleiro.style.top
+            carta_a_mover.elt.onclick = remover_carta
+            carta_a_mover.img.casa = casa_destino
+            carta_a_mover.img.tabuleiro = tabuleiro_target
         
             
         
