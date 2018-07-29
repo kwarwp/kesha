@@ -585,3 +585,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sun Jul 29 2018 19:09:06.505 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 130
+  carta_a_mover = self.lista_de_cartas.pop()
+  ^
+IndentationError: unexpected indent
+'''},
