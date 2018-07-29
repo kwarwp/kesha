@@ -100,7 +100,7 @@ class Tabuleiro:
 class Tabuleiro2:
 
     def __init__ (self):
-            def remover_carta(carta):
+        def remover_carta(carta):
             self.lista_de_cartas.append(carta)
             carta.elt.style.left = Pilha_cartas_left
             carta.elt.style.top = Pilha_cartas_top
