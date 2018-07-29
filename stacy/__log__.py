@@ -543,3 +543,10 @@ SyntaxError: invalid syntax
                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Jul 29 2018 19:03:21.732 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 114
+  """def remover_carta(carta):
+  ^
+IndentationError: expected an indented block
+'''},
