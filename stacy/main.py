@@ -12,7 +12,8 @@ pontos_altos = ""
 pontos_medios = ""
 pontos_fracos = ""
 #deixar errar
-
+TABELAFASE2 ="https://i.imgur.com/EzWk7Jl.jpg"
+tabelafase2 = Cena(img=TABELAFASE2)
 class Tabuleiro:
 
     def __init__ (self):
