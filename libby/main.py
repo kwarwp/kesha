@@ -10,8 +10,8 @@ scene.width = 800
 scene.height = 600
 silv = dict(color=color.blue)
 
-simetria1=box(pos=(1.2, 2, 0), size=(1,1,1) , **silv)
-simetria2=box(pos=(-1,2, 5.6, 0), size=(1,1,1) , **silv)
-simetria = [box(pos=(0, x*(1.2)+2, 0), size=(1,1,1), **silv) for x in range(4)]
+#simetria1=box(pos=(1.2, 2, 0), size=(1,1,1) , **silv)
+#simetria2=box(pos=(-1,2, 5.6, 0), size=(1,1,1) , **silv)
+simetria = [box(pos=(0, x*(1.2), 0), size=(1,1,1), **silv) for x in range(4)]
 
-Q1 = [simetria]+simetria1+simetria2
+#Q1 = [simetria]+simetria1+simetria2
