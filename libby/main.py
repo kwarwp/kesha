@@ -10,9 +10,16 @@ scene.width = 800
 scene.height = 600
 silv = dict(color=color.blue)
 
-simetria1=box(pos=(4.2, -2, 0), size=(1,1,1) , **silv, axis=vec(1,1,0))
-simetria2=box(pos=(1.8, 1.6, 0), size=(1,1,1) , **silv, axis=vec(1,1,0))
-simetria = [box(pos=(3, x*(1.2)-2, 0), size=(1,1,1), **silv, axis=vec(1,1,0)) for x in range(4)]
+simetria1=box(pos=(4.2, -2, 0), size=(1,1,1) , **silv)
+simetria2=box(pos=(1.8, 1.6, 0), size=(1,1,1) , **silv)
+simetria = [box(pos=(3, x*(1.2)-2, 0), size=(1,1,1), **silv) for x in range(4)]
 
-#Q1 = [simetria]+simetria1+simetria2
-#sup = compound(Q1, pos=(3,1.75,0))
+pts = [simetria1, simetria2]+simetria
+sup = compound(pts, pos=(-1,0,0))
+
+def sail():
+    #rate(2, sail)
+    #sup.pos += vec(0.2,0,0)
+    sup.rotate(angle=0.02, axis=vec(1,1,0))
+
+sail()
