@@ -7,7 +7,7 @@ _gs=Glow('pydiv')
 scene=canvas()
 scene.background= color.black #"rgba(0, 0, 200, 0.5)"
 scene.width = 800
-scene.height = "600px"
+scene.height = 600
 silv = dict(color=color.blue)
 
 simetria1=box(pos=(1.2, 2, 0), size=(1,1,1) , **silv)
