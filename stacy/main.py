@@ -134,7 +134,7 @@ class Tabuleiro2:
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         TBX, TBY = 80, 80
         self.tabuleiro = dict(esquerda = {}, direita = {})
-        inicio_x, inicio_y = 390, 128 
+        inicio_x, inicio_y = 390, 50 
         for coluna_ in range(3): 
             for linha_ in range(6): 
                 nome = "{}_{}".format(linha_, coluna_)
@@ -145,7 +145,7 @@ class Tabuleiro2:
                 self.tabuleiro["esquerda"][nome].img.tabuleiro = "esquerda"
                 self.tabuleiro["esquerda"][nome].img.ocupado = 0
                 self.tabuleiro["esquerda"][nome].elt.onclick = move_carta   
-        inicio_x, inicio_y = 430, 128  
+        inicio_x, inicio_y = 430, 50  
         for coluna_ in range(3): 
             for linha_ in range(6):
                 nome = "{}_{}".format(linha_, coluna_)
