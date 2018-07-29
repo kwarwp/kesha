@@ -5,10 +5,10 @@ from browser import html, document, alert
 STYLE["width"]=800
 STYLE["height"]="600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg" 
-FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
+#FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
-QVERMELHO = ""
-QVERDE = ""
+QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
+QVERDE = "https://i.imgur.com/hd3ofzP.png"
 #crivo#
 pontos_altos = ""
 pontos_medios = ""
@@ -59,7 +59,7 @@ class Tabuleiro:
         for coluna_ in range(3): 
             for linha_ in range(4): 
                 nome = "{}_{}".format(linha_, coluna_)
-                self.tabuleiro["esquerda"][nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
+                self.tabuleiro["esquerda"][nome] = Elemento(FUNDO, tit=nome+"_", style=dict(
                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x - coluna_*TBX - (TBX-15), top=inicio_y+linha_*TBY))#-15 o quadradinho diminui na largura
                 self.tabuleiro["esquerda"][nome].entra(tabelafase1)
                 self.tabuleiro["esquerda"][nome].img.id = nome
@@ -70,7 +70,7 @@ class Tabuleiro:
         for coluna_ in range(3): 
             for linha_ in range(4):
                 nome = "{}_{}".format(linha_, coluna_)
-                self.tabuleiro["direita"][nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
+                self.tabuleiro["direita"][nome] = Elemento(FUNDO, tit=nome+"_", style=dict(
                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY))
                 self.tabuleiro["direita"][nome].entra(tabelafase1)
                 self.tabuleiro["direita"][nome].img.id = nome
@@ -132,7 +132,7 @@ class Tabuleiro2:
         self.cartas_no_tabuleiro = []
         Pilha_Cartas = []
         for f in range (36):
-            Pilha_Cartas.append(QAZUL)
+            Pilha_Cartas.append(QVERMELHO)
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         TBX, TBY = 80, 80
         self.tabuleiro = dict(esquerda = {}, direita = {})
@@ -140,7 +140,7 @@ class Tabuleiro2:
         for coluna_ in range(3): 
             for linha_ in range(6): 
                 nome = "{}_{}".format(linha_, coluna_)
-                self.tabuleiro["esquerda"][nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
+                self.tabuleiro["esquerda"][nome] = Elemento(FUNDO, tit=nome+"_", style=dict(
                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x - coluna_*TBX - (TBX-15), top=inicio_y+linha_*TBY))#-15 o quadradinho diminui na largura
                 self.tabuleiro["esquerda"][nome].entra(tabelafase2)
                 self.tabuleiro["esquerda"][nome].img.id = nome
@@ -151,7 +151,7 @@ class Tabuleiro2:
         for coluna_ in range(3): 
             for linha_ in range(6):
                 nome = "{}_{}".format(linha_, coluna_)
-                self.tabuleiro["direita"][nome] = Elemento(FUNDO_BRANCO, tit=nome+"_", style=dict(
+                self.tabuleiro["direita"][nome] = Elemento(FUNDO, tit=nome+"_", style=dict(
                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY))
                 self.tabuleiro["direita"][nome].entra(tabelafase2)
                 self.tabuleiro["direita"][nome].img.id = nome
