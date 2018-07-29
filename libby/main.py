@@ -15,4 +15,4 @@ simetria2=box(pos=(-1.2, 3.6, 0), size=(1,1,1) , **silv)
 simetria = [box(pos=(0, x*(1.2), 0), size=(1,1,1), **silv) for x in range(4)]
 
 Q1 = [simetria]+simetria1+simetria2
-Q2 = [Q1(pos=(3,1.75,0))]
+sup = compound(Q1, pos=(3,1.75,0))
