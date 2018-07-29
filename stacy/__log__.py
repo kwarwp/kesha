@@ -571,3 +571,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sun Jul 29 2018 19:07:35.208 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 114
+  """def remover_carta(carta):
+  ^
+IndentationError: expected an indented block
+'''},
