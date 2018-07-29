@@ -220,14 +220,14 @@ class Tabuleiro3:
         self.lista_de_cartas =[]
         self.cartas_no_tabuleiro = []
         Pilha_Cartas = []
-        for f in range (36):
+        for f in range (56):
             Pilha_Cartas.append(QVERDE)
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         TBX, TBY = 80, 80
         self.tabuleiro = dict(esquerda = {}, direita = {})
         inicio_x, inicio_y = 390, 50 
-        for coluna_ in range(3): 
-            for linha_ in range(6): 
+        for coluna_ in range(7): 
+            for linha_ in range(4): 
                 nome = "{}_{}".format(linha_, coluna_)
                 self.tabuleiro["esquerda"][nome] = Elemento(FUNDO, tit=nome+"_", style=dict(
                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x - coluna_*TBX - (TBX-15), top=inicio_y+linha_*TBY))#-15 o quadradinho diminui na largura
@@ -237,8 +237,8 @@ class Tabuleiro3:
                 self.tabuleiro["esquerda"][nome].img.ocupado = 0
                 self.tabuleiro["esquerda"][nome].elt.onclick = move_carta   
         inicio_x, inicio_y = 430, 50  
-        for coluna_ in range(3): 
-            for linha_ in range(6):
+        for coluna_ in range(7): 
+            for linha_ in range(4):
                 nome = "{}_{}".format(linha_, coluna_)
                 self.tabuleiro["direita"][nome] = Elemento(FUNDO, tit=nome+"_", style=dict(
                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x+coluna_*TBX, top=inicio_y+linha_*TBY))
