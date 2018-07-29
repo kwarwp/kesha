@@ -606,3 +606,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Jul 29 2018 19:34:06.525 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 110
+  """ 
+  ^
+IndentationError: unexpected indent
+'''},
