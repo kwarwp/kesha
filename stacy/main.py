@@ -107,10 +107,10 @@ class Tabuleiro2:
             self.tabuleiro[carta.img.tabuleiro][casa.img.casa].img.ocupado = 0
             carta.img.tabuleiro = "null"
             carta.img.casa = "null"
-                    """ 
-                def move_carta(casa):
-                    casa_destino = casa.target.id
-                    tabuleiro_target = casa.target.tabuleiro
+                
+                #def move_carta(casa):
+                    #   casa_destino = casa.target.id
+                    #  tabuleiro_target = casa.target.tabuleiro
                 #if(casa.target.ocupado == 0):
                 #if((tabuleiro_target == "esquerda" and self.tabuleiro["direita"][casa_destino].img.ocupado == 1)
                 #or tabuleiro_target == "direita"):
