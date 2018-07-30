@@ -104,7 +104,7 @@ class Carta:
         carta_elt = ev.target.parent_id
         doc[carta_elt].remove()
         self.cria_carta(carta_elt)
-        INVENTARIO.score(casa=self.casa.nome, carta=carta_elt, move="REMOVE", ponto=-1, valor="N", _level=3)
+        INVENTARIO.score(casa=self.casa, carta=carta_elt, move="REMOVE", ponto=-1, valor="N", _level=3)
         ev.stopPropagation()
         return False
 
