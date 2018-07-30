@@ -407,3 +407,10 @@ KeyError: py3d
     doc['py3d'].html=''
 KeyError: py3d
 '''},
+{'date': 'Mon Jul 30 2018 10:30:56.227 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 42
+  tabelafase1.vai()
+  ^
+IndentationError: unexpected indent
+'''},
