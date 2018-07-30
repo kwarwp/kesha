@@ -653,3 +653,10 @@ TypeError: '<=' not supported between instances of 'Tabuleiro' and 'Elemento'
                                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Jul 30 2018 18:55:05.499 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 54
+  INVENTARIO.score(casa="9_9", carta="9_9", move="INICIA", ponto=0, valor="N", _level=1):
+                                                                                         ^
+SyntaxError: invalid syntax
+'''},
