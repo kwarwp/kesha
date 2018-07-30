@@ -627,3 +627,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sun Jul 29 2018 21:12:04.730 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 104
+  def segunda_fase(self):
+  ^
+IndentationError: unexpected indent
+'''},
