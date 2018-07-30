@@ -55,3 +55,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Jul 29 2018 22:20:22.974 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 80
+  for carta in Pilha_Cartas:
+  ^
+IndentationError: unexpected indent
+'''},
