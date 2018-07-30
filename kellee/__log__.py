@@ -226,3 +226,10 @@ NameError: name 'FASE1' is not defined
     self.fase1.linhaA1(self.entra) 
 AttributeError: 'Cena' object has no attribute 'linhaA1'
 '''},
+{'date': 'Mon Jul 30 2018 08:26:11.818 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 67
+  self.tabela_fase1 = tabelafase1 = Cena(img=FUNDO)
+  ^
+IndentationError: unexpected indent
+'''},
