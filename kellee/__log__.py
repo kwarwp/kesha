@@ -165,3 +165,10 @@ Traceback (most recent call last):
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Jul 30 2018 07:49:37.91 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  """def _3d_(self):
+  ^
+IndentationError: expected an indented block
+'''},
