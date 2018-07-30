@@ -480,3 +480,10 @@ IndentationError: unexpected indent
     doc['py3d'].html=''
 KeyError: py3d
 '''},
+{'date': 'Mon Jul 30 2018 10:39:45.701 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 44
+  self._3d_()
+  ^
+IndentationError: unexpected indent
+'''},
