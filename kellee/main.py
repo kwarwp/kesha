@@ -53,6 +53,7 @@ class Tabuleiro:
         self._3d_()
 
     def cria_tabuleiro(self, col=3, lin=4):
+        INVENTARIO.score(casa="centro_9_9", carta="carta_99", move="INICIA", ponto=0, valor="N", _level=1)
         self.casa["esquerda"] = {}
         for coluna_ in range(col):
             for linha_ in range(lin):
@@ -73,6 +74,8 @@ class Carta:
     def __init__(self, tabuleiro, carta_id):
         self.tabuleiro = tabuleiro
         self.elemento = None
+        self.nome = carta_id
+        self.casa = None
         self.cria_carta(carta_id)
 
     def cria_carta(self, carta_id):
@@ -88,8 +91,13 @@ class Carta:
         carta_a_mover = tabuleiro.proxima_carta()
         carta_a_mover.move(casa_destino)
 
+    def crivo(self):
+        return 10
+
     def move(self, casa_destino):
         self.elemento.elt.style.left, self.elemento.elt.style.top = casa_destino.local()
+        self.casa = casa_destino.nome
+        INVENTARIO.score(casa=casa_destino.nome, carta=self.nome, move="MOVE", ponto=self.crivo(), valor="N", _level=1)
 
 
     def remover_carta(self, ev):
@@ -97,13 +105,14 @@ class Carta:
         doc[carta_elt].remove()
         self.cria_carta(carta_elt)
         ev.stopPropagation()
+        INVENTARIO.score(casa=self.casa.nome, carta=carta_elt, move="MOVE", ponto=self.crivo(), valor="N", _level=1)
         return False
 
 
 class Casa:
     CASA = {}
     def __init__(self, tabuleiro, nome='0_0', linha=0, coluna=0):
-        nome_elemento = "{}_{}".format(tabuleiro.nome, nome)
+        self.nome = nome_elemento = "{}_{}".format(tabuleiro.nome, nome)
         self.elemento = Elemento(FUNDO, tit=nome_elemento + "_", style=dict(
                 width=TBX - 15, height="{}px".format(TBY - 8), left=inicio_x - coluna * TBX - (TBX - 15),
                 top=inicio_y + linha * TBY))  # -15 o quadradinho diminui na largura
