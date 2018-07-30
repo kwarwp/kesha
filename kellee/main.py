@@ -64,42 +64,42 @@ class Tabuleiro:
                 carta_a_mover.elt.onclick = remover_carta
                 carta_a_mover.img.casa = casa_destino
                 carta_a_mover.img.tabuleiro = tabuleiro_target
-            self.tabela_fase1 = tabelafase1 = Cena(img=FUNDO)
-            self.lista_de_cartas =[]
-            self.cartas_no_tabuleiro = []
-            Pilha_Cartas = []
-            for f in range (12):
-                Pilha_Cartas.append(QAZUL)
+        self.tabela_fase1 = tabelafase1 = Cena(img=FUNDO)
+        self.lista_de_cartas =[]
+        self.cartas_no_tabuleiro = []
+        Pilha_Cartas = []
+        for f in range (12):
+            Pilha_Cartas.append(QAZUL)
             ### TABULEIRO DA ESQUERDA E DA DIREITA####
-            TBX, TBY = 80, 80
-            self.tabuleiro = dict(esquerda = {}, direita = {})
-            inicio_x, inicio_y = 390, 128 
-            for coluna_ in range(3): 
-                for linha_ in range(4): 
-                    nome = "{}_{}".format(linha_, coluna_)
-                    self.tabuleiro["esquerda"][nome] = Elemento(FUNDO, tit=nome+"_", style=dict(
-                        width=TBX-15, height="{}px".format(TBY-8), left=inicio_x - coluna_*TBX - (TBX-15), top=inicio_y+linha_*TBY))#-15 o quadradinho diminui na largura
-                    self.tabuleiro["esquerda"][nome].entra(tabelafase1)
-                    self.tabuleiro["esquerda"][nome].img.id = nome
-                    self.tabuleiro["esquerda"][nome].img.tabuleiro = "esquerda"
-                    self.tabuleiro["esquerda"][nome].img.ocupado = 0
-                    self.tabuleiro["esquerda"][nome].elt.onclick = move_carta   
+        TBX, TBY = 80, 80
+        self.tabuleiro = dict(esquerda = {}, direita = {})
+        inicio_x, inicio_y = 390, 128 
+        for coluna_ in range(3): 
+            for linha_ in range(4): 
+                nome = "{}_{}".format(linha_, coluna_)
+                self.tabuleiro["esquerda"][nome] = Elemento(FUNDO, tit=nome+"_", style=dict(
+                     width=TBX-15, height="{}px".format(TBY-8), left=inicio_x - coluna_*TBX - (TBX-15), top=inicio_y+linha_*TBY))#-15 o quadradinho diminui na largura
+                self.tabuleiro["esquerda"][nome].entra(tabelafase1)
+                self.tabuleiro["esquerda"][nome].img.id = nome
+                self.tabuleiro["esquerda"][nome].img.tabuleiro = "esquerda"
+                self.tabuleiro["esquerda"][nome].img.ocupado = 0
+                self.tabuleiro["esquerda"][nome].elt.onclick = move_carta   
                 ###PILHA DE CARTAS###
-                    Pilha_Cartas_top = 30
-                    Pilha_Cartas_left = 30
-            for carta in Pilha_Cartas:
-                a_carta_a_ser_empilhada = Elemento (carta, tit= "carta", style=dict(
-                width="65px", height="70px", left=Pilha_Cartas_left, top=Pilha_Cartas_top)) 
-                a_carta_a_ser_empilhada.img.casa = "null"
-                a_carta_a_ser_empilhada.img.tabuleiro = "null"
+                Pilha_Cartas_top = 30
+                Pilha_Cartas_left = 30
+        for carta in Pilha_Cartas:
+            a_carta_a_ser_empilhada = Elemento (carta, tit= "carta", style=dict(
+            width="65px", height="70px", left=Pilha_Cartas_left, top=Pilha_Cartas_top)) 
+            a_carta_a_ser_empilhada.img.casa = "null"
+            a_carta_a_ser_empilhada.img.tabuleiro = "null"
 
-                self.lista_de_cartas.append(a_carta_a_ser_empilhada)
-                a_carta_a_ser_empilhada.entra(tabelafase1)
+            self.lista_de_cartas.append(a_carta_a_ser_empilhada)
+            a_carta_a_ser_empilhada.entra(tabelafase1)
 
         def recoloca_clique_aqui(_):
-                self.cliqueaqui.entra(tabelafase1)
+            self.cliqueaqui.entra(tabelafase1)
 
-            for nome in self.tabuleiro["direita"]:
+        for nome in self.tabuleiro["direita"]:
                 self.tabuleiro["direita"][nome].elt.onclick = recoloca_clique_aqui
             for nome in self.tabuleiro["esquerda"]:
                 self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
