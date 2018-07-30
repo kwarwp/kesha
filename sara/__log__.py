@@ -139,3 +139,10 @@ NameError: name 'doc' is not defined
     doc['pydiv'].html=''
 NameError: name 'doc' is not defined
 '''},
+{'date': 'Mon Jul 30 2018 07:16:29.287 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 41
+  def remover_carta(carta):
+  ^
+IndentationError: unexpected indent
+'''},
