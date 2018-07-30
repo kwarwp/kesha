@@ -30,7 +30,7 @@ class Tabuleiro:
 
     def __init__(self):
             self.fase1 = Cena(img = FUNDO)
-            self.linhaA1 = Elemento(FUNDO, style = dict(tit = "py3d",
+            self.linhaA1 = Elemento(FUNDO, tit = "py3d", style = dict(
                 left= 800, 
                 top= "10px", 
                 width=600, 
