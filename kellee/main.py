@@ -1,5 +1,5 @@
 # kesha.kellee.main.py
-from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
+from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO
 from browser import html, document, alert, doc
 from _spy.vpython.main import *
 
@@ -97,7 +97,7 @@ class Carta:
     def move(self, casa_destino):
         self.elemento.elt.style.left, self.elemento.elt.style.top = casa_destino.local()
         self.casa = casa_destino.nome
-        INVENTARIO.score(casa=casa_destino.nome, carta=self.nome, move="MOVE", ponto=self.crivo(), valor="N", _level=1)
+        INVENTARIO.score(casa=casa_destino.nome, carta=self.nome, move="MOVE", ponto=self.crivo(), valor="N", _level=3)
 
 
     def remover_carta(self, ev):
@@ -105,7 +105,7 @@ class Carta:
         doc[carta_elt].remove()
         self.cria_carta(carta_elt)
         ev.stopPropagation()
-        INVENTARIO.score(casa=self.casa.nome, carta=carta_elt, move="MOVE", ponto=self.crivo(), valor="N", _level=1)
+        INVENTARIO.score(casa=self.casa.nome, carta=carta_elt, move="REMOVE", ponto=-1, valor="N", _level=3)
         return False
 
 
