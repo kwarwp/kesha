@@ -340,3 +340,10 @@ KeyError: py3d
     doc['py3d'].html=''
 KeyError: py3d
 '''},
+{'date': 'Mon Jul 30 2018 08:56:04.724 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  def __init__ (self):
+  ^
+IndentationError: unexpected indent
+'''},
