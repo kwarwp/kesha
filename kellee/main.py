@@ -99,7 +99,7 @@ class Tabuleiro:
         def recoloca_clique_aqui(_):
             self.cliqueaqui.entra(tabelafase1)
 
-        for nome in self.tabuleiro["direita"]:
+            for nome in self.tabuleiro["direita"]:
                 self.tabuleiro["direita"][nome].elt.onclick = recoloca_clique_aqui
             for nome in self.tabuleiro["esquerda"]:
                 self.tabuleiro["esquerda"][nome].elt.onclick = recoloca_clique_aqui
