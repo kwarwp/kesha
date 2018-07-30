@@ -78,3 +78,9 @@ IndentationError: unexpected indent
     doc['pydiv'].html=''
 NameError: name 'doc' is not defined
 '''},
+{'date': 'Sun Jul 29 2018 22:29:35.100 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: Cannot set property 'canvas_selected' of undefined
+  module '$exec_1883' line 8
+scene=canvas()
+'''},
