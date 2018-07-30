@@ -547,3 +547,10 @@ KeyError: py3d
     doc['py3d'].html=''
 KeyError: py3d
 '''},
+{'date': 'Mon Jul 30 2018 15:33:39.513 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 79
+  for [] : #carta in Pilha_Cartas:
+        ^
+SyntaxError: invalid syntax
+'''},
