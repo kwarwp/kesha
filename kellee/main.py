@@ -41,7 +41,7 @@ class Tabuleiro:
     
         #tabelafase1.vai()
         #self.linhaA1.entra(tabelafase1) 
-        self._3d_()
+            self._3d_()
 
 
 Tabuleiro()
