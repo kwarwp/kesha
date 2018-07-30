@@ -620,3 +620,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sun Jul 29 2018 21:10:32.47 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  self.lista_de_cartas.append(carta)
+  ^
+IndentationError: expected an indented block
+'''},
