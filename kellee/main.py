@@ -29,12 +29,12 @@ class Tabuleiro:
         sup = compound(pts, pos=vec(2,0,0), axis=vec(4,0,-1))
 
     def __init__(self):
-        self.fase1 = Cena(img = FASE1)
-        self.linhaA1 = Elemento(QBRANCO, style = dict(tit = "py3d",
-            left= 160, 
-            top= "127px", 
-            width=101, 
-            height="74px"))
-        self.fase1.linhaA1(self.entra) 
+        self.fase1 = Cena(img = FUNDO)
+        self.linhaA1 = Elemento(FUNDO, style = dict(tit = "py3d",
+            left= 800, 
+            top= "10px", 
+            width=600, 
+            height="600px"))
+        self.linhaA1.entra(self.fase1) 
         self.fase1.vai()
 Tabuleiro()
