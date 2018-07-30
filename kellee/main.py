@@ -37,10 +37,6 @@ class Tabuleiro:
                 height="600px"))
             self.linhaA1.entra(self.fase1) 
             self.fase1.vai()
-
-    
-        #tabelafase1.vai()
-        #self.linhaA1.entra(tabelafase1) 
             self._3d_()
 
 
