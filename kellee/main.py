@@ -12,8 +12,8 @@ STYLE["height"]="600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg" 
 #FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
-QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
-QVERDE = "https://i.imgur.com/hd3ofzP.png"
+#QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
+#QVERDE = "https://i.imgur.com/hd3ofzP.png"
 
 class Tabuleiro:
     def _3d_(self):
