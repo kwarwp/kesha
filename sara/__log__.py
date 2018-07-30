@@ -100,3 +100,10 @@ scene=canvas()
     doc['pydiv'].html=''
 NameError: name 'doc' is not defined
 '''},
+{'date': 'Sun Jul 29 2018 22:30:43.300 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  doc['pydiv'].html="
+                     ^
+SyntaxError: EOL while scanning string literal
+'''},
