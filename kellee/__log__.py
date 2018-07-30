@@ -233,3 +233,10 @@ AttributeError: 'Cena' object has no attribute 'linhaA1'
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Jul 30 2018 08:30:34.76 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 104
+  for nome in self.tabuleiro["esquerda"]:
+  ^
+IndentationError: unexpected indent
+'''},
