@@ -146,3 +146,10 @@ NameError: name 'doc' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Jul 30 2018 07:20:58.450 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 68
+  self.tabela_fase1 = tabelafase1 = Cena(img=FUNDO)
+  ^
+IndentationError: unexpected indent
+'''},
