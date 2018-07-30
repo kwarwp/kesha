@@ -158,3 +158,10 @@ Traceback (most recent call last):
   module <module> line 2
     from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, doc
 '''},
+{'date': 'Mon Jul 30 2018 07:49:04.706 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  """
+  ^
+IndentationError: expected an indented block
+'''},
