@@ -695,3 +695,10 @@ NameError: name 'tabelafase1' is not defined
     tabela_fase1.vai()
 NameError: name 'tabela_fase1' is not defined
 '''},
+{'date': 'Sun Jul 29 2018 21:36:51.310 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 286
+  tabelafase1.vai()
+  ^
+IndentationError: unexpected indent
+'''},
