@@ -1,5 +1,5 @@
 # kesha.courtney.main.py
-from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO
+from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO, Tkinder
 from browser import html, document, alert, doc, Tkinder
 from _spy.vpython.main import *
 #from Tkinter import*
