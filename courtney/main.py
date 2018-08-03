@@ -15,22 +15,17 @@ from _spy.vpython.main import *
 
 def frameBotoesTelaInicial(self):
         self.frame1= tk.Frame()
-        btn1= tk.Button(master=self.frame1,
-            text="Inserir",
-            command= self.processaInserir).pack(side=tk.LEFT, padx= 20, pady= 20)
-        btn2= tk.Button(master=self.frame1, text="Pesquisar",
-            command= self.processaPesquisar).pack(side=tk.LEFT, padx= 20, pady= 20)
-        btn3= tk.Button(master=self.frame1,
-            text="Editar",command= self.processaEditar).pack(side=tk.LEFT, padx= 20, pady= 20)
-        btn3= tk.Button(master=self.frame1,
-            text="Listar",command= self.processaListar).pack(side=tk.LEFT, padx= 20, pady= 20)
+        btn1= tk.Button(master=self.frame1, text="Inserir", command= self.processaInserir).pack(side=tk.LEFT, padx= 20, pady= 20)
+        btn2= tk.Button(master=self.frame1, text="Pesquisar", command= self.processaPesquisar).pack(side=tk.LEFT, padx= 20, pady= 20)
+        btn3= tk.Button(master=self.frame1, text="Editar",command= self.processaEditar).pack(side=tk.LEFT, padx= 20, pady= 20)
+        btn3= tk.Button(master=self.frame1, text="Listar",command= self.processaListar).pack(side=tk.LEFT, padx= 20, pady= 20)
         return self.frame1       
          
 
-    def create_canvas_area(self):
-        lbl1= tk.Label(self.root, text="Sistema Gerenciador de Componentes do Caderno", font=("Helvetica", 20, "bold"), fg="blue").pack()
-
-        self.frameBotoesTelaInicial().pack()
+"""def create_canvas_area(self):
+    lbl1= tk.Label(self.root, text="Sistema Gerenciador de Componentes do Caderno", font=("Helvetica", 20, "bold"), fg="blue").pack()
+         
+    self.frameBotoesTelaInicial().pack()
              
              
 def processaInserir(self):
@@ -44,3 +39,4 @@ def processaEditar(self):
 
 def processaListar(self):
     tkmsg.showinfo("Botão pressionado","Botão Listar")
+"""
