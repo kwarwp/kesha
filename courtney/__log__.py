@@ -66,3 +66,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Fri Aug 03 2018 10:23:00.933 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  def frameBotoesTelaInicial(self):
+  ^
+IndentationError: expected an indented block
+'''},
