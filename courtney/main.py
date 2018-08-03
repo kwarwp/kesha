@@ -24,20 +24,19 @@ class botoes():
          
     def create_canvas_area(self):
         lbl1= tk.Label(self.root, text="Sistema Gerenciador de Componentes do Caderno", font=("Helvetica", 20, "bold"), fg="blue").pack()
-
         self.frameBotoesTelaInicial().pack()
              
              
-"""def processaInserir(self):
-    tkmsg.showinfo("Botão pressionado","Botão Inserir")
-         
-def processaPesquisar(self):
-    tkmsg.showinfo("Botão pressionado","Botão Pesquisar")       
+    def processaInserir(self):
+        tkmsg.showinfo("Botão pressionado","Botão Inserir")
 
-def processaEditar(self):
-    tkmsg.showinfo("Botão pressionado","Botão Editar")
+    def processaPesquisar(self):
+        tkmsg.showinfo("Botão pressionado","Botão Pesquisar")       
 
-def processaListar(self):
-    tkmsg.showinfo("Botão pressionado","Botão Listar")
-"""
+    def processaEditar(self):
+        tkmsg.showinfo("Botão pressionado","Botão Editar")
+
+    def processaListar(self):
+        tkmsg.showinfo("Botão pressionado","Botão Listar")
+
 botoes()
