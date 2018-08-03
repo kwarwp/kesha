@@ -13,6 +13,7 @@ from _spy.vpython.main import *
 #botao1.pack()
 #janela.mainloop()
 
+class botoes():
 def frameBotoesTelaInicial(self):
         self.frame1= tk.Frame()
         btn1= tk.Button(master=self.frame1, text="Inserir", command= self.processaInserir).pack(side=tk.LEFT, padx= 20, pady= 20)
@@ -40,3 +41,4 @@ def processaEditar(self):
 def processaListar(self):
     tkmsg.showinfo("Botão pressionado","Botão Listar")
 """
+botoes()
