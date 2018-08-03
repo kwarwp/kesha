@@ -1,9 +1,9 @@
 # kesha.courtney.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO
-from browser import html, document, alert, doc
+from browser import html, document, alert, doc, Tkinder
 from _spy.vpython.main import *
-from Tkinter import*
-janela = Tk()
+#from Tkinter import*
+#janela = Tk()
 
 def name(event):
     print ("olá")
