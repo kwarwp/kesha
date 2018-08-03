@@ -38,3 +38,10 @@ NameError: name 'Tk' is not defined
     janela.geometry("100x300+100+100")
 NameError: name 'janela' is not defined
 '''},
+{'date': 'Fri Aug 03 2018 10:10:21.602 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  def create_canvas_area(self):
+  ^
+IndentationError: unexpected indent
+'''},
