@@ -22,9 +22,9 @@ class botoes():
             btn3= tk.Button(master=self.frame1, text="Terminei mas acho que está errado",command= self.processaListar).pack(side=tk.LEFT, padx= 20, pady= 20)
             return self.frame1       
          
-    def create_canvas_area(self):
-        lbl1= tk.Label(self.root, text="Sistema Gerenciador de Componentes do Caderno", font=("Helvetica", 20, "bold"), fg="blue").pack()
-        self.frameBotoesTelaInicial().pack()
+    #def create_canvas_area(self):
+     #   lbl1= tk.Label(self.root, text="Sistema Gerenciador de Componentes do Caderno", font=("Helvetica", 20, "bold"), fg="blue").pack()
+      #  self.frameBotoesTelaInicial().pack()
              
              
     def processaInserir(self):
