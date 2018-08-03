@@ -3,6 +3,7 @@ from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO
 from browser import html, document, alert, doc, Tkinter
 from _spy.vpython.main import *
 from Tkinter import*
+"""
 #janela = Tk()
 
 #def name(event):
@@ -40,3 +41,14 @@ class botoes():
         tkmsg.showinfo("Botão pressionado","Botão Listar")
 
 botoes()
+
+"""
+
+root = Tk()
+root.title("Teste")
+root.geometry("800x600+250+60")
+
+b = Button(root, text="OK", command=comando, width=4, height=2, font="Arial, 14")
+b.pack()
+
+root.mainloop()
