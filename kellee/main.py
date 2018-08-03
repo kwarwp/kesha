@@ -13,7 +13,7 @@ QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 Pilha_Cartas_top = 30
 Pilha_Cartas_left = 30
 TBX, TBY = 80, 80
-inicio_x, inicio_y = 390, 128
+inicio_x, inicio_y = 300, 128
 
 
 class Tabuleiro:
