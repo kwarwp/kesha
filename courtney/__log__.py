@@ -59,3 +59,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Fri Aug 03 2018 10:18:06.988 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  def create_canvas_area(self):
+  ^
+IndentationError: unexpected indent
+'''},
