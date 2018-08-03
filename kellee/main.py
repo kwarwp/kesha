@@ -3,7 +3,7 @@ from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO
 from browser import html, document, alert, doc
 from _spy.vpython.main import *
 
-STYLE["width"] = 800
+STYLE["width"] = 700
 STYLE["height"] = "600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg"
 # FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
@@ -13,7 +13,7 @@ QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 Pilha_Cartas_top = 30
 Pilha_Cartas_left = 30
 TBX, TBY = 80, 80
-inicio_x, inicio_y = 300, 128
+inicio_x, inicio_y = 390, 128
 
 
 class Tabuleiro:
@@ -35,9 +35,9 @@ class Tabuleiro:
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
         self.pilha_de_cartas = []
         self.display_do_3D = Elemento(FUNDO, tit="py3d", style=dict(
-            left=800,
+            left=700,
             top="10px",
-            width=600,
+            width=300,
             height="600px"))
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         self.cria_tabuleiro(col=3, lin=4)
