@@ -151,3 +151,10 @@ Traceback (most recent call last):
     root = Tk()
 NameError: name 'Tk' is not defined
 '''},
+{'date': 'Fri Aug 03 2018 11:29:54.978 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  from Tkinter as Tk
+                ^
+SyntaxError: invalid syntax
+'''},
