@@ -1,15 +1,14 @@
 # kesha.angie.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
 from browser import html, document, alert, doc
+from browser.html import *
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <title>Torre de Londres</title>
 </head>
 <body>
-<form action="" method="post" name="Tol">
+<form action="" method="post" name="Simetrico">
     {% raw xsrf_form_html() %}
     
     <input type="hidden" name="sessionid" value="{{ SESSIONID }}" />
@@ -17,7 +16,7 @@ from browser import html, document, alert, doc
     <input type="hidden" name="status" value="" /> 
     <input type="hidden" name="score" value="" /> 
     <input type="hidden" name="criteria" value='{{json_encode(CRITERIA)}}' /> 
-    <input type="hidden" name="return_url" value="/tol/index" /> 
+    <input type="hidden" name="return_url" value="/simetrico/index" /> 
 
 
     <input type="submit" name="change" value="Tenta Novamente a Fase"            onClick="this.form.action='/api/retry';this.form.return_url.value+='?init=0'; this.form.submit();" />
