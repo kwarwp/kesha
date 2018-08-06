@@ -48,11 +48,13 @@ class Tabuleiro:
             top="540px",
             width=100,
             height="30px")) for i,button in enumerate(BUTTONS)]
+        """
         self.display_do_3D = Elemento(FUNDO, tit="py3d", style=dict(
             left=700,
             top="10px",
             width=300,
             height="600px"))
+        """
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         [self.cria_tabuleiro(col=3, lin=4, lado=l) for l in lado]
 
@@ -63,8 +65,8 @@ class Tabuleiro:
 
 
         # tabuleiro_construido.vai()
-        self.display_do_3D.entra(tabuleiro_construido)
-        self._3d_()
+        # self.display_do_3D.entra(tabuleiro_construido)
+        # self._3d_()
 
     def vai(self):
         self.elemento.vai()
@@ -78,7 +80,7 @@ class Tabuleiro:
         for coluna_ in range(col):
             for linha_ in range(lin):
                 nome = "{}_{}_{}".format(linha_, coluna_, lado)
-                self.casa["esquerda"][nome] = Casa(self, nome=nome, linha=linha_, coluna=coluna_, lado)
+                self.casa["esquerda"][nome] = Casa(self, nome=nome, linha=linha_, coluna=coluna_, lado=lado)
 
     def _entra(self, parte):
         self.elemento.entra(parte)
