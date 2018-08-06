@@ -42,6 +42,7 @@ class Tabuleiro:
 
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
         self.casa = {}
+        self.numcartas, self.lado, self.linha = numcartas, lado, linha
         self.eventos = dict(button_0=lambda:self.score("replay", vai=True), 
             button_1=lambda:self.score("recusa"), 
             button_2=lambda:self.score("Desiste"), 
@@ -57,19 +58,24 @@ class Tabuleiro:
                         width=100,
                         height="30px"))
             elem.img.id = "button_{}".format(i)
+        self.inicia_fase()
+            
+    def inicia_fase(self):
             
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
-        [self.cria_tabuleiro(col=3, lin=linha, lado=l) for l in lado]
+        [self.cria_tabuleiro(col=3, lin=self.linha, lado=l) for l in self.lado]
 
         ###PILHA DE CARTAS###
 
-        for i in range(numcartas):
+        for i in range(self.numcartas):
             Carta(self, "carta_{}".format(i))
     
     def score(self, valor, vai=False):
         INVENTARIO.score(casa="centro_9_9", carta="carta_99", move="INICIA", ponto=0, valor=valor, _level=2)
         if vai:
-            self.vai()
+            self.inicia_fase()
+        else:
+            Jogo.JOGO.tabuleiro.vai()
 
         # tabuleiro_construido.vai()
     def buttonapertado(self, env):
@@ -174,7 +180,9 @@ class Casa:
         Carta.move_carta(self.tabuleiro, Casa.CASA[casa_destino])
 
 class Jogo():
+    JOGO = None
     def __init__(self):
+        JOGO = self
         self.tabuleiro =  Tabuleiro()
         proximafase = Tabuleiro(**FASE1)
         self.tabuleiro.proximafase(proximafase)
