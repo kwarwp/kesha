@@ -160,7 +160,8 @@ class Jogo():
         self.tabuleiro =  Tabuleiro()
         proximafase = Tabuleiro(**FASE1)
         self.tabuleiro.proximafase(proximafase)
-        
+        self.tabuleiro.vai()
+
         proximafase2 = Tabuleiro(**FASE2)
         self.tabuleiro.proximafase(proximafase2)
         self.tabuleiro.vai()
