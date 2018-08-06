@@ -76,7 +76,7 @@ class Tabuleiro:
         print(env.target.id)
         if "button" not in env.target.id:
             return True
-        self.eventos[env.target.id]
+        self.eventos[env.target.id]()
         
     def vai(self):
         self.elemento.vai()
