@@ -75,7 +75,7 @@ class Tabuleiro:
         if vai:
             self.inicia_fase()
         else:
-            Jogo.JOGO.tabuleiro.vai()
+            Jogo.JOGO.reset()
 
         # tabuleiro_construido.vai()
     def buttonapertado(self, env):
@@ -183,6 +183,9 @@ class Jogo():
     JOGO = None
     def __init__(self):
         Jogo.JOGO = self
+        self.reset()
+        
+    def reset(self):
         self.tabuleiro =  Tabuleiro()
         proximafase = Tabuleiro(**FASE1)
         self.tabuleiro.proximafase(proximafase)
