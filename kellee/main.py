@@ -22,6 +22,7 @@ inicio_x, inicio_y = 390, 128
 
 
 class Tabuleiro:
+
     def _3d_(self):
         doc['py3d'].html = ''
         _gs = Glow('py3d')
@@ -141,5 +142,10 @@ class Casa:
         casa_destino = casa.target.id
         Carta.move_carta(self.tabuleiro, Casa.CASA[casa_destino])
 
+class jogo():
+    def __init__(self):
+        self.tabuleiro =  Tabuleiro()
+        
 
-Tabuleiro()
+
+Jogo()
