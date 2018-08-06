@@ -71,6 +71,7 @@ class Tabuleiro:
 
         # tabuleiro_construido.vai()
     def buttonapertado(self, env):
+        print(env.target.id)
         if "button" not in env.target.id:
             return True
         self.eventos[env.target.id]
