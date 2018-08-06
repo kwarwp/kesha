@@ -18,9 +18,10 @@ BUTTONS = [DESISTO, NAOQUEROJOGAR, TENTAR,TERMINEI]
 Pilha_Cartas_top = 30
 Pilha_Cartas_left = 30
 TBX, TBY = 80, 80
-inicio_x, inicio_y = 390, 128
+inicio_x, inicio_y = 290, 128
 FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
+FASE2 = dict(numcartas =36, lado="ed", linha=6)
 offset = dict(e=0, d=300)
 
 
@@ -38,7 +39,7 @@ class Tabuleiro:
         pts = [simetria1, simetria2] + simetria
         sup = compound(pts, pos=vec(2, 0, 0), axis=vec(4, 0, -1))
 
-    def __init__(self, nome="esquerda", numcartas=12, lado="e"):
+    def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4):
         self.casa = {}
         self.nome = nome
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
@@ -56,7 +57,7 @@ class Tabuleiro:
             height="600px"))
         """
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
-        [self.cria_tabuleiro(col=3, lin=4, lado=l) for l in lado]
+        [self.cria_tabuleiro(col=3, lin=linha, lado=l) for l in lado]
 
         ###PILHA DE CARTAS###
 
@@ -159,8 +160,10 @@ class Jogo():
         self.tabuleiro =  Tabuleiro()
         proximafase = Tabuleiro(**FASE1)
         self.tabuleiro.proximafase(proximafase)
-        self.tabuleiro.vai()
         
+        proximafase2 = Tabuleiro(**FASE2)
+        self.tabuleiro.proximafase(proximafase2)
+        self.tabuleiro.vai()
 
 
 Jogo()
