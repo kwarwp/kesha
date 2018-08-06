@@ -50,7 +50,7 @@ class Tabuleiro:
         self.nome, self._3d = nome, _3d
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
         self.pilha_de_cartas = []
-        [Elemento(button, cena=self.elemento, tit="button_{}".format(i), style=dict(
+        [Elemento(button, cena=self.elemento, vai=self.buttonapertado,tit="button_{}".format(i), style=dict(
             left=100 + 110*i,
             top="540px",
             width=100,
