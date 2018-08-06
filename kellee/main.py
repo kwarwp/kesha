@@ -22,6 +22,7 @@ inicio_x, inicio_y = 290, 128
 FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
+FASE3 = dict(numcartas=12, lado="e", _3d=True)
 offset = dict(e=0, d=300)
 
 
@@ -39,7 +40,7 @@ class Tabuleiro:
         pts = [simetria1, simetria2] + simetria
         sup = compound(pts, pos=vec(2, 0, 0), axis=vec(4, 0, -1))
 
-    def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4):
+    def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
         self.casa = {}
         self.nome = nome
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
@@ -49,13 +50,15 @@ class Tabuleiro:
             top="540px",
             width=100,
             height="30px")) for i,button in enumerate(BUTTONS)]
-        """
-        self.display_do_3D = Elemento(FUNDO, tit="py3d", style=dict(
-            left=700,
-            top="10px",
-            width=300,
-            height="600px"))
-        """
+        if _3d:
+            self.display_do_3D = Elemento(FUNDO, tit="py3d", style=dict(
+                left=700,
+                top="10px",
+                width=300,
+                height="600px"))
+            self.display_do_3D.entra(tabuleiro_construido)
+            self._3d_()
+            
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         [self.cria_tabuleiro(col=3, lin=linha, lado=l) for l in lado]
 
@@ -66,8 +69,6 @@ class Tabuleiro:
 
 
         # tabuleiro_construido.vai()
-        # self.display_do_3D.entra(tabuleiro_construido)
-        # self._3d_()
 
     def vai(self):
         self.elemento.vai()
@@ -164,6 +165,9 @@ class Jogo():
 
         proximafase2 = Tabuleiro(**FASE2)
         proximafase.proximafase(proximafase2)
+        
+        proximafase3 = Tabuleiro(**FASE3)
+        proximafase2.proximafase(proximafase3)
         self.tabuleiro.vai()
 
 
