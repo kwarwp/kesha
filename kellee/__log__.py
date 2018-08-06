@@ -714,3 +714,10 @@ NameError: name 'BUTTON' is not defined
     Jogo()
 NameError: name 'Jogo' is not defined
 '''},
+{'date': 'Mon Aug 06 2018 08:05:55.931 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 81
+  self.casa["esquerda"][nome] = Casa(self, nome=nome, linha=linha_, coluna=coluna_, lado)
+                                                                                        ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
