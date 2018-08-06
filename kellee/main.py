@@ -19,6 +19,9 @@ Pilha_Cartas_top = 30
 Pilha_Cartas_left = 30
 TBX, TBY = 80, 80
 inicio_x, inicio_y = 390, 128
+FASE0 = dict(numcartas=12, lado="e")
+FASE1 = dict(numcartas=24, lado="ed")
+offset = dict(e=0, d=300)
 
 
 class Tabuleiro:
@@ -35,7 +38,7 @@ class Tabuleiro:
         pts = [simetria1, simetria2] + simetria
         sup = compound(pts, pos=vec(2, 0, 0), axis=vec(4, 0, -1))
 
-    def __init__(self, nome="esquerda"):
+    def __init__(self, nome="esquerda", numcartas=12, lado="e"):
         self.casa = {}
         self.nome = nome
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
@@ -51,25 +54,31 @@ class Tabuleiro:
             width=300,
             height="600px"))
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
-        self.cria_tabuleiro(col=3, lin=4)
+        [self.cria_tabuleiro(col=3, lin=4, lado=l) for l in lado]
 
         ###PILHA DE CARTAS###
 
-        for i in range(12):
+        for i in range(numcartas):
             Carta(self, "carta_{}".format(i))
 
 
-        tabuleiro_construido.vai()
+        # tabuleiro_construido.vai()
         self.display_do_3D.entra(tabuleiro_construido)
         self._3d_()
 
-    def cria_tabuleiro(self, col=3, lin=4):
+    def vai(self):
+        self.elemento.vai()
+
+    def proximafase(self, tabuleiro):
+        self.elemento.direita = tabuleiro.elemento
+
+    def cria_tabuleiro(self, col=3, lin=4, lado="e"):
         INVENTARIO.score(casa="centro_9_9", carta="carta_99", move="INICIA", ponto=0, valor="N", _level=1)
         self.casa["esquerda"] = {}
         for coluna_ in range(col):
             for linha_ in range(lin):
-                nome = "{}_{}".format(linha_, coluna_)
-                self.casa["esquerda"][nome] = Casa(self, nome=nome, linha=linha_, coluna=coluna_)
+                nome = "{}_{}_{}".format(linha_, coluna_, lado)
+                self.casa["esquerda"][nome] = Casa(self, nome=nome, linha=linha_, coluna=coluna_, lado)
 
     def _entra(self, parte):
         self.elemento.entra(parte)
@@ -122,10 +131,11 @@ class Carta:
 
 class Casa:
     CASA = {}
-    def __init__(self, tabuleiro, nome='0_0', linha=0, coluna=0):
+    def __init__(self, tabuleiro, nome='0_0', linha=0, coluna=0, lado="e"):
+        inicio_x_ = inicio_x + offset[lado]
         self.nome = nome_elemento = "{}_{}".format(tabuleiro.nome, nome)
         self.elemento = Elemento(FUNDO, tit=nome_elemento + "_", style=dict(
-                width=TBX - 15, height="{}px".format(TBY - 8), left=inicio_x - coluna * TBX - (TBX - 15),
+                width=TBX - 15, height="{}px".format(TBY - 8), left=inicio_x_ - coluna * TBX - (TBX - 15),
                 top=inicio_y + linha * TBY))  # -15 o quadradinho diminui na largura
         self.tabuleiro = tabuleiro
         self.elemento.entra(tabuleiro.elemento)
@@ -145,6 +155,9 @@ class Casa:
 class Jogo():
     def __init__(self):
         self.tabuleiro =  Tabuleiro()
+        proximafase = Tabuleiro(**FASE1)
+        self.tabuleiro.proximafase(proximafase)
+        self.tabuleiro.vai()
         
 
 
