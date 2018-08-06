@@ -12,7 +12,7 @@ DESISTO = "https://i.imgur.com/GkqfWc3.png"
 NAOQUEROJOGAR = "https://i.imgur.com/8JGhyAA.png"
 TENTAR = "https://i.imgur.com/PRjuqrZ.png"
 TERMINEI = "https://i.imgur.com/9dtdzcP.png"
-BUTTONS = [DESISTO, NAOQUEROJOGAR, TENTAR,TERMINEI]
+BUTTONS = [TENTAR, DESISTO, NAOQUEROJOGAR, TERMINEI, TERMINEI]
 # QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
 # QVERDE = "https://i.imgur.com/hd3ofzP.png"
 Pilha_Cartas_top = 30
@@ -182,7 +182,7 @@ class Casa:
 class Jogo():
     JOGO = None
     def __init__(self):
-        JOGO = self
+        Jogo.JOGO = self
         self.tabuleiro =  Tabuleiro()
         proximafase = Tabuleiro(**FASE1)
         self.tabuleiro.proximafase(proximafase)
