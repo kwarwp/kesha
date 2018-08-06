@@ -21,7 +21,7 @@ TBX, TBY = 80, 80
 inicio_x, inicio_y = 290, 128
 FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
-FASE2 = dict(numcartas =36, lado="ed", linha=6)
+FASE2 = dict(numcartas =30, lado="ed", linha=5)
 offset = dict(e=0, d=300)
 
 
