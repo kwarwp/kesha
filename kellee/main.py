@@ -64,17 +64,18 @@ class Tabuleiro:
 
     def vai(self):
         self.elemento.vai()
+        print(self._3d, len(self.pilha_de_cartas))
         if self._3d:
             self.display_do_3D = Elemento(FUNDO, tit="py3d", style=dict(
                 left=700,
                 top="10px",
                 width=300,
                 height="600px"))
-            self.display_do_3D.entra(tabuleiro_construido)
+            self.display_do_3D.entra(self.elemento)
             self._3d_()
 
     def proximafase(self, tabuleiro):
-        self.elemento.direita = tabuleiro.elemento
+        self.elemento.direita = tabuleiro #.elemento
 
     def cria_tabuleiro(self, col=3, lin=4, lado="e"):
         INVENTARIO.score(casa="centro_9_9", carta="carta_99", move="INICIA", ponto=0, valor="N", _level=1)
