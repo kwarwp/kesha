@@ -42,6 +42,11 @@ class Tabuleiro:
 
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
         self.casa = {}
+        self.eventos = dict(button_0=lambda:self.score("replay", vai=True), 
+            button_1=lambda:self.score("recusa"), 
+            button_2=lambda:self.score("Desiste"), 
+            button_3=lambda:self.score("errado"), 
+            button_4=lambda:self.score("certo")) 
         self.nome, self._3d = nome, _3d
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
         self.pilha_de_cartas = []
@@ -58,10 +63,16 @@ class Tabuleiro:
 
         for i in range(numcartas):
             Carta(self, "carta_{}".format(i))
-
+    
+    def score(self, valor, vai=False):
+        INVENTARIO.score(casa="centro_9_9", carta="carta_99", move="INICIA", ponto=0, valor=valor, _level=2)
+        if vai:
+            self.vai()
 
         # tabuleiro_construido.vai()
-
+    def buttonapertado(self, env):
+        self.eventos[env.target.id]
+        
     def vai(self):
         self.elemento.vai()
         print(self._3d, len(self.pilha_de_cartas))
