@@ -50,11 +50,13 @@ class Tabuleiro:
         self.nome, self._3d = nome, _3d
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
         self.pilha_de_cartas = []
-        [Elemento(button, cena=self.elemento, vai=self.buttonapertado,tit="button_{}".format(i), style=dict(
-            left=100 + 110*i,
-            top="540px",
-            width=100,
-            height="30px")) for i,button in enumerate(BUTTONS)]
+        for i,button in enumerate(BUTTONS):
+            elem = Elemento(button, cena=self.elemento, vai=self.buttonapertado,tit="button_{}_".format(i), style=dict(
+                        left=100 + 110*i,
+                        top="540px",
+                        width=100,
+                        height="30px"))
+            elem.img.id = "button_{}".format(i)
             
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         [self.cria_tabuleiro(col=3, lin=linha, lado=l) for l in lado]
