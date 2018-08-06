@@ -8,6 +8,9 @@ STYLE["height"] = "600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg"
 # FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
+DESISTE = "https://i.imgur.com/C4uC3K2.png"
+TERMINEI = "https://i.imgur.com/C4uC3K2.png"
+BUTTONS = [DESISTE, TERMINEI]
 # QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
 # QVERDE = "https://i.imgur.com/hd3ofzP.png"
 Pilha_Cartas_top = 30
@@ -34,6 +37,11 @@ class Tabuleiro:
         self.nome = nome
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
         self.pilha_de_cartas = []
+        [Elemento(button, cena=self.elemento, tit="button_{}".format(i), style=dict(
+            left=40 + 110*i,
+            top="540px",
+            width=100,
+            height="30px")) for i,button in enumerate(BUTTONS)]
         self.display_do_3D = Elemento(FUNDO, tit="py3d", style=dict(
             left=700,
             top="10px",
