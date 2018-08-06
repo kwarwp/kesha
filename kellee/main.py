@@ -142,7 +142,7 @@ class Casa:
         casa_destino = casa.target.id
         Carta.move_carta(self.tabuleiro, Casa.CASA[casa_destino])
 
-class jogo():
+class Jogo():
     def __init__(self):
         self.tabuleiro =  Tabuleiro()
         
