@@ -40,7 +40,7 @@ class Tabuleiro:
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
         self.pilha_de_cartas = []
         [Elemento(button, cena=self.elemento, tit="button_{}".format(i), style=dict(
-            left=40 + 110*i,
+            left=100 + 110*i,
             top="540px",
             width=100,
             height="30px")) for i,button in enumerate(BUTTONS)]
