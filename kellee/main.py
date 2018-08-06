@@ -42,7 +42,7 @@ class Tabuleiro:
 
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
         self.casa = {}
-        self.nome = nome
+        self.nome, self._3d = nome, _3d
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
         self.pilha_de_cartas = []
         [Elemento(button, cena=self.elemento, tit="button_{}".format(i), style=dict(
@@ -50,14 +50,6 @@ class Tabuleiro:
             top="540px",
             width=100,
             height="30px")) for i,button in enumerate(BUTTONS)]
-        if _3d:
-            self.display_do_3D = Elemento(FUNDO, tit="py3d", style=dict(
-                left=700,
-                top="10px",
-                width=300,
-                height="600px"))
-            self.display_do_3D.entra(tabuleiro_construido)
-            self._3d_()
             
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         [self.cria_tabuleiro(col=3, lin=linha, lado=l) for l in lado]
@@ -72,6 +64,14 @@ class Tabuleiro:
 
     def vai(self):
         self.elemento.vai()
+        if self._3d:
+            self.display_do_3D = Elemento(FUNDO, tit="py3d", style=dict(
+                left=700,
+                top="10px",
+                width=300,
+                height="600px"))
+            self.display_do_3D.entra(tabuleiro_construido)
+            self._3d_()
 
     def proximafase(self, tabuleiro):
         self.elemento.direita = tabuleiro.elemento
