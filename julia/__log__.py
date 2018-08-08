@@ -177,3 +177,10 @@ SyntaxError: invalid syntax
                                                                                                                                                                                                                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 08 2018 15:45:50.610 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 4
+  jack = Elemento(img = "https://banner2.kisspng.com/20180529/ro/kisspng-jeff-the-killer-creepypasta-slenderman-laughing-ja-5b0d6610b02cd7.8433664615276047527216.jpg",style=dict(top = 100, left = 100,height =500
+                                                                                                                                                                                                                     ^
+SyntaxError: invalid syntax
+'''},
