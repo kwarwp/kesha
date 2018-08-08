@@ -261,3 +261,10 @@ SyntaxError: invalid syntax
                                                                                                                                                                                                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 08 2018 16:53:08.673 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  death = Elemento(img = "http://www.planetmoviestore.com.br/7267-thickbox_default/pre-venda-t800-bd-terminator-14-exterminador-do-futuro-.jpg") , style=dict(top=40,left=70,height = "80px",width =30))
+                                                                                                                                                                                                       ^
+SyntaxError: invalid syntax
+'''},
