@@ -101,3 +101,10 @@ TypeError: 'module' object is not callable
                                                                                                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 08 2018 15:22:14.433 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  voucomerteucu = (img = "https://www.sunhome.ru/i/wallpapers/212/oboi-rabochego-stola-uzhasi.orig.jpg"
+                                                                                                         ^
+SyntaxError: invalid syntax
+'''},
