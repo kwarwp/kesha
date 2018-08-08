@@ -163,3 +163,10 @@ SyntaxError: invalid syntax
     aCasa = Cena(img = "https://ovelhinhodorpg.files.wordpress.com/2015/03/14_41_31_308_file.jpeg")
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Wed Aug 08 2018 16:46:02.531 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  death = Elemento(img = "2wCEAAkGBxAREhUSEhIVDxUWFRAVFxAWDxAQEBAZFhUXGBUXFRUYHSggGBolHRUXIjEhJiktLi8vFx8zODMtNygtLisBCgoKDg0OGA8PFS0dFR0tKy0tLS0tNysrKy0tLSstLS0rLS0tKzctLTcrLS0tKy0rKy0tLSstLS0rKys3KysrN") , style=dict(top=4,left=7,height = "8px",width =3))
+                                                                                                                                                                                                                                                                ^
+SyntaxError: invalid syntax
+'''},
