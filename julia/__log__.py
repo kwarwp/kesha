@@ -282,3 +282,10 @@ SyntaxError: invalid syntax
                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 08 2018 15:50:25.515 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 4
+  personagem  =Elemento(img=https://purepng.com/public/uploads/thumbnail//mia-khalifa-cwj.png"",style=dct(top=121,left=666,height="666px",width=666))
+                                  ^
+SyntaxError: invalid syntax
+'''},
