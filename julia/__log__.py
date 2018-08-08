@@ -48,3 +48,10 @@ SyntaxError: invalid syntax
                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 08 2018 15:00:48.442 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  CasaDoPennisWise(img = http://mouse.latercera.com/wp-content/uploads/2017/09/it-casa.jpg)
+                              ^
+SyntaxError: invalid syntax
+'''},
