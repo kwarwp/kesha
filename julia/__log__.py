@@ -34,3 +34,10 @@ SyntaxError: invalid syntax
       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 08 2018 14:38:05.769 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 1
+  from - spy vitallino main import cena,elemento
+      ^
+SyntaxError: invalid syntax
+'''},
