@@ -94,3 +94,10 @@ TypeError: 'module' object is not callable
     casaDoPennisWise= Cena(img ="http://mouse.latercera.com/wp-content/uploads/2017/09/it-casa.jpg")
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Wed Aug 08 2018 15:21:40.813 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  voucomerteucu = (img = "https://www.sunhome.ru/i/wallpapers/212/oboi-rabochego-stola-uzhasi.orig.jpg")
+                                                                                                        ^
+SyntaxError: invalid syntax
+'''},
