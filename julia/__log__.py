@@ -140,3 +140,10 @@ TypeError: 'module' object is not callable
     death
 NameError: name 'death' is not defined
 '''},
+{'date': 'Wed Aug 08 2018 16:32:31.974 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  death = Elemento(img = "2wCEAAkGBxAREhUSEhIVDxUWFRAVFxAWDxAQEBAZFhUXGBUXFRUYHSggGBolHRUXIjEhJiktLi8vFx8zODMtNygtLisBCgoKDg0OGA8PFS0dFR0tKy0tLS0tNysrKy0tLSstLS0rLS0tKzctLTcrLS0tKy0rKy0tLSstLS0rKys3KysrN"
+                                                                                                                                                                                                               ^
+SyntaxError: invalid syntax
+'''},
