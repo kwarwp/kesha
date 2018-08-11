@@ -6,7 +6,7 @@ doc['pydiv'].html=''
 _gs=Glow('pydiv')
 scene=canvas()
 scene.background= color.black #"rgba(0, 0, 200, 0.5)"
-scene.width = 800
+scene.width = 1200
 scene.height = 600
 bloco = dict(color=color.blue)
 
@@ -18,4 +18,4 @@ bloco = dict(color=color.blue)
 #pts = [simetria1, simetria2]+simetria
 #sup = compound(pts, pos=vec(2,0,0), axis=vec(4,0,-1))
 
-area1 = box(pos=(2,2,2), size=(2,6,0.2))
+area1 = box(pos=(-4,0,0), size=(2,6,0.2))
