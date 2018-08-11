@@ -18,4 +18,6 @@ bloco = dict(color=color.blue)
 #pts = [simetria1, simetria2]+simetria
 #sup = compound(pts, pos=vec(2,0,0), axis=vec(4,0,-1))
 
-area1 = box(pos=(-4,0,0), size=(2,6,0.2))
+area1 = box(pos=(-5,0,0), size=(2,6,0.2))
+area2= box(pos=(-3,0,0), size=(2,2,0.2))
+area3= box(pos=(0,0,0), size=(2,4,0.2))
