@@ -35,3 +35,9 @@ parede_area1d= box(pos=(-4.1,-1.9,1.35), size=(0.2,2.2,2.5), color=color.white, 
 parede_area1e= box(pos=(-4.1,1.9,1.35), size=(0.2,2.2,2.5), color=color.white, opacity=0.3)
 
 parede_area1f= box(pos=(3.9,1,1.35), size=(0.2,4,2.5), color=color.white)
+parede_area1g= box(pos=(-2,-0.9,1.35), size=(4,0.2,2.5), color=color.white)
+parede_area1h= box(pos=(2.9,-2.9,1.35), size=(6,0.2,2.5), color=color.white, opacity=0.3)
+parede_area1i= box(pos=(0,-1.8,1.35), size=(0.2,2,2.5), color=color.white)
+
+parede_area1j= box(pos=(0,1,1.35), size=(4.2,0.1,2.5), color=color.white, opacity=0.5)
+
