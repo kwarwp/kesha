@@ -28,4 +28,5 @@ area7= box(pos=(1,-1.5,0), size=(2,1,0.2), color=color.orange)
 area8= box(pos=(1,-2.5,0), size=(2,1,0.2), color=color.blue)
 area9= box(pos=(4,-2,0), size=(4,2,0.2),color=color.purple)
 
-parede_area1= box(pos=(-5,-3,0), size=(2,0.2,0.2), color=color.white)
+parede_area1a= box(pos=(-5,-2.9,1.35), size=(2,0.2,2.5), color=color.white)
+parede_area1b= box(pos=(-5.9,0,1.35), size=(0.2,6,2.5), color=color.white)
