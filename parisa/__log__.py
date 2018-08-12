@@ -151,3 +151,7 @@ Exception: <Error: Font not available for text object.>
     T1= label(pos=(-5,3,0), text='Utilize as setas')        
 NameError: name 'label' is not defined
 '''},
+{'date': 'Sun Aug 12 2018 09:21:33.177 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <Error: Font not available for text object.>
+'''},
