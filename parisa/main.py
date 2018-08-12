@@ -18,7 +18,7 @@ area4= box(pos=(3,1,0), size=(2,4,0.2), color=color.white)
 area5= box(pos=(-2,2,0), size=(4,2,0.2), color=color.green)
 area6= box(pos=(1,2,0), size=(2,2,0.2), color=color.red)
 area7= box(pos=(1,-1.5,0), size=(2,1,0.2), color=color.orange)
-area8= box(pos=(1,-2.5,0), size=(2,1,0.2), color=color.grey)
+area8= box(pos=(1,-2.5,0), size=(2,1,0.2), color=color.white)
 area9= box(pos=(4,-2,0), size=(4,2,0.2), color=color.blue)
 
 
