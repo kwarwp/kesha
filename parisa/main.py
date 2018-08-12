@@ -23,7 +23,7 @@ area9= box(pos=(4,-2,0), size=(4,2,0.2), color=color.blue)
 
 
 parede_a= box(pos=(-5,-2.9,1.35), size=(2,0.2,2.5), color=color.white)
-"""parede_b= box(pos=(-5.9,0,1.35), size=(0.2,6,2.5), color=color.white)
+parede_b= box(pos=(-5.9,0,1.35), size=(0.2,6,2.5), color=color.white)
 parede_c= box(pos=(-1,2.9,1.35), size=(10,0.2,2.5), color=color.white)
 parede_d= box(pos=(-4.1,-1.9,1.35), size=(0.2,2.2,2.5), color=color.white, opacity=0.3)
 parede_e= box(pos=(-4.1,1.9,1.35), size=(0.2,2.2,2.5), color=color.white, opacity=0.3)
@@ -35,4 +35,3 @@ parede_j= box(pos=(-0.2,1,1.35), size=(4.3,0.1,2.5), color=color.white, opacity=
 parede_k= box(pos=(1.9,0,1.35), size=(0.1,2,2.5), color=color.white)
 parede_l= box(pos=(1.9,-2,1.35), size=(0.1,2,2.5), color=color.white, opacity=0.3)
 parede_m= box(pos=(1,-2,1.35), size=(2,0.1,2.5), color=color.white, opacity=0.3)
-"""
