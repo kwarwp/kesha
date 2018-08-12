@@ -245,3 +245,10 @@ SyntaxError: invalid syntax
                                                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Aug 12 2018 20:21:33.442 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  area9= box(pos=(4,-2,0), size=(4,2,0.2), color=color.blue))
+                                                            ^
+SyntaxError: invalid syntax
+'''},
