@@ -284,3 +284,10 @@ AttributeError: no attribute grey for [object Object]
     area8= box(pos=(1,-2.5,0), size=(2,1,0.2), color=color.grey)
 AttributeError: no attribute grey for [object Object]
 '''},
+{'date': 'Sun Aug 12 2018 20:24:10.958 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  area9= box(pos=(4,-2,0), size=(4,2,0.2), color=color.blue))
+                                                            ^
+SyntaxError: invalid syntax
+'''},
