@@ -175,3 +175,7 @@ AttributeError: no attribute grey for [object Object]
 'error': '''
 Exception: <Error: Font not available for text object.>
 '''},
+{'date': 'Sun Aug 12 2018 09:35:27.108 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <Error: Font not available for text object.>
+'''},
