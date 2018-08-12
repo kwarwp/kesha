@@ -111,3 +111,7 @@ NameError: name 'label' is not defined
     label(pos=(60,120,80), text='MUSEU DA GEODIVERSIDADE')
 NameError: name 'label' is not defined
 '''},
+{'date': 'Sat Aug 11 2018 21:21:26.112 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <Error: Font not available for text object.>
+'''},
