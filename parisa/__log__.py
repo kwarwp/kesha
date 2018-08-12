@@ -179,3 +179,7 @@ Exception: <Error: Font not available for text object.>
 'error': '''
 Exception: <Error: Font not available for text object.>
 '''},
+{'date': 'Sun Aug 12 2018 20:03:05.430 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: <Error: Font not available for text object.>
+'''},
