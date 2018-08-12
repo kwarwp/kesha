@@ -171,3 +171,7 @@ Exception: <Error: Font not available for text object.>
     area8= box(pos=(1,-2.5,0), size=(2,1,0.2), color=color.grey)
 AttributeError: no attribute grey for [object Object]
 '''},
+{'date': 'Sun Aug 12 2018 09:35:17.22 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <Error: Font not available for text object.>
+'''},
