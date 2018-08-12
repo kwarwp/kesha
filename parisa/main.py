@@ -9,7 +9,7 @@ scene.background= color.black #"rgba(0, 0, 200, 0.5)"
 scene.width = 1200
 scene.height = 600
 
-
+t1 = text(text='MUSEU DA GEODIVERSIDADE', pos=vec(-4,-1,0), depth=0.5, color=color.yellow)
 #bloco = dict(color=color.blue)
 #simetria1=box(pos=(4.2, -2, 0), size=(1,1,1) , **bloco)
 #simetria2=box(pos=(1.8, 1.6, 0), size=(1,1,1) , **bloco)
