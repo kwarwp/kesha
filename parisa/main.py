@@ -2,6 +2,7 @@
 from browser import doc, html
 #doc["glowscript"] <= html.H1('XXXXXXXXX -------------- XXXXXXXXXXX')
 from _spy.vpython.main import *
+from math import pi
 doc['pydiv'].html=''
 _gs=Glow('pydiv')
 scene=canvas()
@@ -28,7 +29,7 @@ parede_c= box(pos=(-1,2.9,1.35), size=(10,0.2,2.5), color=color.white)
 parede_d= box(pos=(-4.1,-1.9,1.35), size=(0.2,2.2,2.5), color=color.white, opacity=0.3)
 parede_e= box(pos=(-4.1,1.9,1.35), size=(0.2,2.2,2.5), color=color.white, opacity=0.3)
 parede_f= box(pos=(3.85,1,1.35), size=(4,4,2.5), axis=(1,0,0), texture={'file':'https://i.imgur.com/sWLe8pO.png', 'place':['left']})
-parede_f.rotate(angle=90, axis=(1,0,0)) 
+parede_f.rotate(angle=pi, axis=(1,0,0)) 
 # parede_fa= box(pos=(3.95,1,1.35), size=(0.1,4,2.5), color=color.white)
 parede_g= box(pos=(-2,-0.9,1.35), size=(4,0.2,2.5), color=color.white)
 parede_h= box(pos=(2.9,-2.9,1.35), size=(6,0.1,2.5), texture='https://i.imgur.com/sWLe8pO.png')
