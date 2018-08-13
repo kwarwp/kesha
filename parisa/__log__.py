@@ -355,3 +355,10 @@ Exception: <Error: Can't create canvas: WebGL not supported>
 'error': '''
 Exception: <Error: Can't create canvas: WebGL not supported>
 '''},
+{'date': 'Mon Aug 13 2018 10:03:05.931 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  parede_f= box(pos=(3.85,1,1.35), size=(0.1,4,2.5), texture={'file'='https://i.imgur.com/sWLe8pO.png', 'place'=['right']})
+                                                                                                                          ^
+SyntaxError: invalid syntax
+'''},
