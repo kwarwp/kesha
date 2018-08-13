@@ -351,3 +351,7 @@ Exception: <Error: Can't create canvas: WebGL not supported>
 'error': '''
 Exception: <Error: Can't create canvas: WebGL not supported>
 '''},
+{'date': 'Sun Aug 12 2018 22:10:44.375 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <Error: Can't create canvas: WebGL not supported>
+'''},
