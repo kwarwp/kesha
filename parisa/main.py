@@ -30,7 +30,7 @@ parede_e= box(pos=(-4.1,1.9,1.35), size=(0.2,2.2,2.5), color=color.white, opacit
 parede_f= box(pos=(3.9,1,1.35), size=(0.2,4,2.5), color=color.white)
 parede_g= box(pos=(-2,-0.9,1.35), size=(4,0.2,2.5), color=color.white)
 parede_h= box(pos=(2.9,-2.9,1.35), size=(6,0.1,2.5), texture='https://i.imgur.com/sWLe8pO.png')
-parede_h= box(pos=(2.9,-2.9,1.35), size=(6,0.1,2.5), color=color.white,)
+parede_h= box(pos=(2.9,-3,1.35), size=(6,0.1,2.5), color=color.white,)
 parede_i= box(pos=(0,-1.8,1.35), size=(0.2,2,2.5), color=color.white)
 parede_j= box(pos=(-0.2,1,1.35), size=(4.3,0.1,2.5), color=color.white, opacity=0.5)
 parede_k= box(pos=(1.9,0,1.35), size=(0.1,2,2.5), color=color.white)
