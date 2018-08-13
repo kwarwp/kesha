@@ -343,3 +343,7 @@ AttributeError: no attribute grey for [object Object]
 'error': '''
 Exception: <Error: Can't create canvas: WebGL not supported>
 '''},
+{'date': 'Sun Aug 12 2018 22:07:50.429 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <Error: Can't create canvas: WebGL not supported>
+'''},
