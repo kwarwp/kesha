@@ -597,3 +597,4 @@
       {'doc_id': '9a198519', 'carta': 'carta_20', 'casa': 'esquerda_2_2_e', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1534373570836},
       {'doc_id': '9a198519', 'carta': 'carta_19', 'casa': 'esquerda_1_1_e', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1534373572178},
       {'doc_id': '9a198519', 'carta': 'carta_18', 'casa': 'esquerda_0_1_e', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1534373572694},
+      {'doc_id': '9a198519', 'carta': 'carta_29', 'casa': 'esquerda_1_0_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1534373578192},
