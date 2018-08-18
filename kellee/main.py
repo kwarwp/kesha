@@ -2,7 +2,6 @@
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE, INVENTARIO
 from browser import html, document, alert, doc
 from _spy.vpython.main import *
-
 STYLE["width"] = 700
 STYLE["height"] = "600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg"
@@ -13,8 +12,6 @@ NAOQUEROJOGAR = "https://i.imgur.com/8JGhyAA.png"
 TENTAR = "https://i.imgur.com/PRjuqrZ.png"
 TERMINEI = "https://i.imgur.com/9dtdzcP.png"
 BUTTONS = [TENTAR, DESISTO, NAOQUEROJOGAR, TERMINEI, TERMINEI]
-# QVERMELHO = "https://i.imgur.com/K0YpYsi.png"
-# QVERDE = "https://i.imgur.com/hd3ofzP.png"
 Pilha_Cartas_top = 30
 Pilha_Cartas_left = 30
 TBX, TBY = 80, 80
@@ -24,7 +21,6 @@ FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
 FASE3 = dict(numcartas=12, lado="e", _3d=True)
 offset = dict(e=0, d=300)
-
 
 class Tabuleiro:
 
@@ -61,12 +57,9 @@ class Tabuleiro:
         self.inicia_fase()
             
     def inicia_fase(self):
-            
         ### TABULEIRO DA ESQUERDA E DA DIREITA####
         [self.cria_tabuleiro(col=3, lin=self.linha, lado=l) for l in self.lado]
-
         ###PILHA DE CARTAS###
-
         for i in range(self.numcartas):
             Carta(self, "carta_{}".format(i))
     
@@ -76,7 +69,6 @@ class Tabuleiro:
             self.inicia_fase()
         else:
             Jogo.JOGO.reset()
-
         # tabuleiro_construido.vai()
     def buttonapertado(self, env):
         print(env.target.id)
@@ -116,7 +108,6 @@ class Tabuleiro:
     def proxima_carta(self):
         return self.pilha_de_cartas.pop()
 
-
 class Carta:
     def __init__(self, tabuleiro, carta_id):
         self.tabuleiro = tabuleiro
@@ -146,7 +137,6 @@ class Carta:
         self.casa = casa_destino.nome
         INVENTARIO.score(casa=casa_destino.nome, carta=self.nome, move="MOVE", ponto=self.crivo(), valor="N", _level=3)
 
-
     def remover_carta(self, ev):
         carta_elt = ev.target.parent_id
         doc[carta_elt].remove()
@@ -154,7 +144,6 @@ class Carta:
         INVENTARIO.score(casa=self.casa, carta=carta_elt, move="REMOVE", ponto=-1, valor="N", _level=3)
         ev.stopPropagation()
         return False
-
 
 class Casa:
     CASA = {}
@@ -170,7 +159,6 @@ class Casa:
         Casa.CASA[nome_elemento] = self
 
         self.elemento.elt.onclick = self.move_carta
-
 
     def local(self):
         return self.elemento.elt.style.left, self.elemento.elt.style.top
@@ -189,14 +177,9 @@ class Jogo():
         self.tabuleiro =  Tabuleiro()
         proximafase = Tabuleiro(**FASE1)
         self.tabuleiro.proximafase(proximafase)
-        
-
         proximafase2 = Tabuleiro(**FASE2)
-        proximafase.proximafase(proximafase2)
-        
+        proximafase.proximafase(proximafase2)        
         proximafase3 = Tabuleiro(**FASE3)
         proximafase2.proximafase(proximafase3)
         self.tabuleiro.vai()
-
-
 Jogo()
