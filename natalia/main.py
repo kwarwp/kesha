@@ -68,9 +68,7 @@ C9_SUL = "https://i.imgur.com/evAHwNH.jpg",
 C9_OESTE = "https://i.imgur.com/SJ5c9tV.jpg")
 
 ROSA = "_NORTE,_LESTE,_SUL,_OESTE".split(",")
-#IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
-#IMG_LIST1 = [C1_NORTE, C1_LESTE, C1_SUL, C1_OESTE]
-IMGS = [[MUSEU["C{:01X}{}".format(sala, rosa)] for rosa in ROSA] for sala in range(15)]
+IMGS = [[MUSEU["C{:001X}{}".format(sala, rosa)] for rosa in ROSA] for sala in range(15)]
 
 doc['pydiv'].html = ''
 _gs = Glow('pydiv')
@@ -118,16 +116,16 @@ Sala3D(IMGS[3], p=(-8,-4))
 Sala3D(IMGS[3], p=(-8,0))
 
 
-Sala3D(IMGS[3], p=(-12,-12))
-Sala3D(IMGS[3], p=(-12,-8))
+Sala3D(IMGS[4], p=(-12,-12))
+Sala3D(IMGS[4], p=(-12,-8))
 Sala3D(IMGS[3], p=(-12,-4))
 Sala3D(IMGS[3], p=(-12,0))
 
      
-Sala3D(IMGS[3], p=(-16,-12))
-Sala3D(IMGS[3], p=(-16,-8))
-Sala3D(IMGS[3], p=(-16,-4))
-Sala3D(IMGS[3], p=(-16,0))
+Sala3D(IMGS[4], p=(-16,-12))
+Sala3D(IMGS[4], p=(-16,-8))
+Sala3D(IMGS[5], p=(-16,-4))
+Sala3D(IMGS[5], p=(-16,0))
 
 Sala3D(IMGS[3], p=(-20,-12))
 Sala3D(IMGS[3], p=(-20,-8))
