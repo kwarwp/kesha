@@ -18,10 +18,10 @@ C2_NORTE = "https://i.imgur.com/VdzcF4X.jpg",
 C2_LESTE = "https://i.imgur.com/w7ORIRk.jpg",
 C2_SUL = "https://i.imgur.com/0Nq7Sow.jpg",
 C2_OESTE = "https://i.imgur.com/79MV5Ai.jpg",
-C10_NORTE = "https://i.imgur.com/usame91.jpg",
-C10_LESTE = "https://i.imgur.com/6Sd0NJC.jpg",
-C10_SUL = "https://i.imgur.com/Xj8FuaR.jpg",
-C10_OESTE = "https://i.imgur.com/o6qbGZw.jpg",
+CA_NORTE = "https://i.imgur.com/usame91.jpg",
+CA_LESTE = "https://i.imgur.com/6Sd0NJC.jpg",
+CA_SUL = "https://i.imgur.com/Xj8FuaR.jpg",
+CA_OESTE = "https://i.imgur.com/o6qbGZw.jpg",
 C3_NORTE = "https://i.imgur.com/E3IEnQm.jpg",
 C3_LESTE = "https://i.imgur.com/hwq1aEk.jpg",
 C3_SUL = "https://i.imgur.com/hwq1aEk.jpg",
@@ -105,7 +105,7 @@ Sala3D(IMGS[8], p=(0,-4))
 Sala3D(IMGS[2], p=(0,-8.1))
 Sala3D(IMGS[2], p=(0,-12))
 
-Sala3D(IMGS[10], p=(-4,-12))
+Sala3D(IMGS[A], p=(-4,-12))
 
 
 #Sala3D(IMGS[7], p=(-8.2, 0))
