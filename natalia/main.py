@@ -95,8 +95,8 @@ class Sala3D:
 # Sala3D(IMG_LIST)
     
 # Sala3D(IMG_LIST1, p=(4, 0))
-Sala3D(IMGS[0], pos=(4,0))
-Sala3D(IMGS[1], pos=(4, 4.1))
+Sala3D(IMGS[0], p=(4,0))
+#Sala3D(IMGS[1], pos=(4, 4.1))
 #Sala3D(IMGS[2], p=(-4.1, 4.1))
 #Sala3D(IMGS[8], p=(-4.1, 0))
 #Sala3D(IMGS[7], p=(-8.2, 0))
