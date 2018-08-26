@@ -98,7 +98,8 @@ class Museu:
 Sala3D(IMGS[0], p=(4,0))
 Sala3D(IMGS[1], p=(4,-4.1))
 Sala3D(IMGS[9], p=(0,0))
-Sala3D(IMGS[8], p=(0,4))
+Sala3D(IMGS[8], p=(0,-4))
+Sala3D(IMGS[2], p=(0,-8))
 #Sala3D(IMGS[7], p=(-8.2, 0))
      
 #Museu()
