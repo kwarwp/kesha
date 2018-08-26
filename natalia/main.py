@@ -92,12 +92,13 @@ class Museu:
                 Elemento(prd, style = dict(left=i*110, top =j*110, width=100, height="80px")).entra(cena)
         cena.vai()
     
-# Sala3D(IMG_LIST)
-    
+# Sala3D(IMG_LIST)    
 # Sala3D(IMG_LIST1, p=(4, 0))
+
+
 Sala3D(IMGS[0], p=(4,0))
-#Sala3D(IMGS[1], p=(4,-4.1))
-#Sala3D(IMGS[1], p=(4,-8.1))
+Sala3D(IMGS[1], p=(4,-4.1))
+Sala3D(IMGS[1], p=(4,-8.1))
 Sala3D(IMGS[1], p=(4,-12.1))
 
 Sala3D(IMGS[9], p=(0,0))
@@ -105,9 +106,10 @@ Sala3D(IMGS[8], p=(0,-4))
 Sala3D(IMGS[2], p=(0,-8.1))
 Sala3D(IMGS[2], p=(0,-12))
 
-Sala3D(IMGS[7], p=(-8,-4))
-#Sala3D(IMGS[7], p=(-8.2, 0))
-#Sala3D(IMGS[A], p=(-4,-12))
+Sala3D(IMGS[7], p=(-4,0))
+Sala3D(IMGS[7], p=(-4, -4))
+Sala3D(IMGS[7], p=(-4,-8))
+Sala3D(IMGS[7], p=(-4,-12))
 
 
 
