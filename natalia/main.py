@@ -131,8 +131,8 @@ Sala3D(IMGS[3], p=(-16,0))
 
 Sala3D(IMGS[3], p=(-20,-12))
 Sala3D(IMGS[3], p=(-20,-8))
-Sala3D(IMGS[3], p=(-20,-4))
-Sala3D(IMGS[3], p=(-20,0))
-Sala3D(IMGS[3], p=(-20,4))
+Sala3D(IMGS[6], p=(-20,-4))
+Sala3D(IMGS[6], p=(-20,0))
+Sala3D(IMGS[6], p=(-20,4))
 
 #Museu()
