@@ -91,3 +91,10 @@ TypeError: __init__() got an unexpected keyword argument 'pos'
     Sala3D(IMGS[1], pos=(4, 4.1))
 TypeError: __init__() got an unexpected keyword argument 'pos'
 '''},
+{'date': 'Sun Aug 26 2018 14:23:46.202 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 103
+  def vai(self):
+  ^
+IndentationError: unexpected indent
+'''},
