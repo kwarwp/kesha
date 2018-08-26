@@ -86,7 +86,7 @@ class Sala3D:
 
 class Museu:
     def __init__(self):
-        cena = Cena(MUSEU["C9_OESTE"])
+        cena = Cena(MUSEU["C10_OESTE"])
         for i, sala in enumerate(IMGS):
             for j, prd in enumerate(sala):
                 Elemento(prd, style = dict(left=i*110, top =j*110, width=100, height="80px")).entra(cena)
