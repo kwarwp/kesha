@@ -98,3 +98,10 @@ TypeError: __init__() got an unexpected keyword argument 'pos'
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sun Aug 26 2018 14:26:01.681 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 103
+  def vai(self):
+  ^
+IndentationError: unexpected indent
+'''},
