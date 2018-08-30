@@ -893,3 +893,4 @@
       {'doc_id': '018fbe35', 'carta': 'carta_24', 'casa': 'esquerda_0_1_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1535655662058},
       {'doc_id': '018fbe35', 'carta': 'carta_25', 'casa': 'esquerda_1_1_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1535655663018},
       {'doc_id': '018fbe35', 'carta': 'carta_26', 'casa': 'esquerda_2_1_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1535655663795},
+      {'doc_id': '018fbe35', 'carta': 'carta_27', 'casa': 'esquerda_2_2_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1535655664547},
