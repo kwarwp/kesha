@@ -5,7 +5,6 @@ from _spy.vpython.main import *
 STYLE["width"] = 700
 STYLE["height"] = "600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg"
-# FUNDO_BRANCO = "https://i.imgur.com/UXD0mzp.png"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
 DESISTO = "https://i.imgur.com/GkqfWc3.png"
 NAOQUEROJOGAR = "https://i.imgur.com/8JGhyAA.png"
@@ -20,7 +19,6 @@ FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
 FASE3 = dict(numcartas=12, lado="e", _3d=True)
-offset = dict(e=0, d=300)
 
 class Tabuleiro:
 
@@ -35,7 +33,25 @@ class Tabuleiro:
         simetria = [box(pos=(3, x * (1.2) - 2, 0), size=(1, 1, 1), **bloco) for x in range(4)]
         pts = [simetria1, simetria2] + simetria
         sup = compound(pts, pos=vec(2, 0, 0), axis=vec(4, 0, -1))
+    
+    def _3d2_(self):
+        doc['py3d'].html = ''
+        _gs = Glow('py3d')
+        scene = canvas()
+        bloco1 = dict(color=color.blue)
+        bloco2 = dict(color=color.white)
 
+        cubo1=box(pos=(1, -1.2, 0), size=(1,1,1) , **bloco1)
+        cubo2=box(pos=(1, 0, 0), size=(1,1,1) , **bloco1)
+        cubo3=box(pos=(-0.2, 0, 0), size=(1,1,1) , **bloco1)
+        cubo4=box(pos=(-0.2, 1.2, 0), size=(1,1,1) , **bloco1)
+        cubo5=box(pos=(-0.2, 1.2, 1.2), size=(1,1,1) , **bloco1)
+        cubo5=box(pos=(-0.2, 0, -1.2), size=(1,1,1) , **bloco1)
+        cubo6=box(pos=(-1.4, 0, 0), size=(1,1,1) , **bloco2)
+        cubo7=box(pos=(0, -2.4, 1.2), size=(1,1,1) , **bloco2)
+        cubo8=box(pos=(-1.2, -2.4, -1.2), size=(1,1,1) , **bloco2)
+        cubo9=box(pos=(-1.2, -3.6, -1.2), size=(1,1,1) , **bloco2)
+            
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
         self.casa = {}
         self.numcartas, self.lado, self.linha = numcartas, lado, linha
@@ -69,7 +85,7 @@ class Tabuleiro:
             self.inicia_fase()
         else:
             Jogo.JOGO.reset()
-        # tabuleiro_construido.vai()
+        
     def buttonapertado(self, env):
         print(env.target.id)
         if "button" not in env.target.id:
