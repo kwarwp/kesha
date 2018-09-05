@@ -11,7 +11,7 @@ DESISTO = "https://i.imgur.com/GkqfWc3.png"
 NAOQUEROJOGAR = "https://i.imgur.com/8JGhyAA.png"
 TENTAR = "https://i.imgur.com/PRjuqrZ.png"
 TERMINEI = "https://i.imgur.com/9dtdzcP.png"
-BUTTONS = [TENTAR, DESISTO, NAOQUEROJOGAR, TERMINEI, TERMINEI]
+BUTTONS = [TENTAR, DESISTO, NAOQUEROJOGAR, TERMINEI, JATERMINEI]
 Pilha_Cartas_top = 30
 Pilha_Cartas_left = 30
 TBX, TBY = 80, 80
@@ -20,6 +20,7 @@ FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
 FASE3 = dict(numcartas=12, lado="e", _3d=True)
+
 
 class Tabuleiro:
 
@@ -39,6 +40,7 @@ class Tabuleiro:
         doc['py3d'].html = ''
         _gs = Glow('py3d')
         scene = canvas()
+        
         bloco1 = dict(color=color.blue)
         bloco2 = dict(color=color.white)
 
@@ -106,7 +108,7 @@ class Tabuleiro:
             self._3d_()
 
     def proximafase(self, tabuleiro):
-        self.elemento.direita = tabuleiro #.elemento
+        self.elemento.direita = tabuleiro
 
     def cria_tabuleiro(self, col=3, lin=4, lado="e"):
         INVENTARIO.score(casa="centro_9_9", carta="carta_99", move="INICIA", ponto=0, valor="N", _level=1)
