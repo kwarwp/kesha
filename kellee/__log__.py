@@ -771,3 +771,10 @@ KeyError: py3d
     inicio_x_ = inicio_x + offset[lado]
 NameError: name 'offset' is not defined
 '''},
+{'date': 'Wed Sep 05 2018 07:37:49.675 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  offset = dict(e=0, d=300
+                              ^
+SyntaxError: invalid syntax
+'''},
