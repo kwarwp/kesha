@@ -11,6 +11,7 @@ DESISTO = "https://i.imgur.com/GkqfWc3.png"
 NAOQUEROJOGAR = "https://i.imgur.com/8JGhyAA.png"
 TENTAR = "https://i.imgur.com/PRjuqrZ.png"
 TERMINEI = "https://i.imgur.com/9dtdzcP.png"
+JATERMINEI = "https://i.imgur.com/9dtdzcP.png"
 BUTTONS = [TENTAR, DESISTO, NAOQUEROJOGAR, TERMINEI, JATERMINEI]
 Pilha_Cartas_top = 30
 Pilha_Cartas_left = 30
