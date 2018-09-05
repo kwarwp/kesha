@@ -114,9 +114,9 @@ Sala3D(IMGS[0], p=(8,0))
 #SALA 1
 Sala3Dgrande(IMGS[1], p=(6,-6.1))
 #Sala3D(IMGS[1], p=(4,-8.1))
-#Sala3D(IMGS[1], p=(4,-12.1))
+Sala3D(IMGS[1], p=(4,-12.1))
 #Sala3D(IMGS[1], p=(8,-4.1))
-Sala3D(IMGS[1], p=(8,-8.1))
+#Sala3D(IMGS[1], p=(8,-8.1))
 Sala3D(IMGS[1], p=(8,-12.1))
 
 #SALA 9
