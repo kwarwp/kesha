@@ -272,3 +272,21 @@ KeyError: CA_NORTE
     IMGS = [[MUSEU["C{:01X}{}".format(sala, rosa)] for rosa in ROSA] for sala in range(15)]
 KeyError: CA_NORTE
 '''},
+{'date': 'Wed Sep 05 2018 08:14:15.416 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 112
+    Sala3Dlongo(IMGS[0], p=(4,0))
+  module <module> line 96
+    parede_ = box(pos=(2*POS1[direcao][0]+p[0], 0, -4*POS1[direcao][1]+p[1]), size=(0.2, 4, 8), texture=dict(file=parede, place=["right"]))
+NameError: name 'POS1' is not defined
+'''},
