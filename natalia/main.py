@@ -112,10 +112,10 @@ Sala3D(IMGS[0], p=(4,0))
 Sala3D(IMGS[0], p=(8,0))
 
 #SALA 1
-Sala3D(IMGS[1], p=(4,-4.1))
-Sala3D(IMGS[1], p=(4,-8.1))
-Sala3D(IMGS[1], p=(4,-12.1))
-Sala3D(IMGS[1], p=(8,-4.1))
+Sala3Dgrande(IMGS[1], p=(6,-6.1))
+#Sala3D(IMGS[1], p=(4,-8.1))
+#Sala3D(IMGS[1], p=(4,-12.1))
+#Sala3D(IMGS[1], p=(8,-4.1))
 Sala3D(IMGS[1], p=(8,-8.1))
 Sala3D(IMGS[1], p=(8,-12.1))
 
@@ -152,7 +152,7 @@ Sala3D(IMGS[3], p=(-8,-8))
 #SALA 4
 #Sala3Dgrande(IMGS[4], p=(-12,-12))
 #Sala3Dgrande(IMGS[4], p=(-12,-8))
-Sala3Dgrande(IMGS[4], p=(-16,-12))
+Sala3Dgrande(IMGS[4], p=(-14,-10))
 #Sala3Dgrande(IMGS[4], p=(-16,-8))
 
 #SALA 5  
