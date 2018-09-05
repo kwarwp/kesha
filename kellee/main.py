@@ -19,7 +19,7 @@ FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
 FASE3 = dict(numcartas=12, lado="e", _3d=True)
-offset = dict(e=0, d=300
+offset = dict(e=0, d=300)
 
 
 class Tabuleiro:
