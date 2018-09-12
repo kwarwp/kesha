@@ -326,3 +326,10 @@ UnboundLocalError: local variable 'i' referenced before assignment
     parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 UnboundLocalError: local variable 'i' referenced before assignment
 '''},
+{'date': 'Wed Sep 12 2018 14:10:00.412 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 115
+  Sala3Dlongo(IMGS[0], p=(6,0),0)
+                                ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
