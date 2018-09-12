@@ -351,3 +351,10 @@ SyntaxError: non-keyword arg after keyword arg
     if i%2 == 0:
 NameError: name 'i' is not defined
 '''},
+{'date': 'Wed Sep 12 2018 14:20:22.159 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 116
+  Sala3Dlongo(IMGS[0], p=(6,0),1)
+                                ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
