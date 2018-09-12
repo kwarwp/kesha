@@ -88,13 +88,17 @@ class Sala3Dgrande:
             parede_ = box(pos=(4*POS[direcao][0]+p[0], 0, -4*POS[direcao][1]+p[1]), size=(0.2, 4, 8), texture=dict(file=parede, place=["right"]))
             
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
-
+i = 0
 class Sala3Dlongo:
     def __init__(self, img_list, p=(0,0)):
         for direcao, parede in enumerate(img_list):
-            parede_ = box(pos=(2*POS[direcao][0]+p[0], 0, -2*POS[direcao][1]+p[1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
-            
+            if i%2 == 0:
+                parede_ = box(pos=(2*POS[direcao][0]+p[0], 0, -2*POS[direcao][1]+p[1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
+            else:    
+                parede_ = box(pos=(2*POS[direcao][0]+p[0], 0, -2*POS[direcao][1]+p[1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
+
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
+            i += 1
 
 class Museu:
     def __init__(self):
