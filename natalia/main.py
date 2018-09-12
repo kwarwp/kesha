@@ -177,8 +177,8 @@ Sala3Dlongo(IMGS[3], p=(-20,-10,1,2))
 #Sala3D(IMGS[3], p=(-20,-8))
 
 #SALA 6 sala longa 3 x 1
-Sala3D(IMGS[6], p=(-20,-4))
-Sala3D(IMGS[6], p=(-20,0))
-Sala3D(IMGS[6], p=(-20,4))
+#Sala3D(IMGS[6], p=(-20,-4))
+Sala3Dlongo(IMGS[6], p=(-20,0,1,3))
+#Sala3D(IMGS[6], p=(-20,4))
 
 #Museu()
