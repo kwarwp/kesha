@@ -90,7 +90,7 @@ class Sala3Dgrande:
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 
 class Sala3Dlongo:
-    def __init__(self, img_list, p=(0,0)):
+    def __init__(self, img_list, p=(0,0,0)):
         i = p[2]
         for direcao, parede in enumerate(img_list):
             if i%2 == 0:
