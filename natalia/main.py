@@ -91,7 +91,7 @@ class Sala3Dgrande:
 
 class Sala3Dlongo:
     def __init__(self, img_list, p=(0,0)):
-        #i = 0
+        i = 0
         for direcao, parede in enumerate(img_list):
             if i%2 == 0:
                 parede_ = box(pos=(4*POS[direcao][0]+p[0], 0, -2*POS[direcao][1]+p[1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
