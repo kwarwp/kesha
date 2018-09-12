@@ -90,7 +90,7 @@ class Sala3Dgrande:
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 
 class Sala3Dlongo:
-    def __init__(self, img_list, p=(0,0),i=0):
+    def __init__(self, img_list, p=(0,0)):
         #i = 0
         for direcao, parede in enumerate(img_list):
             if i%2 == 0:
@@ -113,7 +113,7 @@ class Museu:
 # Sala3D(IMG_LIST1, p=(4, 0))
 
 #SALA 0
-Sala3Dlongo(IMGS[0], p=(6,0),1)
+Sala3Dlongo(IMGS[0], p=(6,0))
 #Sala3D(IMGS[0], p=(8,0))
 
 #SALA 1
