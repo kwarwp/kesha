@@ -113,7 +113,7 @@ class Museu:
 # Sala3D(IMG_LIST1, p=(4, 0))
 
 #SALA 0
-Sala3Dlongo(IMGS[0], p=(8,8))
+Sala3Dlongo(IMGS[0], p=(4,0))
 #Sala3D(IMGS[0], p=(8,0))
 
 #SALA 1
