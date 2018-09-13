@@ -388,3 +388,10 @@ SyntaxError: invalid syntax
                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 12 2018 22:29:08.245 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 147
+  Sala3Dlongo(IMGS[0], p=(0,-10.2,1,4)
+                                                                               ^
+SyntaxError: invalid syntax
+'''},
