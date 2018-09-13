@@ -4,7 +4,7 @@ from _spy.vpython.main import *
 from browser import doc
 from math import pi
 STYLE["width"] = 1200
-STYLE["height"] = "650px"
+STYLE["height"] = "850px"
 MUSEU = dict(
 C0_NORTE = "https://i.imgur.com/PbNGJ2M.jpg",
 C0_LESTE = "https://i.imgur.com/6RDjzdv.jpg",
@@ -101,7 +101,7 @@ class Sala3Dlongo:
             b = 0
             
         for direcao, parede in enumerate(img_list):
-            if i%2 == 0:
+            if i % 2 == 0:
                 parede_ = box(pos=(c*2*b*POS[direcao][0]+p[0], 0, -c*2*a*POS[direcao][1]+p[1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
             else:    
                 parede_ = box(pos=(2*POS[direcao][0]+p[0], 0, -2*POS[direcao][1]+p[1]), size=(0.2, 4, 4*c), texture=dict(file=parede, place=["right"]))
@@ -122,14 +122,10 @@ class Museu:
 
 #SALA 0
 Sala3Dlongo(IMGS[0], p=(6,0,0,2))
-#Sala3D(IMGS[0], p=(8,0))
 
 #SALA 1
 Sala3Dgrande(IMGS[1], p=(6,-6.1))
-#Sala3D(IMGS[1], p=(4,-8.1))
 Sala3D(IMGS[1], p=(4,-12.1))
-#Sala3D(IMGS[1], p=(8,-4.1))
-#Sala3D(IMGS[1], p=(8,-8.1))
 Sala3D(IMGS[1], p=(8,-12.1))
 
 #SALA 9
@@ -139,13 +135,14 @@ Sala3D(IMGS[9], p=(0,0))
 Sala3D(IMGS[8], p=(0,-4))
 
 #SALA 2
-#Sala3D(IMGS[2], p=(0,-8.1))
 Sala3Dlongo(IMGS[2], p=(0,-10.2,1,2))
 
 #SALA E
 Sala3D(IMGS[2], p=(-4,0))
+
 #SALA 7
 Sala3D(IMGS[7], p=(-4, -4))
+
 #SALA A
 Sala3D(IMGS[0], p=(-4,-8))
 Sala3D(IMGS[0], p=(-4,-12))
@@ -163,10 +160,8 @@ Sala3D(IMGS[0], p=(-12,0))
 Sala3D(IMGS[3], p=(-8,-8))
 
 #SALA 4 longa 2 x 2
-#Sala3Dgrande(IMGS[4], p=(-12,-12))
-#Sala3Dgrande(IMGS[4], p=(-12,-8))
 Sala3Dgrande(IMGS[4], p=(-14,-10))
-#Sala3Dgrande(IMGS[4], p=(-16,-8))
+
 
 #SALA 5 longa 2 x 1
 Sala3D(IMGS[5], p=(-16,-4))
@@ -174,11 +169,9 @@ Sala3D(IMGS[5], p=(-16,0))
 
 #SALA B longa 2 x 1
 Sala3Dlongo(IMGS[3], p=(-20,-10,1,2))
-#Sala3D(IMGS[3], p=(-20,-8))
+
 
 #SALA 6 sala longa 3 x 1
-#Sala3D(IMGS[6], p=(-20,-4))
 Sala3Dlongo(IMGS[6], p=(-20,0,1,3))
-#Sala3D(IMGS[6], p=(-20,4))
 
 #Museu()
