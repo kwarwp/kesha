@@ -374,3 +374,10 @@ SyntaxError: non-keyword arg after keyword arg
     Sala3Dlonga(IMGS[2], p=(0,-20,1))
 NameError: name 'Sala3Dlonga' is not defined
 '''},
+{'date': 'Wed Sep 12 2018 22:27:30.836 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 147
+  Sala3Dlongo(IMGS[0], p=(0,-10.2,1,4)
+                                                                               ^
+SyntaxError: invalid syntax
+'''},
