@@ -138,18 +138,18 @@ Sala3D(IMGS[7], p=(-4.2, -4.1))
 #SALA A
 Sala3Dlongo(IMGS[0], p=(-4.2,-10.2,1,2))
 #SALA D
-Sala3Dlongo(IMGS[1], p=(-8,-2, 1, 2))
+Sala3Dlongo(IMGS[1], p=(-8.2,-2, 1, 2))
 #SALA 3
-Sala3Dlongo(IMGS[3], p=(-8,-10.1,1,2))
+Sala3Dlongo(IMGS[3], p=(-8.2,-10.1,1,2))
 #SALA C
-Sala3Dlongo(IMGS[0], p=(-12,-2, 1, 2))
+Sala3Dlongo(IMGS[0], p=(-12.3,-2, 1, 2))
 #SALA 4 
-Sala3Dgrande(IMGS[4], p=(-14.1,-10))
+Sala3Dgrande(IMGS[4], p=(-14.3,-10))
 #SALA 5 
-Sala3Dlongo(IMGS[5], p=(-16,-2, 1, 2))
+Sala3Dlongo(IMGS[5], p=(-16.4,-2, 1, 2))
 #SALA B 
-Sala3Dlongo(IMGS[3], p=(-20,-10,1,2))
-#SALA 6 sala longa 3 x 1
-Sala3Dlongo(IMGS[6], p=(-20,0,1,3))
+Sala3Dlongo(IMGS[3], p=(-20.4,-10,1,2))
+#SALA 6 
+Sala3Dlongo(IMGS[6], p=(-20.4,0,1,3))
 
 #Museu()
