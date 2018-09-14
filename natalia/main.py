@@ -92,6 +92,19 @@ class Sala3Dgrande:
             parede_ = box(pos=(4*POS[direcao][0]+p[0], 0, -4*POS[direcao][1]+p[1]), size=(0.2, 4, 8), texture=dict(file=parede, place=["right"]))
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 
+class Sala3Dteste:
+    def __init__(self, img_list, p=(0,0,0,0)):
+        a = p[2] 
+        c = p[3]
+        
+        for direcao, parede in enumerate(img_list):
+            if direcao % 2 == 0:
+                parede_ = box(pos=(a*POS[direcao][0]+p[0], 0, -c*POS[direcao][1]+p[1]), size=(0.2, 4, 2*c), texture=dict(file=parede, place=["right"]))
+            else:    
+                parede_ = box(pos=(c*POS[direcao][0]+p[0], 0, -a*POS[direcao][1]+p[1]), size=(0.2, 4, 2*a), texture=dict(file=parede, place=["right"]))
+
+            parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
+
 class Sala3Dlongo:
     def __init__(self, img_list, p=(0,0,0,0)):
         i = a = p[2] 
@@ -109,6 +122,7 @@ class Sala3Dlongo:
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
             i += 1
 
+
 class Museu:
     def __init__(self):
         cena = Cena(MUSEU["C9_OESTE"])
@@ -121,7 +135,7 @@ class Museu:
 # Sala3D(IMG_LIST1, p=(4, 0))
 
 #SALA 0
-Sala3Dlongo(IMGS[0], p=(6,0,0,2))
+Sala3Dteste(IMGS[0], p=(8,4,2,1))
 #SALA 1
 Sala3Dgrande(IMGS[1], p=(6,-6.1))
 Sala3Dlongo(IMGS[1], p=(6,-12.2,0, 2))
