@@ -144,7 +144,7 @@ Sala3D(IMGS[2], p=(-4,0))
 Sala3D(IMGS[7], p=(-4, -4))
 
 #SALA A
-Sala3Dlongo(IMGS[0], p=(0,-12.2,1,2))
+Sala3Dlongo(IMGS[0], p=(0,-10.2,2,2))
 #Sala3D(IMGS[0], p=(-4,-12))
 
 
