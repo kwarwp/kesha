@@ -3,8 +3,8 @@ from _spy.vitollino.main import Cena, STYLE, Codigo, Elemento
 from _spy.vpython.main import *
 from browser import doc
 from math import pi
-STYLE["width"] = 1200
-STYLE["height"] = "850px"
+STYLE["width"] = 1000
+STYLE["height"] = "800px"
 MUSEU = dict(
 C0_NORTE = "https://i.imgur.com/PbNGJ2M.jpg",
 C0_LESTE = "https://i.imgur.com/6RDjzdv.jpg",
@@ -74,7 +74,7 @@ doc['pydiv'].html = ''
 _gs = Glow('pydiv')
 scene = canvas()
 scene.width = 1200
-scene.height = 850
+scene.height = 800
 #scene = canvas(left=100,top="10px", width=1000,height="800px")
 
 POS=[(-1,0),(0,1),(1,0),(0,-1)]
