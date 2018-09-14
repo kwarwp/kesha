@@ -73,6 +73,8 @@ IMGS = [[MUSEU["C{:01X}{}".format(sala, rosa)] for rosa in ROSA] for sala in ran
 doc['pydiv'].html = ''
 _gs = Glow('pydiv')
 scene = canvas()
+scene.width = 1200
+scene.height = 850
 #scene = canvas(left=100,top="10px", width=1000,height="800px")
 
 POS=[(-1,0),(0,1),(1,0),(0,-1)]
