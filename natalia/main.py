@@ -121,6 +121,7 @@ class Sala3Dlongo:
 
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
             i += 1
+"""
 class Museu:
     def __init__(self):
         cena = Cena(MUSEU["C9_OESTE"])
@@ -129,9 +130,9 @@ class Museu:
                 Elemento(prd, style = dict(left=i*110, top =j*110, width=100, height="80px")).entra(cena)
         cena.vai()
         
-Sala3D(IMG_LIST)    
-Sala3D(IMG_LIST1, p=(4, 0))
-"""
+#Sala3D(IMG_LIST)    
+#Sala3D(IMG_LIST1, p=(4, 0))
+
 #SALA 0
 Sala3D(IMGS[0], p=(8,4,3,1))
 #SALA 1
