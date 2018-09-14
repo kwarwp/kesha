@@ -79,7 +79,7 @@ scene.height = 800
 
 
 POS=[(-1,0),(0,1),(1,0),(0,-1)]
-
+"""
 class Sala3D:
     def __init__(self, img_list, p=(0,0)):
         for direcao, parede in enumerate(img_list):
@@ -91,20 +91,20 @@ class Sala3Dgrande:
         for direcao, parede in enumerate(img_list):
             parede_ = box(pos=(4*POS[direcao][0]+p[0], 0, -4*POS[direcao][1]+p[1]), size=(0.2, 4, 8), texture=dict(file=parede, place=["right"]))
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
-
-class Sala3Dteste:
+"""
+class Sala3D:
     def __init__(self, img_list, p=(0,0,0,0)):
         a = p[2] 
         c = p[3]
         
         for direcao, parede in enumerate(img_list):
             if direcao % 2 == 0:
-                parede_ = box(pos=(a*POS[direcao][0]+p[0], 0, -c*POS[direcao][1]+p[1]), size=(0.2, 4, 2*c), texture=dict(file=parede, place=["right"]))
+                parede_ = box(pos=(a*2*POS[direcao][0]+p[0], 0, -c*2*POS[direcao][1]+p[1]), size=(0.2, 4, 4*c), texture=dict(file=parede, place=["right"]))
             else:    
-                parede_ = box(pos=(c*POS[direcao][0]+p[0], 0, -a*POS[direcao][1]+p[1]), size=(0.2, 4, 2*a), texture=dict(file=parede, place=["right"]))
+                parede_ = box(pos=(a*2*POS[direcao][0]+p[0], 0, -c*2*POS[direcao][1]+p[1]), size=(0.2, 4, 4*a), texture=dict(file=parede, place=["right"]))
 
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
-
+"""
 class Sala3Dlongo:
     def __init__(self, img_list, p=(0,0,0,0)):
         i = a = p[2] 
@@ -121,8 +121,6 @@ class Sala3Dlongo:
 
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
             i += 1
-
-
 class Museu:
     def __init__(self):
         cena = Cena(MUSEU["C9_OESTE"])
@@ -130,40 +128,40 @@ class Museu:
             for j, prd in enumerate(sala):
                 Elemento(prd, style = dict(left=i*110, top =j*110, width=100, height="80px")).entra(cena)
         cena.vai()
-    
-# Sala3D(IMG_LIST)    
-# Sala3D(IMG_LIST1, p=(4, 0))
-
+        
+Sala3D(IMG_LIST)    
+Sala3D(IMG_LIST1, p=(4, 0))
+"""
 #SALA 0
-Sala3Dteste(IMGS[0], p=(8,4,2,1))
+Sala3D(IMGS[0], p=(8,4,3,1))
 #SALA 1
-Sala3Dgrande(IMGS[1], p=(6,-6.1))
-Sala3Dlongo(IMGS[1], p=(6,-12.2,0, 2))
+Sala3D(IMGS[1], p=(6,-6.1, 1 ,1))
+Sala3D(IMGS[1], p=(6,-12.2,0, 2))
 #SALA 9
-Sala3D(IMGS[9], p=(-0.1,0))
+Sala3D(IMGS[9], p=(-0.1,0,1,1))
 #SALA 8
 Sala3D(IMGS[8], p=(-0.1,-4.1))
 #SALA 2
-Sala3Dlongo(IMGS[2], p=(-0.1,-10.2,1,2))
+Sala3D(IMGS[2], p=(-0.1,-10.2,1,2))
 #SALA E
-Sala3D(IMGS[2], p=(-4.2,0))
+Sala3D(IMGS[2], p=(-4.2,0,1,1))
 #SALA 7
-Sala3D(IMGS[7], p=(-4.2, -4.1))
+Sala3D(IMGS[7], p=(-4.2, -4.1,1,1))
 #SALA A
-Sala3Dlongo(IMGS[0], p=(-4.2,-10.2,1,2))
+Sala3D(IMGS[0], p=(-4.2,-10.2,1,2))
 #SALA D
-Sala3Dlongo(IMGS[3], p=(-8.2,-2, 1, 2))
+Sala3D(IMGS[3], p=(-8.2,-2, 1, 2))
 #SALA 3
-Sala3Dlongo(IMGS[3], p=(-8.2,-10.1,1,2))
+Sala3D(IMGS[3], p=(-8.2,-10.1,1,2))
 #SALA C
-Sala3Dlongo(IMGS[0], p=(-12.3,-2, 1, 2))
+Sala3D(IMGS[0], p=(-12.3,-2, 1, 2))
 #SALA 4 
-Sala3Dgrande(IMGS[4], p=(-14.3,-10))
+Sala3D(IMGS[4], p=(-14.3,-10,1,1))
 #SALA 5 
-Sala3Dlongo(IMGS[5], p=(-16.4,-2, 1, 2))
+Sala3D(IMGS[5], p=(-16.4,-2, 1, 2))
 #SALA B 
-Sala3Dlongo(IMGS[3], p=(-20.4,-10,1,2))
+Sala3D(IMGS[3], p=(-20.4,-10,1,2))
 #SALA 6 
-Sala3Dlongo(IMGS[6], p=(-20.4,0,1,3))
+Sala3D(IMGS[6], p=(-20.4,0,1,3))
 
 #Museu()
