@@ -72,7 +72,7 @@ IMGS = [[MUSEU["C{:01X}{}".format(sala, rosa)] for rosa in ROSA] for sala in ran
 
 doc['pydiv'].html = ''
 _gs = Glow('pydiv')
-scene = canvas()
+scene = canvas(left=100,top="10px", width=1000,height="800px")
 
 POS=[(-1,0),(0,1),(1,0),(0,-1)]
 
@@ -80,26 +80,22 @@ class Sala3D:
     def __init__(self, img_list, p=(0,0)):
         for direcao, parede in enumerate(img_list):
             parede_ = box(pos=(2*POS[direcao][0]+p[0], 0, -2*POS[direcao][1]+p[1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
-            
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 
 class Sala3Dgrande:
     def __init__(self, img_list, p=(0,0)):
         for direcao, parede in enumerate(img_list):
             parede_ = box(pos=(4*POS[direcao][0]+p[0], 0, -4*POS[direcao][1]+p[1]), size=(0.2, 4, 8), texture=dict(file=parede, place=["right"]))
-            
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 
 class Sala3Dlongo:
     def __init__(self, img_list, p=(0,0,0,0)):
         i = a = p[2] 
         c = p[3]
-        
         if a == 0:
             b = 1
         else:
             b = 0
-            
         for direcao, parede in enumerate(img_list):
             if i % 2 == 0:
                 parede_ = box(pos=(c*2*b*POS[direcao][0]+p[0], 0, -c*2*a*POS[direcao][1]+p[1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
