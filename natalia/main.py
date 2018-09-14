@@ -137,10 +137,10 @@ class Museu:
 Sala3D(IMGS[0], p=(6,0,2,1))
 #SALA 1
 Sala3D(IMGS[1], p=(6,-8.1,2 ,3))
-'''#SALA 9
+#SALA 9
 Sala3D(IMGS[9], p=(-0.1,0,1,1))
 #SALA 8
-Sala3D(IMGS[8], p=(-0.1,-4.1))
+Sala3D(IMGS[8], p=(-0.1,-4.1,1,1))
 #SALA 2
 Sala3D(IMGS[2], p=(-0.1,-10.2,1,2))
 #SALA E
@@ -150,18 +150,18 @@ Sala3D(IMGS[7], p=(-4.2, -4.1,1,1))
 #SALA A
 Sala3D(IMGS[0], p=(-4.2,-10.2,1,2))
 #SALA D
-Sala3D(IMGS[3], p=(-8.2,-2, 1, 2))
+Sala3D(IMGS[3], p=(-8.3,-2, 1, 2))
 #SALA 3
-Sala3D(IMGS[3], p=(-8.2,-10.1,1,2))
+Sala3D(IMGS[3], p=(-8.3,-10.2,1,2))
 #SALA C
-Sala3D(IMGS[0], p=(-12.3,-2, 1, 2))
+Sala3D(IMGS[0], p=(-12.4,-2, 1, 2))
 #SALA 4 
-Sala3D(IMGS[4], p=(-14.3,-10,1,1))
+Sala3D(IMGS[4], p=(-14.5,-10.2,2,2))
 #SALA 5 
-Sala3D(IMGS[5], p=(-16.4,-2, 1, 2))
+Sala3D(IMGS[5], p=(-16.5,-2, 1, 2))
 #SALA B 
-Sala3D(IMGS[3], p=(-20.4,-10,1,2))
+Sala3D(IMGS[3], p=(-20.6,-10.2,1,2))
 #SALA 6 
-Sala3D(IMGS[6], p=(-20.4,0,1,3))'''
+Sala3D(IMGS[6], p=(-20.6,0,1,3))
 
 #Museu()
