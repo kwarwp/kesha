@@ -126,30 +126,29 @@ Sala3Dlongo(IMGS[0], p=(6,0,0,2))
 Sala3Dgrande(IMGS[1], p=(6,-6.1))
 Sala3Dlongo(IMGS[1], p=(6,-12.2,0, 2))
 #SALA 9
-Sala3D(IMGS[9], p=(0,0))
+Sala3D(IMGS[9], p=(-0.1,0))
 #SALA 8
-Sala3D(IMGS[8], p=(0,-4))
+Sala3D(IMGS[8], p=(-0.1,-4.1))
 #SALA 2
-Sala3Dlongo(IMGS[2], p=(0,-10.2,1,2))
+Sala3Dlongo(IMGS[2], p=(-0.1,-10.2,1,2))
 #SALA E
-Sala3D(IMGS[2], p=(-4,0))
+Sala3D(IMGS[2], p=(-4.2,0))
 #SALA 7
-Sala3D(IMGS[7], p=(-4, -4))
+Sala3D(IMGS[7], p=(-4.2, -4.1))
 #SALA A
-Sala3Dlongo(IMGS[0], p=(-4,-10.2,1,2))
+Sala3Dlongo(IMGS[0], p=(-4.2,-10.2,1,2))
 #SALA D
 Sala3Dlongo(IMGS[1], p=(-8,-2, 1, 2))
 #SALA 3
-Sala3Dlongo(IMGS[3], p=(-8,-10,1,2))
-#SALA  C
+Sala3Dlongo(IMGS[3], p=(-8,-10.1,1,2))
+#SALA C
 Sala3Dlongo(IMGS[0], p=(-12,-2, 1, 2))
-#SALA 4 longa 2 x 2
-Sala3Dgrande(IMGS[4], p=(-14,-10))
-#SALA 5 longa 2 x 1
-Sala3D(IMGS[5], p=(-16,-4, 1, 2))
-#SALA B longa 2 x 1
+#SALA 4 
+Sala3Dgrande(IMGS[4], p=(-14.1,-10))
+#SALA 5 
+Sala3Dlongo(IMGS[5], p=(-16,-2, 1, 2))
+#SALA B 
 Sala3Dlongo(IMGS[3], p=(-20,-10,1,2))
-
 #SALA 6 sala longa 3 x 1
 Sala3Dlongo(IMGS[6], p=(-20,0,1,3))
 
