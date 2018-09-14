@@ -69,13 +69,14 @@ C9_OESTE = "https://i.imgur.com/SJ5c9tV.jpg")
 
 ROSA = "_NORTE,_LESTE,_SUL,_OESTE".split(",")
 IMGS = [[MUSEU["C{:01X}{}".format(sala, rosa)] for rosa in ROSA] for sala in range(15)]
+#IMGS = [[MUSEU["C{:15}{}".format(sala, rosa)] for rosa in ROSA] for sala in range(15)]
 
 doc['pydiv'].html = ''
 _gs = Glow('pydiv')
 scene = canvas()
 scene.width = 1200
 scene.height = 800
-#scene = canvas(left=100,top="10px", width=1000,height="800px")
+
 
 POS=[(-1,0),(0,1),(1,0),(0,-1)]
 
@@ -137,7 +138,7 @@ Sala3D(IMGS[7], p=(-4.2, -4.1))
 #SALA A
 Sala3Dlongo(IMGS[0], p=(-4.2,-10.2,1,2))
 #SALA D
-Sala3Dlongo(IMGS[1], p=(-8.2,-2, 1, 2))
+Sala3Dlongo(IMGS[3], p=(-8.2,-2, 1, 2))
 #SALA 3
 Sala3Dlongo(IMGS[3], p=(-8.2,-10.1,1,2))
 #SALA C
