@@ -140,19 +140,13 @@ Sala3Dlongo(IMGS[0], p=(-4,-10.2,1,2))
 #SALA D
 Sala3Dlongo(IMGS[1], p=(-8,-2, 1, 2))
 #SALA 3
-Sala3Dlongo(IMGS[3], p=(-8,-12,1,2))
+Sala3Dlongo(IMGS[3], p=(-8,-10,1,2))
 #SALA  C
-Sala3D(IMGS[0], p=(-12,-4))
-#Sala3D(IMGS[0], p=(-12,0))
-#Sala3D(IMGS[3], p=(-8,-8))
-
+Sala3Dlongo(IMGS[0], p=(-12,-2, 1, 2))
 #SALA 4 longa 2 x 2
 Sala3Dgrande(IMGS[4], p=(-14,-10))
-
 #SALA 5 longa 2 x 1
-Sala3D(IMGS[5], p=(-16,-4))
-Sala3D(IMGS[5], p=(-16,0))
-
+Sala3D(IMGS[5], p=(-16,-4, 1, 2))
 #SALA B longa 2 x 1
 Sala3Dlongo(IMGS[3], p=(-20,-10,1,2))
 
