@@ -437,3 +437,10 @@ SyntaxError: invalid syntax
                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Sep 14 2018 09:07:37.417 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 147
+  Sala3Dlongo(IMGS[0], p=(0,-12.2,1,2)
+                                                                               ^
+SyntaxError: invalid syntax
+'''},
