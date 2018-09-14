@@ -134,11 +134,10 @@ class Museu:
 #Sala3D(IMG_LIST1, p=(4, 0))
 
 #SALA 0
-Sala3D(IMGS[0], p=(8,4,3,1))
+Sala3D(IMGS[0], p=(6,0,2,1))
 #SALA 1
-Sala3D(IMGS[1], p=(6,-6.1, 1 ,1))
-Sala3D(IMGS[1], p=(6,-12.2,0, 2))
-#SALA 9
+Sala3D(IMGS[1], p=(6,-8.1,2 ,3))
+'''#SALA 9
 Sala3D(IMGS[9], p=(-0.1,0,1,1))
 #SALA 8
 Sala3D(IMGS[8], p=(-0.1,-4.1))
@@ -163,6 +162,6 @@ Sala3D(IMGS[5], p=(-16.4,-2, 1, 2))
 #SALA B 
 Sala3D(IMGS[3], p=(-20.4,-10,1,2))
 #SALA 6 
-Sala3D(IMGS[6], p=(-20.4,0,1,3))
+Sala3D(IMGS[6], p=(-20.4,0,1,3))'''
 
 #Museu()
