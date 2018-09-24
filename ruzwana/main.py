@@ -23,7 +23,7 @@ dt = 0.01
 while True:
     rate(1/dt)
     if running:
-        cubos1.rotate(angle=sl.value*dt, axis=vector(0,1,0))
+        cubos1.rotate(angle=100*dt, axis=vector(0,1,0))
 
 
 
