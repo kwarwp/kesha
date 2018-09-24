@@ -27,3 +27,10 @@ SyntaxError: invalid syntax
                                                                                       ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 24 2018 17:33:01.494 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  cubos1 = [box(pos=(x[0], x[1], 0), size=(1, 1, 1), **bloco) for x in enumerate(list 1)] 
+                                                                                       ^
+SyntaxError: invalid syntax
+'''},
