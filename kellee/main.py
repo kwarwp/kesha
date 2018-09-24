@@ -6,12 +6,14 @@ STYLE["width"] = 700
 STYLE["height"] = "600px"
 FUNDO = "https://i.imgur.com/EzWk7Jl.jpg"
 QAZUL = "https://i.imgur.com/lWDGIvc.jpg"
+
 TENTAR = "https://i.imgur.com/PRjuqrZ.png"
 DESISTO = "https://i.imgur.com/GkqfWc3.png"
 NAOQUEROJOGAR = "https://i.imgur.com/8JGhyAA.png"
 TERMINEI = "https://i.imgur.com/9dtdzcP.png"
 JATERMINEI = "https://i.imgur.com/2OIhpY3.png"
 BUTTONS = [TENTAR, DESISTO, NAOQUEROJOGAR, TERMINEI, JATERMINEI]
+
 Pilha_Cartas_top = 30
 Pilha_Cartas_left = 30
 TBX, TBY = 80, 80
@@ -36,6 +38,27 @@ class Tabuleiro:
         simetria = [box(pos=(3, x * (1.2) - 2, 0), size=(1, 1, 1), **bloco) for x in range(4)]
         pts = [simetria1, simetria2] + simetria
         sup = compound(pts, pos=vec(2, 0, 0), axis=vec(4, 0, -1))
+        
+    # Cria figura fase 3 em 3d        
+    def _3da_(self):
+        doc['py3d'].html = ''
+        _gs = Glow('py3d')
+        scene = canvas()
+        bloco = dict(color=color.blue)
+        bloco1 = dict(color=color.white)
+
+        cubo1=box(pos=(1, -1.2, 0), size=(1,1,1) , **bloco)
+        cubo2=box(pos=(1, 0, 0), size=(1,1,1) , **bloco)
+        cubo3=box(pos=(-0.2, 0, 0), size=(1,1,1) , **bloco)
+        cubo4=box(pos=(-0.2, 1.2, 0), size=(1,1,1) , **bloco)
+        cubo5=box(pos=(-0.2, 1.2, 1.2), size=(1,1,1) , **bloco)
+        cubo5=box(pos=(-0.2, 0, -1.2), size=(1,1,1) , **bloco)
+        cubo6=box(pos=(-1.4, 0, 0), size=(1,1,1) , **bloco1)
+        cubo7=box(pos=(0, -2.4, 1.2), size=(1,1,1) , **bloco1)
+        cubo8=box(pos=(-1.2, -2.4, -1.2), size=(1,1,1) , **bloco1)
+        cubo9=box(pos=(-1.2, -3.6, -1.2), size=(1,1,1) , **bloco1)
+
+
         
     # Cria os botoes la de baixo e nome das casas          
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
