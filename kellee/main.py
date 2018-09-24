@@ -22,6 +22,7 @@ FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
 FASE3 = dict(numcartas=12, lado="e", _3d=True)
+FASE4 = dict(numcartas=15, lado="e", _3da=True)
 offset = dict(e=0, d=300)
 
 
@@ -69,6 +70,7 @@ class Tabuleiro:
             button_2=lambda:self.score("Desiste"), 
             button_3=lambda:self.score("errado"), 
             button_4=lambda:self.score("certo")) 
+        
         self.nome, self._3d = nome, _3d
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
         self.pilha_de_cartas = []
@@ -84,7 +86,6 @@ class Tabuleiro:
     # Cria as grades        
     def inicia_fase(self):
         [self.cria_tabuleiro(col=3, lin=self.linha, lado=l) for l in self.lado]
-        ###PILHA DE CARTAS###
         for i in range(self.numcartas):
             Carta(self, "carta_{}".format(i))
     
@@ -192,7 +193,7 @@ class Casa:
         casa_destino = casa.target.id
         Carta.move_carta(self.tabuleiro, Casa.CASA[casa_destino])
 
-class Jogo():
+class Jogo:
     JOGO = None
     def __init__(self):
         Jogo.JOGO = self
