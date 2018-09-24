@@ -22,7 +22,7 @@ inicio_x, inicio_y = 290, 128
 FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
-FASE3 = dict(numcartas=12, lado="e", _3d=True)
+FASE3 = dict(numcartas=12, lado="e", _3da=True)
 FASE4 = dict(numcartas=24, lado = "e", _3d=True)
 offset = dict(e=0, d=300)
 
@@ -63,7 +63,7 @@ class Tabuleiro:
 
         
     # Cria os botoes la de baixo e nome das casas          
-    def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
+    def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False, _3da=False):
         self.casa = {}
         self.numcartas, self.lado, self.linha = numcartas, lado, linha
         self.eventos = dict(button_0=lambda:self.score("replay", vai=True), 
@@ -72,6 +72,7 @@ class Tabuleiro:
             button_3=lambda:self.score("errado"), 
             button_4=lambda:self.score("certo")) 
         self.nome, self._3d = nome, _3d
+        self.nome, self._3da = nome, _3da
         self.elemento = tabuleiro_construido = Cena(img=FUNDO)
         self.pilha_de_cartas = []
         for i,button in enumerate(BUTTONS):
@@ -208,7 +209,7 @@ class Jogo():
         proximafase.proximafase(proximafase2)        
         proximafase3 = Tabuleiro(**FASE3)
         proximafase2.proximafase(proximafase3)
-        proximafase4 = Tabuleiro(**FASE4)
-        proximafase3.proximafase(proximafase4)
+        #proximafase4 = Tabuleiro(**FASE4)
+        #proximafase3.proximafase(proximafase4)
         self.tabuleiro.vai()
 Jogo()
