@@ -15,7 +15,7 @@ d = 1
 list1 = [(0,1.2 + d),(0,-1.2 - d),(-1.2 - d,0),(1.2 + d,0)]
 cubos1 = [box(pos=(x[0], x[1], 0), size=(1, 1, 1), **bloco) for x in list1] 
 list2 = [(0,1.2 + d),(0,-1.2 - d),(-1.2 - d,0),(1.2 + d,0)]
-ball = sphere[(pos=x[0], x[1], 0),, radius=0.3, **bloco1) for x in list2]
+ball = sphere[(pos=x[0], x[1], 0), radius=0.3, **bloco1) for x in list2]
 
 
 
