@@ -12,7 +12,7 @@ bloco = dict(color=color.blue)
 bloco1 = dict(color=color.white)
 
 
-cubos1 = [box(pos=(-2.2, 1.2, x * (1.2) - 0), size=(1, 1, 1), **bloco) for x in range(4)] 
+cubos1 = [box(pos=(-2.2 + (4.4) * x, 1.2 - (2.4) * y, 0), size=(1, 1, 1), **bloco) for x in range(2)for y in range(2)] 
 
 
 
