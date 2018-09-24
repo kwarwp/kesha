@@ -8,7 +8,7 @@ scene=canvas()
 scene.background= color.black #"rgba(0, 0, 200, 0.5)"
 scene.width = 1200
 scene.height = 800
-bloco = dict(color=color.blue)
+bloco = dict(color=color.blue, opacity=0.3)
 bloco1 = dict(color=color.white)
 
 d = 1
