@@ -24,7 +24,7 @@ offset = dict(e=0, d=300)
 
 
 class Tabuleiro:
-
+    # Cria figura fase 3 em 3d
     def _3d_(self):
         doc['py3d'].html = ''
         _gs = Glow('py3d')
@@ -36,7 +36,8 @@ class Tabuleiro:
         simetria = [box(pos=(3, x * (1.2) - 2, 0), size=(1, 1, 1), **bloco) for x in range(4)]
         pts = [simetria1, simetria2] + simetria
         sup = compound(pts, pos=vec(2, 0, 0), axis=vec(4, 0, -1))
-               
+        
+    # Cria os botoes la de baixo e nome das casas          
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
         self.casa = {}
         self.numcartas, self.lado, self.linha = numcartas, lado, linha
@@ -56,9 +57,9 @@ class Tabuleiro:
                         height="30px"))
             elem.img.id = "button_{}".format(i)
         self.inicia_fase()
-            
+        
+    # Cria as grades        
     def inicia_fase(self):
-        ### TABULEIRO DA ESQUERDA E DA DIREITA####
         [self.cria_tabuleiro(col=3, lin=self.linha, lado=l) for l in self.lado]
         ###PILHA DE CARTAS###
         for i in range(self.numcartas):
