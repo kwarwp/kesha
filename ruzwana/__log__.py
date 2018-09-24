@@ -85,3 +85,7 @@ Exception: <TypeError: Cannot read property '__class__' of undefined>
 'error': '''
 Exception: <TypeError: Cannot read property '__class__' of undefined>
 '''},
+{'date': 'Mon Sep 24 2018 17:57:15.816 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: Cannot read property '__class__' of undefined>
+'''},
