@@ -17,7 +17,13 @@ cubos1 = [box(pos=(x[0], x[1], 0), size=(1, 1, 1), **bloco) for x in list1]
 ball = [sphere(pos=(y[0], y[1], 0), radius=0.05, **bloco1) for y in list1]
 
 
-
+running = True
+  
+dt = 0.01
+while True:
+    rate(1/dt)
+    if running:
+        cubos1.rotate(angle=sl.value*dt, axis=vector(0,1,0))
 
 
 
