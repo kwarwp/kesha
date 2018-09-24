@@ -23,6 +23,7 @@ FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
 FASE3 = dict(numcartas=12, lado="e", _3da=True)
+FASE4 = dict(numcartas=15, lado = "e", _3da=True)
 offset = dict(e=0, d=300)
 
 
@@ -62,6 +63,26 @@ class Tabuleiro:
 
         
     # Cria os botoes la de baixo e nome das casas          
+    def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
+        self.casa = {}
+        self.numcartas, self.lado, self.linha = numcartas, lado, linha
+        self.eventos = dict(button_0=lambda:self.score("replay", vai=True), 
+            button_1=lambda:self.score("recusa"), 
+            button_2=lambda:self.score("Desiste"), 
+            button_3=lambda:self.score("errado"), 
+            button_4=lambda:self.score("certo")) 
+        self.nome, self._3d = nome, _3d
+        self.elemento = tabuleiro_construido = Cena(img=FUNDO)
+        self.pilha_de_cartas = []
+        for i,button in enumerate(BUTTONS):
+            elem = Elemento(button, cena=self.elemento, vai=self.buttonapertado,tit="button_{}_".format(i), style=dict(
+                        left=100 + 110*i,
+                        top="540px",
+                        width=100,
+                        height="30px"))
+            elem.img.id = "button_{}".format(i)
+        self.inicia_fase()
+        
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3da=False):
         self.casa = {}
         self.numcartas, self.lado, self.linha = numcartas, lado, linha
@@ -102,6 +123,18 @@ class Tabuleiro:
             return True
         self.eventos[env.target.id]()
         
+    def vai(self):
+        self.elemento.vai()
+        print(self._3d, len(self.pilha_de_cartas))
+        if self._3d:
+            self.display_do_3D = Elemento(FUNDO, tit="py3d", style=dict(
+                left=700,
+                top="10px",
+                width=300,
+                height="600px"))
+            self.display_do_3D.entra(self.elemento)
+            self._3d_()
+            
     def vai(self):
         self.elemento.vai()
         print(self._3da, len(self.pilha_de_cartas))
@@ -207,5 +240,7 @@ class Jogo():
         proximafase.proximafase(proximafase2)        
         proximafase3 = Tabuleiro(**FASE3)
         proximafase2.proximafase(proximafase3)
+        proximafase4 = Tabuleiro(**FASE4)
+        proximafase3.proximafase(proximafase4)
         self.tabuleiro.vai()
 Jogo()
