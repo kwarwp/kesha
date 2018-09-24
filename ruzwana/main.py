@@ -14,7 +14,7 @@ bloco1 = dict(color=color.red)
 d = 1
 list1 = [(0,1.2 + d),(0,-1.2 - d),(-1.2 - d,0),(1.2 + d,0)]
 cubos1 = [box(pos=(x[0], x[1], 0), size=(1, 1, 1), **bloco) for x in list1] 
-ball = [sphere(pos=(y[0], y[1], 0), radius=0.3, **bloco1) for y in list1]
+ball = [sphere(pos=(y[0], y[1], 0), radius=0.2, **bloco1) for y in list1]
 
 
 
