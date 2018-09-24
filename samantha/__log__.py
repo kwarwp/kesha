@@ -812,3 +812,7 @@ Tabuleiro()
     simetria1 = box(pos=(4.2, -2, 0), size=(1, 1, 1), **bloco)
 NameError: name 'bloco' is not defined
 '''},
+{'date': 'Sun Sep 23 2018 23:49:25.142 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: Cannot read property 'canvas_selected' of undefined>
+'''},
