@@ -11,8 +11,9 @@ scene.height = 800
 bloco = dict(color=color.blue)
 bloco1 = dict(color=color.white)
 
-
-cubos1 = [box(pos=(-2.2 + (4.4) * x, 1.2 - (2.4) * y, 0), size=(1, 1, 1), **bloco) for x in range(2)for y in range(2)] 
+d = 1
+list1 = [(0,1.2 + d),(0,-1.2 - d),(-1.2 - d,0),(1.2 + d,0)]
+cubos1 = [box(pos=(x[0], x[1], 0), size=(1, 1, 1), **bloco) for x in list1] 
 
 
 
