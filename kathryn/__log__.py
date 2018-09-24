@@ -45,3 +45,10 @@ SyntaxError: non-keyword arg after keyword arg
                                                             ^
 SyntaxError: non-keyword arg after keyword arg
 '''},
+{'date': 'Mon Sep 24 2018 15:11:29.888 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  cubos1 = [box(pos = (-0.2, 1.2, 1.2*x),size(1, 1, 1),**bloco1)for x in range(2)]  # Os da primeira em cima
+                                                      ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
