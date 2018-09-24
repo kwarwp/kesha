@@ -40,7 +40,7 @@ class Tabuleiro:
         pts = [simetria1, simetria2] + simetria
         sup = compound(pts, pos=vec(2, 0, 0), axis=vec(4, 0, -1))
         
-    # Cria figura fase 3 em 3d        
+    # Cria figura fase 4 em 3d        
     def _3da_(self):
         doc['py3d'].html = ''
         _gs = Glow('py3d')
