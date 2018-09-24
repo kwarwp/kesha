@@ -39,7 +39,7 @@ class Tabuleiro:
         pts = [simetria1, simetria2] + simetria
         sup = compound(pts, pos=vec(2, 0, 0), axis=vec(4, 0, -1))
         
-    # Cria figura fase 3 em 3d        
+    # Cria figura fase 4 em 3d        
     def _3da_(self):
         doc['py3d'].html = ''
         _gs = Glow('py3d')
@@ -60,7 +60,7 @@ class Tabuleiro:
 
 
         
-    # Cria os botoes la de baixo e nome das casas          
+    # Cria os botoes  embaixo e nome das casas          
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
         self.casa = {}
         self.numcartas, self.lado, self.linha = numcartas, lado, linha
