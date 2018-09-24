@@ -62,3 +62,10 @@ SyntaxError: invalid syntax
                                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 24 2018 17:53:42.777 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  ball = sphere[(pos=x[0], x[1], 0), radius=0.3, **bloco1) for y in list1]
+                                    ^
+SyntaxError: invalid syntax
+'''},
