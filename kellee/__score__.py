@@ -1239,3 +1239,4 @@
   {'doc_id': '73ebf398', 'carta': 'carta_99', 'casa': 'centro_9_9', 'move': 'INICIA', 'ponto': 0, 'valor': 'N', '_level': 1, 'tempo': 1538176506720},
   {'doc_id': '73ebf398', 'carta': 'carta_99', 'casa': 'centro_9_9', 'move': 'INICIA', 'ponto': 0, 'valor': 'N', '_level': 1, 'tempo': 1538176507290},
   {'doc_id': '73ebf398', 'carta': 'carta_99', 'casa': 'centro_9_9', 'move': 'INICIA', 'ponto': 0, 'valor': 'N', '_level': 1, 'tempo': 1538176508205},
+  {'doc_id': '73ebf398', 'carta': 'carta_99', 'casa': 'centro_9_9', 'move': 'INICIA', 'ponto': 0, 'valor': 'N', '_level': 1, 'tempo': 1538176834348},
