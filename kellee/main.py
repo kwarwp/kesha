@@ -12,6 +12,7 @@ DESISTO = "https://i.imgur.com/GkqfWc3.png"
 NAOQUEROJOGAR = "https://i.imgur.com/8JGhyAA.png"
 TERMINEI = "https://i.imgur.com/9dtdzcP.png"
 JATERMINEI = "https://i.imgur.com/2OIhpY3.png"
+THE_END = "https://i.imgur.com/1iduvzP.jpg"
 BUTTONS = [TENTAR, DESISTO, NAOQUEROJOGAR, TERMINEI, JATERMINEI]
 
 Pilha_Cartas_top = 30
@@ -65,6 +66,7 @@ class Tabuleiro:
     # Cria os botoes  embaixo e nome das casas          
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
         self.casa = {}
+        self.the_end = Cena(THE_END)
         self.numcartas, self.lado, self.linha = numcartas, lado, linha
         self.eventos = dict(button_0=lambda:self.score("replay", vai=True), 
             button_1=lambda:self.score("recusa"), 
@@ -98,10 +100,10 @@ class Tabuleiro:
             Jogo.JOGO.reset()
         
     def buttonapertado(self, env):
-        print(env.target.id)
         if "button" not in env.target.id:
             return True
         self.eventos[env.target.id]()
+        print(env.target.id)
         
     def vai(self):
         self.elemento.vai()
