@@ -1012,3 +1012,10 @@ TypeError: __init__() got an unexpected keyword argument '_3da'
     proximafase4 = Tabuleiro(**FASE4)
 TypeError: __init__() got an unexpected keyword argument '_3da'
 '''},
+{'date': 'Tue Oct 02 2018 19:11:42.118 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module _spy.vpython.main line 31
+  return window.glowscript.canvas({width=width, height=height, background=background})
+                                                                                     ^
+SyntaxError: invalid syntax
+'''},
