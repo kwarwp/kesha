@@ -22,7 +22,7 @@ FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
 FASE3 = dict(numcartas=12, lado="e", _3d=1)
-FASE4 = dict(numcartas=15, lado="e", _3d=2)
+FASE4 = dict(numcartas=15, lado="e", _3d=2, linha=5)
 offset = dict(e=0, d=300)
 
 
@@ -31,7 +31,7 @@ class Tabuleiro:
     def _3d_(self):
         doc['py3d'].html = ''
         _gs = Glow('py3d')
-        scene = canvas()
+        scene = canvas(height=600)
 
         bloco = dict(color=color.blue)
         simetria1 = box(pos=(4.2, -2, 0), size=(1, 1, 1), **bloco)
@@ -44,7 +44,7 @@ class Tabuleiro:
     def _3da_(self):
         doc['py3d'].html = ''
         _gs = Glow('py3d')
-        scene = canvas()
+        scene = canvas(height=600)
         bloco = dict(color=color.blue)
         bloco1 = dict(color=color.white)
 
