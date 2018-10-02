@@ -21,8 +21,8 @@ inicio_x, inicio_y = 290, 128
 FASE0 = dict(numcartas=12, lado="e")
 FASE1 = dict(numcartas=24, lado="ed")
 FASE2 = dict(numcartas=30, lado="ed", linha=5)
-FASE3 = dict(numcartas=12, lado="e", _3d=True)
-FASE4 = dict(numcartas=15, lado="e", _3da=True)
+FASE3 = dict(numcartas=12, lado="e", _3d=1)
+FASE4 = dict(numcartas=15, lado="e", _3d=2)
 offset = dict(e=0, d=300)
 
 
@@ -112,7 +112,10 @@ class Tabuleiro:
                 width=300,
                 height="600px"))
             self.display_do_3D.entra(self.elemento)
-            self._3d_()
+            if self._3d == 1:
+                self._3d_()
+            else:
+                self._3da_()
 
     def proximafase(self, tabuleiro):
         self.elemento.direita = tabuleiro #.elemento
