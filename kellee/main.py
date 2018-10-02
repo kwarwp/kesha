@@ -110,7 +110,7 @@ class Tabuleiro:
                 left=700,
                 top="10px",
                 width=300,
-                height="600px"))
+                height="700px"))
             self.display_do_3D.entra(self.elemento)
             if self._3d == 1:
                 self._3d_()
