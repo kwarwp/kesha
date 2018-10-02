@@ -66,7 +66,6 @@ class Tabuleiro:
     # Cria os botoes  embaixo e nome das casas          
     def __init__(self, nome="esquerda", numcartas=12, lado="e", linha=4, _3d=False):
         self.casa = {}
-        self.the_end = Cena(THE_END)
         self.numcartas, self.lado, self.linha = numcartas, lado, linha
         self.eventos = dict(button_0=lambda:self.score("replay", vai=True), 
             button_1=lambda:self.score("recusa"), 
@@ -97,7 +96,7 @@ class Tabuleiro:
         if vai:
             self.inicia_fase()
         else:
-            Jogo.JOGO.reset()
+            Jogo.JOGO.busted()
         
     def buttonapertado(self, env):
         if "button" not in env.target.id:
@@ -203,7 +202,14 @@ class Jogo:
     JOGO = None
     def __init__(self):
         Jogo.JOGO = self
+        self.the_end = Cena(THE_END)
+        go = Cena()
+        go.vai = self.reset
+        self.the_end.meio = go
         self.reset()
+        
+    def busted(self):
+        self.the_end.vai()
         
     def reset(self):
         self.tabuleiro =  Tabuleiro()
