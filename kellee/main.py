@@ -31,8 +31,8 @@ class Tabuleiro:
     def _3d_(self):
         doc['py3d'].html = ''
         _gs = Glow('py3d')
-        scene = canvas(height=600)
-        scene.height=600
+        scene = canvas(height=580)
+        scene.height=580
         bloco = dict(color=color.blue)
         simetria1 = box(pos=(4.2, -2, 0), size=(1, 1, 1), **bloco)
         simetria2 = box(pos=(1.8, 1.6, 0), size=(1, 1, 1), **bloco)
@@ -44,8 +44,8 @@ class Tabuleiro:
     def _3da_(self):
         doc['py3d'].html = ''
         _gs = Glow('py3d')
-        scene = canvas(height=600)
-        scene.height=600
+        scene = canvas(height=580)
+        scene.height=580
         bloco = dict(color=color.blue)
         bloco1 = dict(color=color.white)
 
