@@ -1370,3 +1370,4 @@
       {'doc_id': '487878ad', 'carta': 'carta_24', 'casa': 'esquerda_4_1_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1538508683625},
       {'doc_id': '487878ad', 'carta': 'carta_23', 'casa': 'esquerda_4_0_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1538508684922},
       {'doc_id': '487878ad', 'carta': 'carta_22', 'casa': 'esquerda_0_0_e', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1538508687810},
+      {'doc_id': '487878ad', 'carta': 'carta_21', 'casa': 'esquerda_1_0_e', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1538508689074},
