@@ -37,6 +37,39 @@ LEGENDAS = "vestiário abriu_o_armário o_asseio acionou_a_pia molhando_as_mãos
            " as_bactérias enxaguando secando descontaminando saindo teste".split()
 
 class Config:
+ x=8.0/6.0
+    debug = False
+    
+    """"""
+    CONFIGURA = dict(
+        origem=\
+        ["vestiário#vestiário#Asseio#Você deve por o avental", debug, dict(left=214, top=112//x, width=113, height=221)],
+        vestiário=\
+        ["vestiário#abriu_o_armário#Asseio#Você deve por o avental", debug, dict(left=407, top=35//x, width=115, height=175)],
+        abriu_o_armário=\
+        ["abriu_o_armário#o_asseio#Asseio#Você deve lavar as mão", debug, dict(left=437, top=127//x, width=109, height=300)],
+        o_asseio=\
+        ["o_asseio#acionou_a_pia#o_asseio#acionou_a_pia", debug, dict(left=354, top=653//x, width=60, height=60)],
+        acionou_a_pia=\
+        ["acionou_a_pia#molhando_as_mãos#o_asseio#acionou_a_pia", debug, dict(left=313, top=390//x, width=171, height=96)],
+        molhando_as_mãos=\
+        ["molhando_as_mãos#usando_sabão#o_asseio#acionou_a_pia", debug, dict(left=316, top=276//x, width=54, height=95)],
+        usando_sabão=\
+        ["usando_sabão#as_bactérias#o_asseio#acionou_a_pia", debug, dict(left=310, top=403//x, width=188, height=121)],
+        as_bactérias=\
+        ["as_bactérias#enxaguando#o_asseio#acionou_a_pia", debug, dict(left=349, top=666//x, width=62, height=79)],
+        enxaguando=\
+        ["enxaguando#secando#o_asseio#acionou_a_pia", debug, dict(left=381, top=252//x, width=81, height=121)],
+        secando=\
+        ["secando#descontaminando#o_asseio#acionou_a_pia", debug, dict(left=449, top=256//x, width=49, height=109)],
+        descontaminando=\
+        ["descontaminando#saindo#o_asseio#acionou_a_pia", debug, dict(left=610, top=116//x, width=181, height=676)],
+        saindo=\
+        ["saindo#teste#o_asseio#acionou_a_pia", debug, dict(left=610, top=116//x, width=181, height=676)],
+        teste=\
+        ["teste#saindo#o_asseio#acionou_a_pia", debug, dict(left=610, top=116//x, width=181, height=676)],
+    )
+
 
 class PreviaDoMomento:
     def __init__(self, jogo, destino):
