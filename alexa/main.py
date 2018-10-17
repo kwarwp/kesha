@@ -37,7 +37,7 @@ LEGENDAS = "vestiário abriu_o_armário o_asseio acionou_a_pia molhando_as_mãos
            " as_bactérias enxaguando secando descontaminando saindo teste".split()
 
 class Config:
- x=8.0/6.0
+    x=8.0/6.0
     debug = False
     
     """"""
@@ -69,7 +69,6 @@ class Config:
         teste=\
         ["teste#saindo#o_asseio#acionou_a_pia", debug, dict(left=610, top=116//x, width=181, height=676)],
     )
-
 
 class PreviaDoMomento:
     def __init__(self, jogo, destino):
