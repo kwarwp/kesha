@@ -23,9 +23,7 @@
 Gerador de labirintos e jogos tipo 'novel
 https://github.com/carlotolla/vitollino
 """
-from _spy.yoda.main import STYLE, INVENTARIO, Cena, Elemento
-from _spy.yoda.main import Texto
-from _spy.yoda.main import JOGO
+from _spy.yoda.main import STYLE, INVENTARIO, Cena, Elemento, Texto, JOGO
 from browser import window, html, document
 document["pydiv"].style.width="800px"
 document["pydiv"].style.minHeight="600px"
