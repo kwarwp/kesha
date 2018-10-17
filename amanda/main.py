@@ -1,24 +1,14 @@
 # kesha.amanda.main.py
-#tarzan/main.py
-#vader/main.py
 #! /usr/bin/env python
 # -*- coding: UTF8 -*-
-# Este arquivo é parte do programa Vittolino
-# Copyright 2011-2017 Carlo Oliveira <carlo@nce.ufrj.br>,
+# Este arquivo é parte do programa Vittolino Copyright 2011-2017 Carlo Oliveira <carlo@nce.ufrj.br>,
 # `Labase <http://labase.selfip.org/>`__, `GPL <http://is.gd/3Udt>`__.
-#
-# Vittolino é um software livre, você pode redistribuí-lo e/ou
-# modificá-lo dentro dos termos da Licença Pública Geral GNU como
-# publicada pela Fundação do Software Livre (FSF), na versão 2 da
-# Licença.
-#
-# Este programa é distribuído na esperança de que possa ser útil,
-# mas SEM NENHUMA GARANTIA, sem uma garantia implícita de ADEQUAÇÃO
-# a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
-# Licença Pública Geral GNU para maiores detalhes.
-#
-# Você deve ter recebido uma cópia da Licença Pública Geral GNU
-# junto com este programa, se não, veja em <http://www.gnu.org/licenses/>
+# Vittolino é um software livre, você pode redistribuí-lo e/ou modificá-lo dentro dos termos da Licença Pública Geral GNU como
+# publicada pela Fundação do Software Livre (FSF), na versão 2 da Licença.
+# Este programa é distribuído na esperança de que possa ser útil, mas SEM NENHUMA GARANTIA, sem uma garantia implícita 
+# de ADEQUAÇÃO a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a Licença Pública Geral GNU para maiores detalhes.
+# Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este programa, se não, 
+#veja em <http://www.gnu.org/licenses/>
 """
 Gerador de labirintos e jogos tipo 'novel
 https://github.com/carlotolla/vitollino
@@ -43,7 +33,6 @@ MOMENTOS = [
         for quadro, quadros in enumerate(QUADROS[i]) 
         for momento in quadros 
     ]
-    
 LEGENDAS = "vestiário abriu_o_armário o_asseio acionou_a_pia molhando_as_mãos usando_sabão" \
            " as_bactérias enxaguando secando descontaminando saindo teste".split()
 
@@ -51,40 +40,28 @@ class Config:
     """
     **CONFIGURA**
         Dicionário de configuração das cenas.
-
         ::
-
             CONFIGURA = dict(origem=["vestiário#armário#Asseio#Por o avental", True, dict(left=429))
-
         ===============================  ==============  =========
         Origem, Destino, Título e Texto  Com Popup       Hot Spot
         ===============================  ==============  =========
         "Origem#Destino#Título#Texto"    True or False   {"top":1}
         ===============================  ==============  =========
-
         **Origem, Destino, Título e Texto**
             String com partes separadas por **#**
-
             **Origem**
                 Nome da cena de origem, precisa ser uma chave de **CONFIGURA**
-
             **Destino**
                 Nome da cena de destino, precisa ser uma chave de **CONFIGURA**
-
             **Título**
                 Título do popup de texto
-
             **Texto**
                 Texto do popup de texto
-
         **Com Popup**
             Determina se vai aparecer o popup de texto na transição de cenas
-
         **Hot Spot**
             Dicionário com as dimensões do hot spot que vai receber o click
-
             ::
-
                 dict(left=429, top=112, width=109, height=300)
     """
     x=8.0/6.0
