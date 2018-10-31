@@ -1902,3 +1902,4 @@
   {'doc_id': 'bb6e26b6', 'carta': 'carta_99', 'casa': 'centro_9_9', 'move': 'INICIA', 'ponto': 0, 'valor': 'N', '_level': 1, 'tempo': 1541013159405},
   {'doc_id': 'bb6e26b6', 'carta': 'carta_99', 'casa': 'centro_9_9', 'move': 'INICIA', 'ponto': 0, 'valor': 'N', '_level': 1, 'tempo': 1541013159793},
       {'doc_id': 'bb6e26b6', 'carta': 'carta_11', 'casa': None, 'move': 'REMOVE', 'ponto': -1, 'valor': 'N', '_level': 3, 'tempo': 1541013165184},
+      {'doc_id': 'bb6e26b6', 'carta': 'carta_11', 'casa': 'esquerda_0_1_e', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1541013166368},
