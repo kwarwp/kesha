@@ -2003,3 +2003,4 @@
       {'doc_id': '3637b487', 'carta': 'carta_15', 'casa': 'esquerda_3_0_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1542990883036},
       {'doc_id': '3637b487', 'carta': 'carta_14', 'casa': 'esquerda_2_0_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1542990883691},
       {'doc_id': '3637b487', 'carta': 'carta_13', 'casa': 'esquerda_1_0_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1542990884264},
+      {'doc_id': '3637b487', 'carta': 'carta_12', 'casa': 'esquerda_0_0_d', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1542990884846},
