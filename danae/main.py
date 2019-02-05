@@ -9,6 +9,7 @@ class Aresta(Componente):
     def __init__(self, nome, noh1, noh2):
         super().__init__(nome)
         self.nome = nome
+        self.noh1, self.noh2 = noh1, noh2
         
 class Noh(Componente):
     def __init__(self, nome):
@@ -17,4 +18,6 @@ class Noh(Componente):
 
 if __name__ == "__main__":
     n = Noh("nn")
-    print(n.nome)
+    n2 = Noh("Mari")
+    a = Aresta("Desg", n, n2)
+    print(a.nome, a.noh1, a.noh2)
