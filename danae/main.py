@@ -20,4 +20,4 @@ if __name__ == "__main__":
     n = Noh("nn")
     n2 = Noh("Mari")
     a = Aresta("Desg", n, n2)
-    print(a.nome, a.noh1, a.noh2)
+    print(a.nome, a.noh1.nome, a.noh2.nome)
