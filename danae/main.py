@@ -6,11 +6,11 @@ class Aresta(Componente):
         super().__init__(nome)
         self.nome = nome
         
-class noh(Componente):
+class Noh(Componente):
     def __init__(self, nome):
         super().__init__(nome)
         self.nome = nome
 
 if __name__ == "__main__":
-    n = noh("nn")
+    n = Noh("nn")
     print(n.nome)
