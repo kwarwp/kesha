@@ -1,5 +1,4 @@
 # kesha.meredith.main.py
-from meredith import 
 
 
 class Componente():
