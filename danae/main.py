@@ -10,11 +10,16 @@ class Aresta(Componente):
         super().__init__(nome)
         self.nome = nome
         self.noh1, self.noh2 = noh1, noh2
+        noh1.adicionar(self)
+        noh2.adicionar(self)
         
 class Noh(Componente):
     def __init__(self, nome):
         super().__init__(nome)
         self.nome = nome
+        self.aresta = []
+    def adicionar(self,aresta):
+        self.aresta.append(aresta)
 
 if __name__ == "__main__":
     n = Noh("nn")
