@@ -11,4 +11,7 @@ indios ="https://i.imgur.com/RMc3y2v.png"
 def cicloagua():
     cenaAgua = Cena(img = "https://i.imgur.com/7xC9bET.jpg")
     cenaAgua.vai()
+    india = Elemento(img = "https://i.imgur.com/B6MiL1Y.jpg", 
+    tit = "India", 
+    style = dict (top = 150, left = 60, height = 60, width = 200))
 cicloagua()
