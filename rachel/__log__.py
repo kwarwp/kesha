@@ -132,3 +132,10 @@ AttributeError: 'str' object has no attribute 'vai'
                            ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Wed Apr 24 2019 19:50:04.531 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  cenaAgua = Cena(img = ciencia, 
+                                                                       ^
+SyntaxError: invalid syntax
+'''},
