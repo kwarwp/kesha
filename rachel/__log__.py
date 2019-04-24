@@ -125,3 +125,10 @@ AttributeError: 'Elemento' object has no attribute 'entrar'
     textourso.vai = urso.vai
 AttributeError: 'str' object has no attribute 'vai'
 '''},
+{'date': 'Wed Apr 24 2019 19:48:25.67 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  STYLE ["height"] = "600px
+                           ^
+SyntaxError: EOL while scanning string literal
+'''},
