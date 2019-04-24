@@ -13,7 +13,7 @@ def cicloagua():
     
     elementourso = Elemento(img = urso, 
                      tit = "Urso Marrom", 
-                     style = dict (top = 250, left = 25, height = 100, width = 75))
+                     style = dict (top = 500, left = 25, height = 100, width = 75))
     elementourso.entra(cenaAgua)
     textourso = Texto(cenaAgua,
                       "Urso marrom das montanhas do Alasca")
