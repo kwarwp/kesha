@@ -1,5 +1,5 @@
 # kesha.rachel.main.py
-from _spy.vitolino.main import Cena, Elemento, Texto
+from _spy.vitollino.main import Cena, Elemento, Texto
 #cicloagua = "https://i.imgur.com/7xC9bET.jpg"
 urso = "https://i.imgur.com/UvNnOfq.png"
 cervo = "https://i.imgur.com/1ymK1ct.jpg"
