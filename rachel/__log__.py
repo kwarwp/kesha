@@ -139,3 +139,10 @@ SyntaxError: EOL while scanning string literal
                                                                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Apr 24 2019 19:51:24.643 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  cenaAgua = Cena(img = ciencia, 
+                                                                       ^
+SyntaxError: invalid syntax
+'''},
