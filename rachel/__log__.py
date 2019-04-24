@@ -146,3 +146,10 @@ SyntaxError: invalid syntax
                                                                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Apr 24 2019 19:52:14.733 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  cenaAgua = Cena(img = ciencia, style = dict(height= 600px, width = 1200))
+                                                          ^
+SyntaxError: invalid syntax
+'''},
