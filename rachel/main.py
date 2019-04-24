@@ -1,6 +1,6 @@
 # kesha.rachel.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto
-#cicloagua = "https://i.imgur.com/7xC9bET.jpg"
+ciencia = "https://i.imgur.com/7xC9bET.jpg"
 urso = "https://i.imgur.com/UvNnOfq.png"
 cervo = "https://i.imgur.com/1ymK1ct.jpg"
 india ="https://i.imgur.com/B6MiL1Y.jpg"
@@ -9,9 +9,16 @@ indios ="https://i.imgur.com/RMc3y2v.png"
 
 
 def cicloagua():
-    cenaAgua = Cena(img = "https://i.imgur.com/7xC9bET.jpg")
+    cenaAgua = Cena(img = ciencia)
+    
+    elementourso = Elemento(img = urso, 
+                     tit = "Urso Marrom", 
+                     style = dict (top = 250, left = 25, height = 100, width = 75))
+    elementourso.entra(cenaAgua)
+    textourso = Texto(cenaAgua,
+                      "Urso marrom das montanhas do Alasca")
+    elementourso.vai = textourso.vai
+    
     cenaAgua.vai()
-    india = Elemento(img = "https://i.imgur.com/B6MiL1Y.jpg", 
-    tit = "India", 
-    style = dict (top = 150, left = 60, height = 60, width = 200))
 cicloagua()
+
