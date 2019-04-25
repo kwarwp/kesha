@@ -10,7 +10,7 @@ STYLE ["height"] = "600px"
 
 def cicloagua():
     cenaAgua = Cena(img = ciencia)
-    
+#CHAMA O ELEMENTO URSO E O TEXTO 
     elementourso = Elemento(img = urso, 
                      tit = "Urso Marrom", 
                      style = dict (top = 500, left = 25, height = 100, width = 75))
@@ -19,6 +19,14 @@ def cicloagua():
                       "Urso marrom das montanhas do Alasca")
     elementourso.vai = textourso.vai
     
+#CHAMA O ELEMENTO URSO E O TEXTO 
+    elementoindio = Elemento(img = indio, 
+                     tit = "Indio", 
+                     style = dict (top = 350, left = 25, height = 100, width = 75))
+    elementoindio.entra(cenaAgua)
+    textoindio = Texto(cenaAgua,
+                      "Indio Pele vermelha")
+    elementoindio.vai = textoindio.vai
     cenaAgua.vai()
 cicloagua()
 
