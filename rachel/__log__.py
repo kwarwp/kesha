@@ -178,3 +178,10 @@ SyntaxError: invalid syntax
     elementoindio.entra(cenaAgua)
 UnboundLocalError: local variable 'elementoindio' referenced before assignment
 '''},
+{'date': 'Wed Apr 24 2019 21:20:29.718 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 23
+  elementoindio = Elemento(img = indio, 
+                                                                                                                                                    ^
+SyntaxError: invalid syntax
+'''},
