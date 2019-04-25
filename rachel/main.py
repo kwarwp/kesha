@@ -22,20 +22,20 @@ def cicloagua():
 #CHAMA O ELEMENTO INDIO E O TEXTO 
     elementoindio = Elemento(img = indio, 
                      tit = "Indio", 
-                     style = dict (top = 350, left = 190, height = 100, width = 75))
+                     style = dict (top = 350, left = 190, height = 20, width = 75))
     elementoindio.entra(cenaAgua)
     textoindio = Texto(cenaAgua,
                       "Indio Pele vermelha")
     elementoindio.vai = textoindio.vai
     
     #CHAMA O ELEMENTO INDIOS E O TEXTO 
-    elementoindio = Elemento(img = indio, 
+    elementoindios = Elemento(img = indios, 
                      tit = "Indio", 
-                     style = dict (top = 350, left = 190, height = 100, width = 75))
-    elementoindio.entra(cenaAgua)
-    textoindio = Texto(cenaAgua,
-                      "Indio Pele vermelha")
-    elementoindio.vai = textoindio.vai
+                     style = dict (top = 400, left = 300, height = 70, width = 75))
+    elementoindios.entra(cenaAgua)
+    textoindios = Texto(cenaAgua,
+                      "Familia de indios")
+    elementoindios.vai = textoindios.vai
     cenaAgua.vai()
 cicloagua()
 
