@@ -19,7 +19,16 @@ def cicloagua():
                       "Urso marrom das montanhas do Alasca")
     elementourso.vai = textourso.vai
     
-#CHAMA O ELEMENTO URSO E O TEXTO 
+#CHAMA O ELEMENTO INDIO E O TEXTO 
+    elementoindio = Elemento(img = indio, 
+                     tit = "Indio", 
+                     style = dict (top = 350, left = 190, height = 100, width = 75))
+    elementoindio.entra(cenaAgua)
+    textoindio = Texto(cenaAgua,
+                      "Indio Pele vermelha")
+    elementoindio.vai = textoindio.vai
+    
+    #CHAMA O ELEMENTO INDIOS E O TEXTO 
     elementoindio = Elemento(img = indio, 
                      tit = "Indio", 
                      style = dict (top = 350, left = 190, height = 100, width = 75))
