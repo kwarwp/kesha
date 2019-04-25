@@ -22,7 +22,7 @@ def cicloagua():
 #CHAMA O ELEMENTO URSO E O TEXTO 
     elementoindio = Elemento(img = indio, 
                      tit = "Indio", 
-                     style = dict (top = 350, left = 25, height = 100, width = 75))
+                     style = dict (top = 350, left = 190, height = 100, width = 75))
     elementoindio.entra(cenaAgua)
     textoindio = Texto(cenaAgua,
                       "Indio Pele vermelha")
