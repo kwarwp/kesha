@@ -185,3 +185,10 @@ UnboundLocalError: local variable 'elementoindio' referenced before assignment
                                                                                                                                                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Apr 26 2019 09:36:49.890 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  html.botao = button onclick="myFunction()">Click me</button>
+                       ^
+SyntaxError: invalid syntax
+'''},
