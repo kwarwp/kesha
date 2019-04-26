@@ -5,7 +5,9 @@ ciencia = "https://i.imgur.com/7xC9bET.jpg"
 urso = "https://i.imgur.com/UvNnOfq.png"
 indio ="https://i.imgur.com/acNsNoO.png"
 indios ="https://i.imgur.com/RMc3y2v.png"
-interroga = "https://imgur.com/vHTik0T"
+interrogav = "https://i.imgur.com/vHTik0T.png"
+interrogab = "https://i.imgur.com/hHMFVSy.png"
+interrogap ="https://i.imgur.com/3DBAXnK.png"
 STYLE ["width"] = 1150
 STYLE ["height"] = "600px"
 
@@ -39,17 +41,36 @@ def cicloagua():
                       "Familia de indios")
     elementoindios.vai = textoindios.vai
 
-    #CHAMA O PONTO DE INTERROGAÇÃO
-    elementoponto = Elemento(img = interroga, 
+    #CHAMA O PONTO DE INTERROGAÇÃO VERMELHO
+    elementopontov = Elemento(img = interrogav, 
                      tit = "DUVIDA", 
-                     style = dict (top = 420, left = 25, height = 60, width = 55, bottom = 100))
+                     style = dict (top = 500, left = 530, height = 60, width = 55, bottom = 100))
     
-    elementoponto.entra(cenaAgua)
-    textoponto = Texto(cenaAgua,
+    elementopontov.entra(cenaAgua)
+    textopontov = Texto(cenaAgua,
                       "EVAPORAÇÃO")
-    elementoponto.vai = textoponto.vai
+    elementopontov.vai = textopontov.vai
+    
+    #CHAMA O PONTO DE INTERROGAÇÃO AZUL
+    elementopontob = Elemento(img = interrogab, 
+                     tit = "DUVIDA", 
+                     style = dict (top = 300, left = 330, height = 60, width = 55, bottom = 100))
+    
+    elementopontob.entra(cenaAgua)
+    textopontob = Texto(cenaAgua,
+                      "PRECIPITAÇÃO")
+    elementopontob.vai = textopontob.vai
 
+#CHAMA O PONTO DE INTERROGAÇÃO PRETO
+    elementopontop = Elemento(img = interrogap, 
+                     tit = "DUVIDA", 
+                     style = dict (top = 100, left = 630, height = 60, width = 55, bottom = 100))
+    
+    elementopontop.entra(cenaAgua)
+    textopontop = Texto(cenaAgua,
+                      "CONDENSAÇÃO")
+    elementopontop.vai = textopontop.vai
 
-cenaAgua.vai()
+    cenaAgua.vai()
 cicloagua()
 
