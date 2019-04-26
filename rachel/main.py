@@ -54,7 +54,7 @@ def cicloagua():
     #CHAMA O PONTO DE INTERROGAÇÃO AZUL
     elementopontob = Elemento(img = interrogab, 
                      tit = "DUVIDA", 
-                     style = dict (top = 300, left = 330, height = 60, width = 55, bottom = 100))
+                     style = dict (top = 220, left = 370, height = 60, width = 55, bottom = 100))
     
     elementopontob.entra(cenaAgua)
     textopontob = Texto(cenaAgua,
@@ -64,7 +64,7 @@ def cicloagua():
 #CHAMA O PONTO DE INTERROGAÇÃO PRETO
     elementopontop = Elemento(img = interrogap, 
                      tit = "DUVIDA", 
-                     style = dict (top = 100, left = 630, height = 60, width = 55, bottom = 100))
+                     style = dict (top = 30, left = 800, height = 60, width = 55, bottom = 100))
     
     elementopontop.entra(cenaAgua)
     textopontop = Texto(cenaAgua,
