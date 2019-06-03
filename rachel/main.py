@@ -1,7 +1,7 @@
 # kesha.rachel.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
 #from browser import html
-ciencia = "https://i.imgur.com/7xC9bET.jpg"
+ciencia = "https://i.imgur.com/OMOPgC7.png"
 urso = "https://i.imgur.com/UvNnOfq.png"
 indio ="https://i.imgur.com/acNsNoO.png"
 indios ="https://i.imgur.com/RMc3y2v.png"
