@@ -16,7 +16,7 @@ def geometria():
     
     square = Elemento(img = quadrado,
                       tit = "Adivinhe quem eu sou?",
-                      style = dict (top = 300, left = 575, hight = 50, width = 50))
+                      style = dict (top = 300, left = 575, hight = 130, width = 130))
     square.entra (fundogeo)
     
     
