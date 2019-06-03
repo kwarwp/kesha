@@ -14,8 +14,10 @@ STYLE ["height"] = "600px"
 def geometria():
     fundogeo = Cena(img = fundo)
     
-    
-    
+    square = Elemento(img = quadrado,
+                      tit = "Adivinhe quem eu sou?",
+                      style = dict (top = 300, left = 575, hight = 50, width = 50))
+    square.entra (fundogeo)
     
     
     
