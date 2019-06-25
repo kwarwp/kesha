@@ -2147,3 +2147,4 @@
       {'doc_id': 'f7cf0eca', 'carta': 'carta_7', 'casa': 'esquerda_1_0_e', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1561471980384},
       {'doc_id': 'f7cf0eca', 'carta': 'carta_6', 'casa': 'esquerda_2_0_e', 'move': 'MOVE', 'ponto': 10, 'valor': 'N', '_level': 3, 'tempo': 1561471985264},
       {'doc_id': 'f7cf0eca', 'carta': 'carta_7', 'casa': 'esquerda_1_0_e', 'move': 'REMOVE', 'ponto': -1, 'valor': 'N', '_level': 3, 'tempo': 1561471986163},
+    {'doc_id': 'f7cf0eca', 'carta': 'carta_99', 'casa': 'centro_9_9', 'move': 'INICIA', 'ponto': 0, 'valor': 'recusa', '_level': 2, 'tempo': 1561472069930},
