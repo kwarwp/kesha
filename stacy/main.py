@@ -1,4 +1,5 @@
 # kesha.stacy.main.py
+#4ª tentativa com o Simetric 3D
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
 from browser import html, document, alert
 
