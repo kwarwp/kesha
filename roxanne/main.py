@@ -1,4 +1,6 @@
 # kesha.roxanne.main.py
+#1ª tentativa do Jogo Simetrico 3D
+#Autor: Hortencia
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
 from browser import html, document
 
