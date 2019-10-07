@@ -1,4 +1,6 @@
 # kesha.natalia.main.py
+#Museu em 3D
+#Autor: Hortencia
 from _spy.vitollino.main import Cena, STYLE, Codigo, Elemento
 from _spy.vpython.main import *
 from browser import doc
