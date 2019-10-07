@@ -34,3 +34,10 @@ SyntaxError: invalid syntax
    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Oct 07 2019 13:55:48.664 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  <head>
+   ^
+SyntaxError: invalid syntax
+'''},
