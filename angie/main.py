@@ -1,4 +1,5 @@
 # kesha.angie.main.py
+#utilizando html
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
 from browser import html, document, alert, doc
 from browser.html import *
