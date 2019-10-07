@@ -1,4 +1,6 @@
 # kesha.sara.main.py
+#3ª tentativa do Simetric 3D
+#Autor: Hortencia
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
 from browser import html, document, alert, doc
 #doc["glowscript"] <= html.H1('XXXXXXXXX -------------- XXXXXXXXXXX')
