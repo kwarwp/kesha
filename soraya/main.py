@@ -21,20 +21,5 @@ def geometria():
     textosquare = Texto(fundogeo,"Pesquisa no google kakakajota")
     square.vai =textosquare.vai 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     fundogeo.vai()   
 geometria()
