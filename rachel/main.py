@@ -1,5 +1,6 @@
 # kesha.rachel.main.py
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
+from _spy.vitollino.main import Elemento_ as Elemento
 #from browser import html
 ciencia = "https://i.imgur.com/7xC9bET.jpg"
 urso = "https://i.imgur.com/UvNnOfq.png"
