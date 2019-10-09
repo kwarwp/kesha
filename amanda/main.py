@@ -13,7 +13,8 @@
 Gerador de labirintos e jogos tipo 'novel
 https://github.com/carlotolla/vitollino
 """
-from _spy.vitollino.main import STYLE, INVENTARIO, Cena, Elemento, Texto, JOGO
+from _spy.vitollino.main import STYLE, INVENTARIO, Cena, Elemento_, Texto, JOGO
+from _spy.vitollino.main import Elemento_ as Elemento
 from browser import window, html, document
 document["pydiv"].style.width="800px"
 document["pydiv"].style.minHeight="600px"
