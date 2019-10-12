@@ -373,3 +373,10 @@ NameError: name 'mary_shaw' is not defined
     outro_jogo = JogoMarilia()
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Sat Oct 12 2019 16:48:28.771 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  Tesouro Inca
+  ^
+IndentationError: unexpected indent
+'''},
