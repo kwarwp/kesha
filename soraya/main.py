@@ -22,4 +22,14 @@ def geometria():
     square.vai =textosquare.vai 
     
     fundogeo.vai()   
+    
+        
+    log = Elemento(img = losango3d,
+                      tit = "Adivinhe quem eu sou?",
+                      style = dict (top = 600, left = 300, hight = 300, width = 300))
+    log.entra (fundogeo)
+    textolog = Texto(fundogeo,"LOSANGO")
+    log.vai =textolog.vai 
+    
+    fundogeo.vai()   
 geometria()
