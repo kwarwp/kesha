@@ -18,7 +18,7 @@ def geometria():
                       tit = "Adivinhe quem eu sou?",
                       style = dict (top = 300, left = 300, hight = 300, width = 300))
     square.entra (fundogeo)
-    textosquare = Texto(fundogeo,"Pesquisa no google")
+    textosquare = Texto(fundogeo,"RETÂNGULO")
     square.vai =textosquare.vai 
     
     fundogeo.vai()   
