@@ -26,7 +26,7 @@ def geometria():
         
     log = Elemento(img = losango3d,
                       tit = "Adivinhe quem eu sou?",
-                      style = dict (top = 200, left = 500, hight = 300, width = 300))
+                      style = dict (top = 100, left = 500, hight = 300, width = 300))
     log.entra (fundogeo)
     textolog = Texto(fundogeo,"LOSANGO")
     log.vai =textolog.vai 
