@@ -1,12 +1,12 @@
 # kesha.sarah.main.py
 # mary_shaw.samantha.main.py
-from random import randint
+
 """
 Uma expedição para coletar os tesouros do Templo Inca
  --Relato:
  fui e voltei rico
 """
-
+from random import randint
 __author__ = "Carlo E T Oliveira <carlo at nce ufrj br>"
 __version__ = "19.11.06"
 
@@ -32,6 +32,10 @@ class Explorador:
 
 
 class Camara:
+    """
+    Uma camara do templo
+    O explorador usa o método entra para ter acesso aos tesouros
+    """
     def __init__(self):
         self.quantidade = 3
         #self.explorador = explorador
@@ -52,6 +56,10 @@ class Camara:
 
 
 class TemploInca:
+    """
+    O jogo do Templo Inca
+    O jogo incia quando se chama o inicia
+    """
     def __init__(self):
         self.explorador = Explorador()
         self.camara = Camara()
