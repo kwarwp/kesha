@@ -2,6 +2,7 @@
 # mary_shaw.samantha.main.py
 
 """
+proposito do jupyter acompanhar o processamento de um dado
 Uma expedição para coletar os tesouros do Templo Inca
  --Relato:
  fui e voltei rico
@@ -19,9 +20,8 @@ class Explorador:
             
     def pega(self, quantidade, camara):
         """ coloca um tesouro na mochila """
-        input(f"Você coloca {quantidade} tesouro na mochila ")
         self.mochila += quantidade
-        input(f"Você fica com {self.mochila} tesouros na mochila ")
+        input(f"Você coloca {quantidade} na mochila e fica com {self.mochila} tesouros na mochila ")
         camara.entra(self)
                     
     def sai(self):
@@ -53,7 +53,6 @@ class Camara:
             self.sai()
         
 
-
 class TemploInca:
     """
     O jogo do Templo Inca
@@ -68,10 +67,6 @@ class TemploInca:
         input("Uma expedição para coletar os tesouros do Templo Inca")
         self.camara.entra(self.explorador)
         
-        
-    
-
-
 if __name__ == "__main__":
     TemploInca().inicia()
 
