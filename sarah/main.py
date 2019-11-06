@@ -6,6 +6,7 @@ proposito do jupyter acompanhar o processamento de um dado
 Uma expedição para coletar os tesouros do Templo Inca
  --Relato:
  fui e voltei rico
+ 19.11.06b - usa defaultdict na camara também
  19.11.06a - usa defaultdict como uma forma de switch
  19.11.06 - troca print por input
 """
@@ -41,21 +42,27 @@ class Camara:
     def __init__(self):
         self.quantidade = 3
         #self.explorador = explorador
+        self.decide_entrar = defaultdict(lambda: self.entra) #a sintaxe do defaultdict exige o lambda
+        self.decide_entrar["s"] = self.entra #qualquer outra desição ele sai
         
     def entra(self, explorador):#referência efemera só dura enquanto está executando
         """ entra em uma câmara"""
         #input("Você entra em uma câmara com tesouros!")
-        input("Você entra em uma câmara com tesouros!")
+        entrando= input("Você entra em uma câmara com tesouros!. Vai entrar (s/n)?")
+        self.decide_entrar[entrando]()
+        """
         if input("Continua?").lower() == "s":
+        """
             if self.quantidade:
                 self.quantidade -= 1        
                 explorador.pega(randint(1, 4), self)
             else:
                 input("Não havia mais tesouros!")
                 explorador.sai()
+        """
         else:
             explorador.sai()
-        
+        """
 
 class TemploInca:
     """
