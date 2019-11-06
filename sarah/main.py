@@ -43,7 +43,7 @@ class Camara:
         self.quantidade = 3
         #self.explorador = explorador
         self.decide = defaultdict(lambda: self.desiste) #a sintaxe do defaultdict exige o lambda
-        self.decide_entrar["s"] = self.entra #qualquer outra desição ele sai
+        self.decide["s"] = self.encara #qualquer outra desição ele sai
         
     def entra(self, explorador):#referência efemera só dura enquanto está executando
         """ entra em uma câmara"""
