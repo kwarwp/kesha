@@ -6,6 +6,8 @@ proposito do jupyter acompanhar o processamento de um dado
 Uma expedição para coletar os tesouros do Templo Inca
  --Relato:
  fui e voltei rico
+ 19.11.06a - usa defaultdict como uma forma de switch
+ 19.11.06 - troca print por input
 """
 from random import randint
 __author__ = "Carlo E T Oliveira <carlo at nce ufrj br>"
@@ -39,8 +41,9 @@ class Camara:
         self.quantidade = 3
         #self.explorador = explorador
         
-    def entra(self, explorador):
+    def entra(self, explorador):#referência efemera só dura enquanto está executando
         """ entra em uma câmara"""
+        #input("Você entra em uma câmara com tesouros!")
         input("Você entra em uma câmara com tesouros!")
         if input("Continua?").lower() == "s":
             if self.quantidade:
@@ -64,8 +67,11 @@ class TemploInca:
         
     def inicia(self):
         """ inicia a exploração """
-        input("Uma expedição para coletar os tesouros do Templo Inca")
-        self.camara.entra(self.explorador)
+        encara =input("Uma expedição para saquear os tesouros do Templo Inca. Vai encarar (s/n)?")
+        if encara == "s":
+            self.camara.entra(self.explorador)
+        else
+            input("sabia decisão, vamos evitar este templo macabro!")
         
 if __name__ == "__main__":
     TemploInca().inicia()
