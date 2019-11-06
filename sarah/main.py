@@ -70,7 +70,7 @@ class TemploInca:
         encara =input("Uma expedição para saquear os tesouros do Templo Inca. Vai encarar (s/n)?")
         if encara == "s":
             self.camara.entra(self.explorador)
-        else
+        else:
             input("sabia decisão, vamos evitar este templo macabro!")
         
 if __name__ == "__main__":
