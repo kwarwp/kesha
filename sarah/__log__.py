@@ -128,3 +128,10 @@ AttributeError: 'Camara' object has no attribute 'sai'
        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Nov 06 2019 11:37:32.898 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 56
+  if self.quantidade:
+  ^
+IndentationError: unexpected indent
+'''},
