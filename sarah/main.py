@@ -10,6 +10,7 @@ Uma expedição para coletar os tesouros do Templo Inca
  19.11.06 - troca print por input
 """
 from random import randint
+from collections import defaultdict #o defaultdict se vc der uma chave que não existe ele vai dar um valor que será especificado
 __author__ = "Carlo E T Oliveira <carlo at nce ufrj br>"
 __version__ = "19.11.06"
 
@@ -64,14 +65,35 @@ class TemploInca:
     def __init__(self):
         self.explorador = Explorador()
         self.camara = Camara()
+        self.decide = defaultdict(lambda: self.desiste) #a sintaxe do defaultdict exige o lambda
+        self.decide["s"] = self.encara #qualquer outra desição ele sai
+        """
+        lambda adia a execução até execute o que esta depois do :
+        self.decide = defaultdict(lambda: input(self.desiste) #a sintaxe do defaultdict exige o lambda
+        self.decide["s"] = self.encara #qualquer outra desição ele sai
         
+        """
     def inicia(self):
         """ inicia a exploração """
-        encara =input("Uma expedição para saquear os tesouros do Templo Inca. Vai encarar (s/n)?")
+        o_que_decidiu =input("Uma expedição para saquear os tesouros do Templo Inca. Vai encarar (s/n)?")
+        self.decide[o_que_decidiu]() #esta linha já é o swhith
+        
+        """
         if encara == "s":
             self.camara.entra(self.explorador)
         else:
             input("sabia decisão, vamos evitar este templo macabro!")
+        """
+
+    def encara(self):
+        """ decide iniciar a exploração"""
+        self.camara.entra(self.explorador)
+    
+    def desiste(self):
+        """ desiste da exploração"""
+        input("sabia decisão, vamos evitar este templo macabro!")
+    
+          
         
 if __name__ == "__main__":
     TemploInca().inicia()
