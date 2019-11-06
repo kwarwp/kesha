@@ -62,7 +62,7 @@ class Camara:
                 #input("Não havia mais tesouros!")
             explorador.sai()
                 
-    def desiste(self, , explorador):
+    def desiste(self, explorador):
         """ desiste da exploração"""
         #input("sabia decisão, vamos evitar este templo macabro!")
         explorador.sai
