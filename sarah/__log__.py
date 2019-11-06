@@ -121,3 +121,10 @@ Traceback (most recent call last):
     self.sai()
 AttributeError: 'Camara' object has no attribute 'sai'
 '''},
+{'date': 'Wed Nov 06 2019 11:07:47.939 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 73
+  else
+       ^
+SyntaxError: invalid syntax
+'''},
