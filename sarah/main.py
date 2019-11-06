@@ -58,9 +58,9 @@ class Camara:
         if self.quantidade:
             self.quantidade -= 1        
             explorador.pega(randint(1, 4), self)
-            else:
+        else:
                 #input("Não havia mais tesouros!")
-                explorador.sai()
+            explorador.sai()
                 
     def desiste(self, , explorador):
         """ desiste da exploração"""
