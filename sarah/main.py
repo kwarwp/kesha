@@ -26,9 +26,8 @@ class Explorador:
                     
     def sai(self):
         """ sai do templo """
-        input("Você sai do templo e guarda os tesouros!")
         self.cabana, self.mochila = self.mochila, 0
-        input(f"Você ficou com {self.cabana} tesouros na cabana!")
+        input(f"Você sai do templo e guarda {self.cabana} tesouros na cabana!")
 
 
 class Camara:
