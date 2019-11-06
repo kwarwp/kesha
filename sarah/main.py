@@ -50,7 +50,7 @@ class Camara:
                 input("Não havia mais tesouros!")
                 explorador.sai()
         else:
-            self.sai()
+            explorador.sai()
         
 
 class TemploInca:
