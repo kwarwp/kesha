@@ -142,3 +142,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Nov 06 2019 11:54:28.414 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 65
+  def desiste(self, , explorador):
+                     ^
+SyntaxError: invalid syntax
+'''},
