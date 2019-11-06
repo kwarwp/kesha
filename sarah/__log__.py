@@ -135,3 +135,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Nov 06 2019 11:53:32.645 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 60
+  explorador.pega(randint(1, 4), self)
+  ^
+IndentationError: unexpected indent
+'''},
