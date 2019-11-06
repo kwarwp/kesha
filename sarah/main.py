@@ -6,6 +6,7 @@ proposito do jupyter acompanhar o processamento de um dado
 Uma expedição para coletar os tesouros do Templo Inca
  --Relato:
  fui e voltei rico
+ 19.11.06c - usa defaultdict na camara no caso de if quantidade: também
  19.11.06b - usa defaultdict na camara também
  19.11.06a - usa defaultdict como uma forma de switch
  19.11.06 - troca print por input
