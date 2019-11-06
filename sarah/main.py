@@ -57,7 +57,7 @@ class Camara:
         """ decide continuar a exploração"""
         if self.quantidade:
             self.quantidade -= 1        
-                explorador.pega(randint(1, 4), self)
+            explorador.pega(randint(1, 4), self)
             else:
                 #input("Não havia mais tesouros!")
                 explorador.sai()
