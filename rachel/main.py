@@ -9,6 +9,9 @@ indios ="https://i.imgur.com/RMc3y2v.png"
 interrogav = "https://i.imgur.com/vHTik0T.png"
 interrogab = "https://i.imgur.com/hHMFVSy.png"
 interrogap ="https://i.imgur.com/3DBAXnK.png"
+
+terraMorta = "https://i.imgur.com/CPiCdim.jpg"
+lavaArdente = "https://i.imgur.com/PskfkEy.jpg"
 STYLE ["width"] = 1150
 STYLE ["height"] = "600px"
 
@@ -71,6 +74,18 @@ def cicloagua():
     textopontop = Texto(cenaAgua,
                       "CONDENSAÇÃO")
     elementopontop.vai = textopontop.vai
+
+    #criar uma nova cena a direita
+    cenaErosao = Cena(img = terraMorta)
+    cenaAgua.direita = cenaErosao
+    cenaErosao.vai()
+
+    #criar uma nova cena a esquerda
+    cenaVulcao = Cena(img = lavaArdente)
+    cenaAgua.esquerda = cenaVulcao
+    cenaVulcao.vai()
+
+
 
     cenaAgua.vai()
 cicloagua()
