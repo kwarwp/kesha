@@ -301,3 +301,10 @@ SyntaxError: invalid syntax
                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Nov 14 2019 16:41:09.759 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  interrogav = 
+                ^
+SyntaxError: invalid syntax
+'''},
