@@ -81,11 +81,18 @@ def cicloagua():
     cenaErosao = Cena(img = terraMorta)
     cenaAgua.direita = cenaErosao
     cenaErosao.vai()
+    
+    #se quiser voltar para a cenaAgua
+    cenaErosao.esquerda = cenaAgua
 
     #criar uma nova cena a esquerda
     cenaVulcao = Cena(img = lavaArdente)
     cenaAgua.esquerda = cenaVulcao
     cenaVulcao.vai()
+
+
+    #se quiser voltar para a cenaAgua
+    cenaVulcao.direita = cenaAgua
 
 
 
