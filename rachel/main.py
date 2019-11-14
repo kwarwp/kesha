@@ -1,4 +1,5 @@
 # kesha.rachel.main.py
+# https://addons.mozilla.org/pt-BR/firefox/addon/imgur-upload/
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
 from _spy.vitollino.main import Elemento_ as Elemento
 #from browser import html
@@ -11,7 +12,8 @@ interrogab = "https://i.imgur.com/hHMFVSy.png"
 interrogap ="https://i.imgur.com/3DBAXnK.png"
 
 terraMorta = "https://i.imgur.com/CPiCdim.jpg"
-lavaArdente = "https://i.imgur.com/PskfkEy.jpg"
+#lavaArdente = "https://i.imgur.com/PskfkEy.jpg"
+lavaArdente = "https://i.imgur.com/i4giA12.gif"
 STYLE ["width"] = 1150
 STYLE ["height"] = "600px"
 
