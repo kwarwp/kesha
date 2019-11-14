@@ -4,8 +4,8 @@ from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
 from _spy.vitollino.main import Elemento_ as Elemento
 #from browser import html
 ciencia = "https://i.imgur.com/7xC9bET.jpg"
-urso = "https://i.imgur.com/UvNnOfq.png"
-indio ="https://i.imgur.com/acNsNoO.png"
+urso = "http://3.bp.blogspot.com/-dbTn0AUuc58/UXDMjkaRwoI/AAAAAAAAUa4/6NPV8n1P5P8/s1600/A%C3%A7ai+Indio.png"
+indio ="https://i.dlpng.com/static/png/6360501_thumb.png"
 indios ="https://i.imgur.com/RMc3y2v.png"
 interrogav = "https://i.imgur.com/vHTik0T.png"
 interrogab = "https://i.imgur.com/hHMFVSy.png"
