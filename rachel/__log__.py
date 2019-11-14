@@ -287,3 +287,10 @@ AttributeError: 'str' object has no attribute 'entra'
                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Nov 14 2019 16:19:43.572 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  urso = https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjxhvPIp-rlAhU7D7kGHZbaCL0QjRx6BAgBEAQ&url=%2Furl%3Fsa%3Di%26rct%3Dj%26q%3D%26esrc%3Ds%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fimagensemoldes.com.br%252Fimagens-de-personagens-masha-e-o-urso-png-8%252F%26psig%3DAOvVaw1S8_rXIbSwfxwncCCF9u9j%26ust%3D1573841746132699&psig=AOvVaw1S8_rXIbSwfxwncCCF9u9j&ust=1573841746132699"
+               ^
+SyntaxError: invalid syntax
+'''},
