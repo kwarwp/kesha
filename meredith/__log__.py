@@ -33,3 +33,10 @@ AttributeError: 'GUI' object has no attribute 'tesouros'
                                                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 26 2019 11:32:27.726 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  """
+  ^
+IndentationError: expected an indented block
+'''},
