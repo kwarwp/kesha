@@ -26,3 +26,10 @@ SyntaxError: trailing comma not allowed without surrounding parentheses
     (self.tesouros)
 AttributeError: 'GUI' object has no attribute 'tesouros'
 '''},
+{'date': 'Tue Nov 26 2019 10:26:29.939 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 77
+  if input(self.camara.format(tesouro_aqui) +continua)+continua) == "s": #deixou de usar a proxima linha para usar esta
+                                                        ^
+SyntaxError: invalid syntax
+'''},
