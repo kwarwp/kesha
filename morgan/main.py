@@ -7,10 +7,10 @@ from _spy.vitollino.main import Cena, Texto, Elemento, INVENTARIO, STYLE, Musica
 STYLE ["width"] = 1320
 STYLE ["height"] = "600px"
 IGR = "https://i.imgur.com/"
-CEST, DOG, BASE, CENA, CENAINICIO  = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"", f"{IGR}zRGdYRp.gif", f"{IGR}3qdowNm.jpg"
-FUNDODIA, BILHETE, BOTAO, LOGO, PLAY = f"{IGR}zRGdYRp.gif", f"{IGR}p9SteRs.png", f"{IGR}kTocYiF.png", f"{IGR}JflnamW.png",f"{IGR}Jcnz4vj.png"
-TRACK = "https://raw.githubusercontent.com/kwarwp/anita/master/bensound-creativeminds.mp3"
-RET, SOMA, SOMB, PRED = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png", f"{IGR}vL9kR9Y.png", f"{IGR}HUkZFHm.png"
+CEST, DOG, RET, CENAINICIO  = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}HUkZFHm.png", f"{IGR}zRGdYRp.gif"
+#FUNDODIA, BILHETE, BOTAO, LOGO, PLAY = f"{IGR}zRGdYRp.gif", f"{IGR}p9SteRs.png", f"{IGR}kTocYiF.png", f"{IGR}JflnamW.png",f"{IGR}Jcnz4vj.png"
+#TRACK = "https://raw.githubusercontent.com/kwarwp/anita/master/bensound-creativeminds.mp3"
+#SOMA, SOMB, PRED = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png", f"{IGR}vL9kR9Y.png", 
 
 """
 class gameInicio:
