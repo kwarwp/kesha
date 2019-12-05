@@ -10,8 +10,8 @@ IGR = "https://i.imgur.com/"
 CEST, DOG, BASE, CENA, CENAINICIO  = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"", f"{IGR}zRGdYRp.gif", f"{IGR}3qdowNm.jpg"
 FUNDODIA, BILHETE, BOTAO, LOGO, PLAY = f"{IGR}zRGdYRp.gif", f"{IGR}p9SteRs.png", f"{IGR}kTocYiF.png", f"{IGR}JflnamW.png",f"{IGR}Jcnz4vj.png"
 TRACK = "https://raw.githubusercontent.com/kwarwp/anita/master/bensound-creativeminds.mp3"
-SOMA, SOMB = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png"
-
+SOMA, SOMB, PRED = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png", f"{IGR}vL9kR9Y.png"
+"""
 class gameInicio:
     def __init__(self):
         gameInicio = Cena(CENAINICIO)
@@ -28,14 +28,6 @@ class gameInicio:
         self.bil = Elemento(BILHETE, x=200, y=20,w=900,h=600, cena=dia, vai = self.elevador)
         self.boton = Elemento(BOTAO, x=820, y=470,w=70,h=70, cena=dia, vai = self.elevador)
 
-    def elevador(self, ev=0):
-        todos = Cena(FUNDODIA)
-        todos.vai()
-        self.musica = Musica(TRACK)
-        self.musica.sound.pause()
-        self.musA = Elemento(SOMA, x=1200, y=500,w=80,h=80, cena=todos, vai=self.toca)
-        self.musB = Elemento(SOMB, x=-1200, y=500,w=80,h=80, cena=todos, vai=self.pause)
-        
     def toca(self, ev=0):
         self.musica.sound.play()
         self.musA.x= -1200
@@ -45,17 +37,72 @@ class gameInicio:
         self.musica.sound.pause()
         self.musA.x= 1200
         self.musB.x= -1200
+    
+    def elevador(self, ev=0):
+        todos = Cena(FUNDODIA)
+        todos.vai()
+        self.musica = Musica(TRACK)
+        self.musica.sound.pause()
+        self.musA = Elemento(SOMA, x=1200, y=500,w=80,h=80, cena=todos, vai=self.toca)
+        self.musB = Elemento(SOMB, x=-1200, y=500,w=80,h=80, cena=todos, vai=self.pause)
+
 """
+
+class Plataforma(Elemento): #são as bases fantasmas
+    def __init__(self, imagem, cena, x=0, y=400):
+        super().__init__(imagem, cena=cena, w=200, x=x, y=y)
+        self.destino = self
+        self.nome = "base"
+        
+    def movimenta(self, destino):
+        destino.move(self.destino)
+
+
+class Personagem(Elemento): # dog
+    def __init__(self, imagem, destino, cena, x=0, y=0):
+        super().__init__(imagem, cena=cena, x=x, y=y, w=60, h=60)
+        self.destino = destino
+        self.vai = self.move
+        
+    def move(self, evento=None):
+        self.entra(self.destino)
+
+
+class Veiculo(Elemento): #é a cesta
+    def __init__(self, imagem, destino, cena, x=100, y=0):
+        super().__init__(imagem, cena=cena, x=x, y=y)
+        self.nome = "veiculo"
+        self.destino = destino
+        self.vai = self._move
+        
+    def _move(self, evento=None):
+        self.destino.movimenta(self)
+        
+    def move(self, destino):
+        self.entra(destino)
+        self.destino = destino
+        
+    def movimenta(self, destino):
+        destino.move(self)
+
+
+
 class Basico:
     def __init__(self):
-        self.cena = cena = Cena(CENA)
-        self.base0 = Plataforma("", x=500, y= 100, cena=cena)
-        self.base1 = Plataforma("", x=500, y= 500, cena=cena)
+        self.cena = cena = Cena(FUNDODIA)
+        self.predio = Elemento(PRED, x=350, y=180,w=600,h=300, cena=cena)
+        self.base0 = Plataforma("", x=500, y= 100, cena=cena, style=dict(width="100px",height="100px",backgroundColor="black",opacity=0.5))
+        self.base1 = Plataforma("", x=500, y= 500, cena=cena, style=dict(width="100px",height="100px",backgroundColor="black",opacity=0.5))
         self.base0.destino, self.base1.destino = self.base1, self.base0 
         self.cesta = Veiculo(CEST, destino=self.base1, cena=cena)
         self.cesta.entra(self.base0)
         self.doggie = Personagem(DOG, destino=self.cart, cena=cena)
         cena.vai()
+
+
+if __name__ == "__main__":
+    Basico()
+
 """
 
 
