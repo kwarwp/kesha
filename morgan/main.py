@@ -19,21 +19,21 @@ class gameInicio:
         self.play = Elemento(PLAY, x=570, y=470,w=180,h=120, cena=gameInicio, vai = self.mostradia)
 
     def mostradia(self,ev=0):
-            fake = Cena()
-            fake.vai = self.elevador
-            dia = Cena(FUNDODIA, direita=fake )
-            dia.vai()
-            self.bil = Elemento(BILHETE, x=200, y=20,w=900,h=600, cena=dia, vai = self.elevador)
-            self.boton = Elemento(BOTAO, x=820, y=470,w=70,h=70, cena=dia, vai = self.elevador)
+        fake = Cena()
+        fake.vai = self.elevador
+        dia = Cena(FUNDODIA, direita=fake )
+        dia.vai()
+        self.bil = Elemento(BILHETE, x=200, y=20,w=900,h=600, cena=dia, vai = self.elevador)
+        self.boton = Elemento(BOTAO, x=820, y=470,w=70,h=70, cena=dia, vai = self.elevador)
 
-        def toca(self, ev=0):
-            self.musica.sound.play()
-            self.musA.x= -1200
-            self.musB.x= 1200
+    def toca(self, ev=0):
+        self.musica.sound.play()
+        self.musA.x= -1200
+        self.musB.x= 1200
 
-        def pause(self, ev=0):
-            self.musica.sound.pause()
-            self.musA.x= 1200
-            self.musB.x= -1200
+    def pause(self, ev=0):
+        self.musica.sound.pause()
+        self.musA.x= 1200
+        self.musB.x= -1200
 
 gameInicio()
