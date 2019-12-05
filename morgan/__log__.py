@@ -78,3 +78,10 @@ NameError: name 'CENAINICIO' is not defined
     self.logotipo = Elemento(LOGO, x=370, y=30,w=650,h=400, cena=gameInicio)
 NameError: name 'LOGO' is not defined
 '''},
+{'date': 'Thu Dec 05 2019 10:50:33.737 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  def toca(self, ev=0):
+  ^
+IndentationError: unexpected indent
+'''},
