@@ -10,7 +10,8 @@ IGR = "https://i.imgur.com/"
 CEST, DOG, BASE, CENA, CENAINICIO  = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"", f"{IGR}zRGdYRp.gif", f"{IGR}3qdowNm.jpg"
 FUNDODIA, BILHETE, BOTAO, LOGO, PLAY = f"{IGR}zRGdYRp.gif", f"{IGR}p9SteRs.png", f"{IGR}kTocYiF.png", f"{IGR}JflnamW.png",f"{IGR}Jcnz4vj.png"
 TRACK = "https://raw.githubusercontent.com/kwarwp/anita/master/bensound-creativeminds.mp3"
-SOMA, SOMB, PRED = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png", f"{IGR}vL9kR9Y.png"
+RET, SOMA, SOMB, PRED = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png", f"{IGR}vL9kR9Y.png", f"{IGR}HUkZFHm.png"
+
 """
 class gameInicio:
     def __init__(self):
@@ -90,9 +91,8 @@ class Veiculo(Elemento): #é a cesta
 class Basico:
     def __init__(self):
         self.cena = cena = Cena(FUNDODIA)
-        self.predio = Elemento(PRED, x=350, y=180,w=600,h=300, cena=cena)
-        self.base0 = Plataforma("", x=500, y= 100, cena=cena, style=dict(width="100px",height="100px",backgroundColor="black",opacity=0.5))
-        self.base1 = Plataforma("", x=500, y= 500, cena=cena, style=dict(width="100px",height="100px",backgroundColor="black",opacity=0.5))
+        self.base0 = Plataforma(RET, x=500, y= 100, cena=cena)
+        self.base1 = Plataforma(RET, x=500, y= 500, cena=cena)
         self.base0.destino, self.base1.destino = self.base1, self.base0 
         self.cesta = Veiculo(CEST, destino=self.base1, cena=cena)
         self.cesta.entra(self.base0)
