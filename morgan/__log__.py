@@ -121,3 +121,10 @@ NameError: name 'PLAY' is not defined
     self.doggie = Personagem(DOG, destino=self.cart, cena=cena)
 AttributeError: 'Basico' object has no attribute 'cart'
 '''},
+{'date': 'Thu Dec 05 2019 13:16:36.933 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  super().__init__(imagem, cena=cena, w=200, style=dict(backgroundColor="black",opacity=0.2) x=x, y=y)
+                                                                                              ^
+SyntaxError: invalid syntax
+'''},
