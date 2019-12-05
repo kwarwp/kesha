@@ -7,7 +7,7 @@ from _spy.vitollino.main import Cena, Texto, Elemento, INVENTARIO, STYLE, Musica
 STYLE ["width"] = 1320
 STYLE ["height"] = "600px"
 IGR = "https://i.imgur.com/"
-CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}HUkZFHm.png", f"{IGR}zRGdYRp.gif", f"{IGR}vL9kR9Y.png"
+CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}7Wh2Px0.png", f"{IGR}zRGdYRp.gif", f"{IGR}vL9kR9Y.png"
 #CEST, DOG, RET, CENAINICIO  = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}HUkZFHm.png", f"{IGR}zRGdYRp.gif"
 #FUNDODIA, BILHETE, BOTAO, LOGO, PLAY = f"{IGR}zRGdYRp.gif", f"{IGR}p9SteRs.png", f"{IGR}kTocYiF.png", f"{IGR}JflnamW.png",f"{IGR}Jcnz4vj.png"
 #TRACK = "https://raw.githubusercontent.com/kwarwp/anita/master/bensound-creativeminds.mp3"
@@ -15,15 +15,15 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}H
 #CART, CAT, BASE, CENA = f"{IGR}m2k5sv6.png", f"{IGR}ek8oINR.png", f"{IGR}DAUyvBP.jpg", f"{IGR}nkwZCrR.jpg"
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
-     def __init__(self, imagem, cena, x=350, y=180):
-        super().__init__(imagem, cena=cena, w=600, h=300)
-        self.destino = self
+     def __init__(self, imagem, cena, x=500, y=180, w=600, h=300):
+        #super().__init__(imagem, cena=cena, )
+        #self.destino = self
         self.nome = "casa"
 
 
 class Plataforma(Elemento): #retangulo azul
     def __init__(self, imagem, cena, x=400, y=0):
-        super().__init__(imagem, cena=cena, w=200, x=x, y=y, style=dict(backgroundColor="black",opacity=0.2))
+        super().__init__(imagem, cena=cena, w=200, x=x, y=y)
         self.destino = self
         self.nome = "base"
         
@@ -62,13 +62,13 @@ class Veiculo(Elemento):
 class Basico:
     def __init__(self):
         self.cena = cena = Cena(CENA)
-        self.casa = Predio(PRED, cena=cena)
         self.base0 = Plataforma(BASE, y=100, cena=cena)
         self.base1 = Plataforma(BASE, y=500, cena=cena)
         self.base0.destino, self.base1.destino = self.base1, self.base0 
         self.cesta = Veiculo(CEST, destino=self.base1, cena=cena)
         self.cesta.entra(self.base0)
         self.doggie = Personagem(DOG, destino=self.cesta, cena=cena)
+        self.casa = Predio(PRED, cena=cena)
         cena.vai()
         
         
