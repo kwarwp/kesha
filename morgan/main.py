@@ -7,13 +7,65 @@ from _spy.vitollino.main import Cena, Texto, Elemento, INVENTARIO, STYLE, Musica
 STYLE ["width"] = 1320
 STYLE ["height"] = "600px"
 IGR = "https://i.imgur.com/"
-CART, CAT, BASE, CENA  = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}HUkZFHm.png", f"{IGR}zRGdYRp.gif"
+CEST, DOG, BASE, CENA  = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}HUkZFHm.png", f"{IGR}zRGdYRp.gif"
 #CEST, DOG, RET, CENAINICIO  = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}HUkZFHm.png", f"{IGR}zRGdYRp.gif"
 #FUNDODIA, BILHETE, BOTAO, LOGO, PLAY = f"{IGR}zRGdYRp.gif", f"{IGR}p9SteRs.png", f"{IGR}kTocYiF.png", f"{IGR}JflnamW.png",f"{IGR}Jcnz4vj.png"
 #TRACK = "https://raw.githubusercontent.com/kwarwp/anita/master/bensound-creativeminds.mp3"
 #SOMA, SOMB, PRED = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png", f"{IGR}vL9kR9Y.png", 
 #CART, CAT, BASE, CENA = f"{IGR}m2k5sv6.png", f"{IGR}ek8oINR.png", f"{IGR}DAUyvBP.jpg", f"{IGR}nkwZCrR.jpg"
 
+class Plataforma(Elemento): #retangulo azul
+    def __init__(self, imagem, cena, x=400, y=0):
+        super().__init__(imagem, cena=cena, w=200, x=x, y=y)
+        self.destino = self
+        self.nome = "base"
+        
+    def movimenta(self, destino):
+        destino.move(self.destino)
+
+
+class Personagem(Elemento): #dog
+    def __init__(self, imagem, destino, cena, x=0, y=0):
+        super().__init__(imagem, cena=cena, x=x, y=y, w=60, h=60)
+        self.destino = destino
+        self.vai = self.move
+        
+    def move(self, evento=None):
+        self.entra(self.destino)
+
+
+class Veiculo(Elemento):
+    def __init__(self, imagem, destino, cena, x=100, y=0):
+        super().__init__(imagem, cena=cena, x=x, y=y)
+        self.nome = "veiculo"
+        self.destino = destino
+        self.vai = self._move
+        
+    def _move(self, evento=None):
+        self.destino.movimenta(self)
+        
+    def move(self, destino):
+        self.entra(destino)
+        self.destino = destino
+        
+    def movimenta(self, destino):
+        destino.move(self)
+
+
+class Basico:
+    def __init__(self):
+        self.cena = cena = Cena(CENA)
+        self.base0 = Plataforma(BASE, y=100, cena=cena)
+        self.base1 = Plataforma(BASE, y=500, cena=cena)
+        self.base0.destino, self.base1.destino = self.base1, self.base0 
+        self.cesta = Veiculo(CEST, destino=self.base1, cena=cena)
+        self.cesta.entra(self.base0)
+        self.doggie = Personagem(DOG, destino=self.cart, cena=cena)
+        cena.vai()
+        
+        
+if __name__ == "__main__":
+    Basico()
 """
 class gameInicio:
     def __init__(self):
@@ -110,57 +162,3 @@ if __name__ == "__main__":
 gameInicio()
 """
 
-
-class Plataforma(Elemento):
-    def __init__(self, imagem, cena, x=0, y=400):
-        super().__init__(imagem, cena=cena, w=200, x=x, y=y)
-        #self.elt.style.transition = "all 1s"
-        self.destino = self
-        self.nome = "base"
-        
-    def movimenta(self, destino):
-        destino.move(self.destino)
-
-
-class Personagem(Elemento):
-    def __init__(self, imagem, destino, cena, x=0, y=0):
-        super().__init__(imagem, cena=cena, x=x, y=y, w=60, h=60)
-        self.destino = destino
-        self.vai = self.move
-        
-    def move(self, evento=None):
-        self.entra(self.destino)
-
-
-class Veiculo(Elemento):
-    def __init__(self, imagem, destino, cena, x=100, y=0):
-        super().__init__(imagem, cena=cena, x=x, y=y)
-        self.nome = "veiculo"
-        self.destino = destino
-        self.vai = self._move
-        
-    def _move(self, evento=None):
-        self.destino.movimenta(self)
-        
-    def move(self, destino):
-        self.entra(destino)
-        self.destino = destino
-        
-    def movimenta(self, destino):
-        destino.move(self)
-
-
-class Basico:
-    def __init__(self):
-        self.cena = cena = Cena(CENA)
-        self.base0 = Plataforma(BASE, x=100, cena=cena)
-        self.base1 = Plataforma(BASE, x=500, cena=cena)
-        self.base0.destino, self.base1.destino = self.base1, self.base0 
-        self.cart = Veiculo(CART, destino=self.base1, cena=cena)
-        self.cart.entra(self.base0)
-        self.gato = Personagem(CAT, destino=self.cart, cena=cena)
-        cena.vai()
-        
-        
-if __name__ == "__main__":
-    Basico()
