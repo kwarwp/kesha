@@ -9,6 +9,8 @@ STYLE ["height"] = "600px"
 IGR = "https://i.imgur.com/"
 CEST, DOG, BASE, CENA, CENAINICIO  = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"", f"{IGR}zRGdYRp.gif", f"{IGR}3qdowNm.jpg"
 FUNDODIA, BILHETE, BOTAO, LOGO, PLAY = f"{IGR}zRGdYRp.gif", f"{IGR}p9SteRs.png", f"{IGR}kTocYiF.png", f"{IGR}JflnamW.png",f"{IGR}Jcnz4vj.png"
+TRACK = "https://raw.githubusercontent.com/kwarwp/anita/master/bensound-creativeminds.mp3"
+SOMA, SOMB = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png"
 
 class gameInicio:
     def __init__(self):
