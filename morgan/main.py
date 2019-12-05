@@ -8,6 +8,9 @@ STYLE ["width"] = 1320
 STYLE ["height"] = "600px"
 IGR = "https://i.imgur.com/"
 CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}7Wh2Px0.png", f"{IGR}zRGdYRp.gif", f"{IGR}vL9kR9Y.png"
+BOY, GIRL = f"{IGR}LsinOyd.png", f"{IGR}XZJuxnZ.png"
+
+
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
      def __init__(self, imagem, cena):
@@ -26,11 +29,29 @@ class Plataforma(Elemento): #retangulo azul
 
 
 class Personagem(Elemento): #dog
-    def __init__(self, imagem, destino, cena, x=600, y=0):
+    def __init__(self, imagem, destino, cena, x=560, y=130):
         super().__init__(imagem, cena=cena, x=x, y=y, w=100, h=70)
         self.destino = destino
         self.vai = self.move
         
+    def move(self, evento=None):
+        self.entra(self.destino)
+
+class Personagem2(Elemento): #Irma no predio
+    def __init__(self, imagem, destino, cena, x=580, y=70):
+        super().__init__(imagem, cena=cena, x=x, y=y, w=220, h=150)
+        self.destino = destino
+        self.vai = self.move
+
+    def move(self, evento=None):
+        self.entra(self.destino)
+
+class Personagem3(Elemento): #garoto no predio
+    def __init__(self, imagem, destino, cena, x=650, y=50):
+        super().__init__(imagem, cena=cena, x=x, y=y, w=270, h=170)
+        self.destino = destino
+        self.vai = self.move
+
     def move(self, evento=None):
         self.entra(self.destino)
 
@@ -64,6 +85,8 @@ class Basico:
         self.cesta = Veiculo(CEST, destino=self.base1, cena=cena)
         self.cesta.entra(self.base0)
         self.doggie = Personagem(DOG, destino=self.cesta, cena=cena)
+        self.menina = Personagem2(GIRL, destino=self.cesta, cena=cena)
+        self.menino = Personagem3(BOY, destino=self.cesta, cena=cena)
         cena.vai()
         
         
