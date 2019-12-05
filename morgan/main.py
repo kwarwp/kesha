@@ -26,6 +26,14 @@ class gameInicio:
         self.bil = Elemento(BILHETE, x=200, y=20,w=900,h=600, cena=dia, vai = self.elevador)
         self.boton = Elemento(BOTAO, x=820, y=470,w=70,h=70, cena=dia, vai = self.elevador)
 
+    def elevador(self):
+        todos = Cena(FUNDODIA)
+        todos.vai()
+        self.musica = Musica(TRACK)
+        self.musica.sound.pause()
+        self.musA = Elemento(SOMA, x=1200, y=500,w=80,h=80, cena=todos, vai=self.toca)
+        self.musB = Elemento(SOMB, x=-1200, y=500,w=80,h=80, cena=todos, vai=self.pause)
+        
     def toca(self, ev=0):
         self.musica.sound.play()
         self.musA.x= -1200
@@ -35,14 +43,6 @@ class gameInicio:
         self.musica.sound.pause()
         self.musA.x= 1200
         self.musB.x= -1200
-    
-    def elevador(self):
-        todos = Cena(FUNDODIA)
-        todos.vai()
-        self.musica = Musica(TRACK)
-        self.musica.sound.pause()
-        self.musA = Elemento(SOMA, x=1200, y=500,w=80,h=80, cena=todos, vai=self.toca)
-        self.musB = Elemento(SOMB, x=-1200, y=500,w=80,h=80, cena=todos, vai=self.pause)
 """
 class Basico:
     def __init__(self):
