@@ -14,7 +14,7 @@ CEST_IMG, DOG_IMG, BASE_IMG, CENA_IMG, PRED_IMG = f"{IGR}qtw6IoO.png", f"{IGR}ZQ
 #SOMA, SOMB, PRED_IMG = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png",  
 #CART, CAT, BASE_IMG, CENA_IMG = f"{IGR}m2k5sv6.png", f"{IGR}ek8oINR.png", f"{IGR}DAUyvBP.jpg", f"{IGR}nkwZCrR.jpg"
 
-#predio que  inicia bom e no fim fica queimado
+# predio que  inicia bom e no fim fica queimado (gif)
 class Predio(Elemento): 
      def __init__(self, imagem, cena, x=600, y=180):
         super().__init__(imagem, cena=cena,w=650, h=300)
