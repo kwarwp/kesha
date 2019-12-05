@@ -22,7 +22,7 @@ class Predio(Elemento):
 
 #retangulo azul
 class Plataforma(Elemento): 
-    def __init__(self, imagem, cena, x=100, y=0):
+    def __init__(self, imagem, cena, x=400, y=100):
         super().__init__(imagem, cena=cena, w=200, x=x, y=y)
         self.destino = self
         self.nome = "base"
