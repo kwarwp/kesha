@@ -438,3 +438,10 @@ AttributeError: 'Basico' object has no attribute 'cesta'
     self.doggie = Personagem(DOG, destino=self.cesta, cena=cena)
 AttributeError: 'Basico' object has no attribute 'cesta'
 '''},
+{'date': 'Thu Dec 05 2019 13:52:33.479 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  def move(self, evento=None):
+  ^
+IndentationError: unexpected indent
+'''},
