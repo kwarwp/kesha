@@ -15,8 +15,8 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}7
 #CART, CAT, BASE, CENA = f"{IGR}m2k5sv6.png", f"{IGR}ek8oINR.png", f"{IGR}DAUyvBP.jpg", f"{IGR}nkwZCrR.jpg"
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
-     def __init__(self, imagem, cena, x=500, y=180, w=600, h=300):
-        #super().__init__(imagem, cena=cena, )
+     def __init__(self, imagem, cena, x=500, y=180):
+        super().__init__(imagem, cena=cena,w=600, h=300)
         #self.destino = self
         self.nome = "casa"
 
