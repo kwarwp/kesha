@@ -16,7 +16,7 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}7
 
 #predio que  inicia bom e no fim fica queimado
 class Predio(Elemento): 
-     def __init__(self, imagem, cena, x=600, y=180):
+     def __init__(self, imagem, cena, x=600, y=500):
         super().__init__(imagem, cena=cena,w=650, h=300)
         self.nome = "casa"
 
