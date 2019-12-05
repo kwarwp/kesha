@@ -35,5 +35,8 @@ class gameInicio:
         self.musica.sound.pause()
         self.musA.x= 1200
         self.musB.x= -1200
+    
+    def elevador(self):
+        pass
 
 gameInicio()
