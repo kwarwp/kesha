@@ -14,13 +14,14 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}7
 #SOMA, SOMB, PRED = f"{IGR}Rpo5MDy.png", f"{IGR}Hysq98H.png",  
 #CART, CAT, BASE, CENA = f"{IGR}m2k5sv6.png", f"{IGR}ek8oINR.png", f"{IGR}DAUyvBP.jpg", f"{IGR}nkwZCrR.jpg"
 
-class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
+#predio que  inicia bom e no fim fica queimado
+class Predio(Elemento): 
      def __init__(self, imagem, cena, x=600, y=180):
         super().__init__(imagem, cena=cena,w=650, h=300)
         self.nome = "casa"
 
-
-class Plataforma(Elemento): #retangulo azul
+#retangulo azul
+class Plataforma(Elemento): 
     def __init__(self, imagem, cena, x=400, y=0):
         super().__init__(imagem, cena=cena, w=200, x=x, y=y)
         self.destino = self
@@ -29,8 +30,8 @@ class Plataforma(Elemento): #retangulo azul
     def movimenta(self, destino):
         destino.move(self.destino)
 
-
-class Personagem(Elemento): #dog
+#dog, menino e menina (futuramente)
+class Personagem(Elemento): 
     def __init__(self, imagem, destino, cena, x=600, y=0):
         super().__init__(imagem, cena=cena, x=x, y=y, w=100, h=70)
         self.destino = destino
@@ -39,7 +40,7 @@ class Personagem(Elemento): #dog
     def move(self, evento=None):
         self.entra(self.destino)
 
-
+#Cestas que os personagens entrarão
 class Veiculo(Elemento):
     def __init__(self, imagem, destino, cena, x=100, y=0):
         super().__init__(imagem, cena=cena, x=x, y=y)
@@ -57,7 +58,6 @@ class Veiculo(Elemento):
     def movimenta(self, destino):
         destino.move(self)
 
-
 class Basico:
     def __init__(self):
         self.cena = cena = Cena(CENA)
@@ -71,7 +71,6 @@ class Basico:
         self.doggie = Personagem(DOG, destino=self.cesta, cena=cena)
         
         cena.vai()
-        
         
 if __name__ == "__main__":
     Basico()
