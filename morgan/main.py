@@ -50,8 +50,8 @@ class gameInicio:
 """
 
 class Plataforma(Elemento): #são as bases fantasmas
-    def __init__(self, imagem, cena, x=0, y=400):
-        super().__init__(imagem, cena=cena, w=200, x=x, y=y)
+    def __init__(self, imagem, cena, x=400, y=0):
+        super().__init__(imagem, cena=cena, w=100, x=x, y=y)
         self.destino = self
         self.nome = "base"
         
@@ -60,8 +60,8 @@ class Plataforma(Elemento): #são as bases fantasmas
 
 
 class Personagem(Elemento): # dog
-    def __init__(self, imagem, destino, cena, x=0, y=0):
-        super().__init__(imagem, cena=cena, x=x, y=y, w=60, h=60)
+    def __init__(self, imagem, destino, cena, x=540, y=130):
+        super().__init__(imagem, cena=cena, x=x, y=y, w=100, h=70)
         self.destino = destino
         self.vai = self.move
         
@@ -70,7 +70,7 @@ class Personagem(Elemento): # dog
 
 
 class Veiculo(Elemento): #é a cesta
-    def __init__(self, imagem, destino, cena, x=100, y=0):
+    def __init__(self, imagem, destino, cena, x=180, y=120):
         super().__init__(imagem, cena=cena, x=x, y=y)
         self.nome = "veiculo"
         self.destino = destino
@@ -91,8 +91,8 @@ class Veiculo(Elemento): #é a cesta
 class Basico:
     def __init__(self):
         self.cena = cena = Cena(FUNDODIA)
-        self.base0 = Plataforma(RET, x=500, y= 100, cena=cena)
-        self.base1 = Plataforma(RET, x=500, y= 500, cena=cena)
+        self.base0 = Plataforma(RET, y= 100, cena=cena)
+        self.base1 = Plataforma(RET, y= 500, cena=cena)
         self.base0.destino, self.base1.destino = self.base1, self.base0 
         self.cesta = Veiculo(CEST, destino=self.base1, cena=cena)
         self.cesta.entra(self.base0)
