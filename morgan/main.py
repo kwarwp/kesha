@@ -20,7 +20,7 @@ class Predio(Elemento):
         super().__init__(imagem, cena=cena,w=650, h=300)
         self.nome = "casa"
 
-#retangulo azul
+# retangulo azul
 class Plataforma(Elemento):
     def __init__(self, imagem, cena, x=400, y=0):
         super().__init__(imagem, cena=cena, w=200, x=x, y=y)
