@@ -60,7 +60,7 @@ class Basico:
         self.base0.destino, self.base1.destino = self.base1, self.base0 
         self.cesta = Veiculo(CEST, destino=self.base1, cena=cena)
         self.cesta.entra(self.base0)
-        self.doggie = Personagem(DOG, destino=self.cart, cena=cena)
+        self.doggie = Personagem(DOG, destino=self.cesta, cena=cena)
         cena.vai()
         
         
