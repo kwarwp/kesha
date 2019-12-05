@@ -492,3 +492,10 @@ AttributeError: 'Personagem3' object has no attribute 'move'
     self.vai = self.move
 AttributeError: 'Personagem3' object has no attribute 'move'
 '''},
+{'date': 'Thu Dec 05 2019 13:55:59.93 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 55
+  def move(self, evento=None):
+  ^
+IndentationError: unexpected indent
+'''},
