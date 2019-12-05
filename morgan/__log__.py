@@ -499,3 +499,10 @@ AttributeError: 'Personagem3' object has no attribute 'move'
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Thu Dec 05 2019 14:15:29.394 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 60
+  def __init__(self, imagem, destino, cena, x=90, y=0)*2:
+                                                       ^
+SyntaxError: invalid syntax
+'''},
