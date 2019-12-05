@@ -16,8 +16,7 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ZQ9SSMz.png", f"{IGR}7
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
      def __init__(self, imagem, cena, x=500, y=180):
-        super().__init__(imagem, cena=cena,w=600, h=300)
-        #self.destino = self
+        super().__init__(imagem, cena=cena,w=650, h=300)
         self.nome = "casa"
 
 
@@ -62,13 +61,15 @@ class Veiculo(Elemento):
 class Basico:
     def __init__(self):
         self.cena = cena = Cena(CENA)
+        self.casa = Predio(PRED, cena=cena)
+        self.casa.entra(cena)
         self.base0 = Plataforma(BASE, y=100, cena=cena)
         self.base1 = Plataforma(BASE, y=500, cena=cena)
         self.base0.destino, self.base1.destino = self.base1, self.base0 
         self.cesta = Veiculo(CEST, destino=self.base1, cena=cena)
         self.cesta.entra(self.base0)
         self.doggie = Personagem(DOG, destino=self.cesta, cena=cena)
-        self.casa = Predio(PRED, cena=cena)
+        
         cena.vai()
         
         
