@@ -9,7 +9,7 @@ STYLE ["height"] = "600px"
 IGR = "https://i.imgur.com/"
 CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ek5NQYw.png", f"{IGR}7Wh2Px0.png", f"{IGR}zRGdYRp.gif", f"{IGR}vL9kR9Y.png"
 BOY, GIRL = f"{IGR}MXiGMEc.png", f"{IGR}GDK3tcT.png"
-
+CESTF = f"{IGR}QRKt9p8.png"
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
      def __init__(self, imagem, cena):
@@ -19,7 +19,7 @@ class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
 #Lado esquerdo
 class Plataforma(Elemento): #retangulo tranparente
     def __init__(self, imagem, cena, x=430, y=0):
-        super().__init__(imagem, cena=cena, w=200, x=x, y=y)
+        super().__init__(imagem, cena=cena, w=500, x=x, y=y)
         self.destino = self
         self.nome = "base"
         
