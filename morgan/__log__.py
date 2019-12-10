@@ -506,3 +506,10 @@ IndentationError: unexpected indent
                                                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Dec 10 2019 14:43:42.414 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 103
+  self.cesta2 = Veiculo (CEST, destino= self.base0, cena= self,base1, x=200)
+                                                                    ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
