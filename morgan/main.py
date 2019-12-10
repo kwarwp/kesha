@@ -7,9 +7,8 @@ from _spy.vitollino.main import Cena, Texto, Elemento, INVENTARIO, STYLE, Musica
 STYLE ["width"] = 1320
 STYLE ["height"] = "600px"
 IGR = "https://i.imgur.com/"
-CEST, DOG, BASE, CENA, PRED = f"{IGR}9Uzn7n6.png", f"{IGR}ZQ9SSMz.png", f"{IGR}7Wh2Px0.png", f"{IGR}zRGdYRp.gif", f"{IGR}vL9kR9Y.png"
-BOY, GIRL = f"{IGR}LsinOyd.png", f"{IGR}XZJuxnZ.png"
-
+CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ek5NQYw.png", f"{IGR}7Wh2Px0.png", f"{IGR}zRGdYRp.gif", f"{IGR}vL9kR9Y.png"
+BOY, GIRL = f"{IGR}MXiGMEc.png", f"{IGR}GDK3tcT.png"
 
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
@@ -19,7 +18,7 @@ class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
 
 #Lado esquerdo
 class Plataforma(Elemento): #retangulo tranparente
-    def __init__(self, imagem, cena, x=400, y=0):
+    def __init__(self, imagem, cena, x=430, y=0):
         super().__init__(imagem, cena=cena, w=200, x=x, y=y)
         self.destino = self
         self.nome = "base"
@@ -29,51 +28,51 @@ class Plataforma(Elemento): #retangulo tranparente
 
 
 class Personagem(Elemento): #dog
-    def __init__(self, imagem, destino, cena, x=560, y=130):
-        super().__init__(imagem, cena=cena, x=x, y=y, w=100, h=70)
+    def __init__(self, imagem, destino, cena, x=540, y=150):
+        super().__init__(imagem, cena=cena, x=x, y=y, w=80, h=50)
         self.destino = destino
         self.vai = self.move
         
     def move(self, evento=None):
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
-        self.x=0
-        self.y=0
+        self.x=30
+        self.y=20
 
 
 class Personagem2(Elemento): #Irma no predio
-    def __init__(self, imagem, destino, cena, x=580, y=70):
-        super().__init__(imagem, cena=cena, x=x, y=y, w=220, h=150)
+    def __init__(self, imagem, destino, cena, x=620, y=120):
+        super().__init__(imagem, cena=cena, x=x, y=y, w=60, h=80)
         self.destino = destino
         self.vai = self.move
 
     def move(self, evento=None):
         self.entra(self.destino)
-        self.x=0
+        self.x=50
         self.y=0
 
 class Personagem3(Elemento): #garoto no predio
-    def __init__(self, imagem, destino, cena, x=650, y=50):
-        super().__init__(imagem, cena=cena, x=x, y=y, w=270, h=170)
+    def __init__(self, imagem, destino, cena, x=710, y=100):
+        super().__init__(imagem, cena=cena, x=x, y=y, w=60, h=100)
         self.destino = destino
         self.vai = self.move
 
     def move(self, evento=None):
         self.entra(self.destino)
-        self.x=0
+        self.x=70
         self.y=0
 
 
 class Veiculo(Elemento): #cesta da esquerda
-    def __init__(self, imagem, destino, cena, x=90, y=0):
-        super().__init__(imagem, cena=cena, x=x, y=y)
+    def __init__(self, imagem, destino, cena, x=0, y=0):
+        super().__init__(imagem, cena=cena, w= 170, x=x, y=y)
         self.nome = "veiculo"
         self.destino = destino
         self.outro = self
         self.vai = self.mover
-        #self.vai = self._move
+
         
-    def mover(self, evento = None):
+    def mover(self, evento=None):
         self.do_move()
         self.outro.do_move()
     
@@ -100,7 +99,7 @@ class Basico:
         self.base0.destino, self.base1.destino = self.base1, self.base0 
         
         self.cesta = Veiculo(CEST, destino=self.base1, cena=self.base0)
-        self.cesta2 = Veiculo(CEST, destino= self.base0, cena= self.base1, x=200)
+        self.cesta2 = Veiculo(CEST, destino= self.base0, cena= self.base1, x=300)
         self.cesta.outro, self.cesta2.outro = self.cesta2.outro, self.cesta.outro
         
         
