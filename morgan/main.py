@@ -69,9 +69,15 @@ class Veiculo(Elemento): #cesta da esquerda
         super().__init__(imagem, cena=cena, x=x, y=y)
         self.nome = "veiculo"
         self.destino = destino
-        self.vai = self._move
+        self.outro = self
+        self.vai = self.mover
+        #self.vai = self._move
         
-    def _move(self, evento=None):
+    def mover(self, evento = None):
+        self.do_move()
+        self.outro.do_move()
+    
+    def do_move(self, evento=None):
         self.destino.movimenta(self)
         
     def move(self, destino):
@@ -81,23 +87,6 @@ class Veiculo(Elemento): #cesta da esquerda
     def movimenta(self, destino):
         destino.move(self)
 
-#Lado direito
-class Veiculo2(Elemento): #cesta da direita
-    def __init__(self, imagem, destino, cena, x=300, y=0):
-        super().__init__(imagem, cena=cena, x=x, y=y)
-        self.nome = "veiculo2"
-        self.destino = destino
-        self.vai = self._move
-        
-    def _move(self, evento=None):
-        self.destino.movimenta(self)
-        
-    def move(self, destino):
-        self.entra(destino)
-        self.destino = destino
-        
-    def movimenta(self, destino):
-        destino.move(self)
 
 
 class Basico:
@@ -111,12 +100,16 @@ class Basico:
         self.base0.destino, self.base1.destino = self.base1, self.base0 
         
         self.cesta = Veiculo(CEST, destino=self.base1, cena=self.base0)
-        #self.cesta.entra(self.base0)
-                      
+        self.cesta2 = Veiculo (CEST, destino= self.base0, cena= self,base1, x=200)
+        self.cesta.outro, self.cesta2.outro = self.cesta2.outro, self.cesta.outro
+        
+        
         self.doggie = Personagem(DOG, destino=self.cesta, cena=cena)
         self.menina = Personagem2(GIRL, destino=self.cesta, cena=cena)
         self.menino = Personagem3(BOY, destino=self.cesta, cena=cena)
         
+        
+        """
         #Lado direito
                 
         self.base0a = Plataforma(BASE, y=200, cena=cena)
@@ -125,6 +118,7 @@ class Basico:
                    
         self.cesta2 = Veiculo2(CEST, destino=self.base1a, cena=cena)
         self.cesta2.entra(self.base0a)
+        """
         cena.vai()
         
         
