@@ -19,7 +19,7 @@ class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
 #Lado esquerdo
 class Plataforma(Elemento): #retangulo tranparente
     def __init__(self, imagem, cena, x=430, y=0):
-        super().__init__(imagem, cena=cena, w=500, x=x, y=y)
+        super().__init__(imagem, cena=cena, w=500,h=200, x=x, y=y)
         self.destino = self
         self.nome = "base"
         
@@ -36,8 +36,8 @@ class Personagem(Elemento): #dog
     def move(self, evento=None):
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
-        self.x=30
-        self.y=20
+        self.x=50
+        self.y=10
 
 
 class Personagem2(Elemento): #Irma no predio
@@ -48,8 +48,8 @@ class Personagem2(Elemento): #Irma no predio
 
     def move(self, evento=None):
         self.entra(self.destino)
-        self.x=50
-        self.y=0
+        self.x=70
+        self.y=10
 
 class Personagem3(Elemento): #garoto no predio
     def __init__(self, imagem, destino, cena, x=710, y=100):
