@@ -67,8 +67,8 @@ class Veiculo(Elemento): #cesta da esquerda
     def __init__(self, imagem, destino, cena, x=0, y=0):
         self.nome = "veiculo" 
         super().__init__(imagem, cena=cena, w= 170, x=x, y=y)
-        self.fundo = Elemento(imagem, cena=self, x=0, y=0)
-        frente = Elemento(imagem, cena=self, x=0, y=0)
+        self.fundo = Elemento(img = CESTF,cena=self, x=-20, y=20, w=200, h =100)
+        frente = Elemento(img = CESTF, cena=self, x=-20, y=20, w=200, h =100)
         self.destino = destino
         self.outro = self
         self.vai = self.mover
@@ -106,8 +106,8 @@ class Basico:
         
         
         self.doggie = Personagem(DOG, destino=self.cesta.fundo, cena=cena)
-        self.menina = Personagem2(GIRL, destino=self.cesta, cena=cena)
-        self.menino = Personagem3(BOY, destino=self.cesta, cena=cena)
+        self.menina = Personagem2(GIRL, destino=self.cesta.fundo, cena=cena)
+        self.menino = Personagem3(BOY, destino=self.cesta.fundo, cena=cena)
 
         cena.vai()
         
