@@ -9,7 +9,7 @@ STYLE ["height"] = "600px"
 IGR = "https://i.imgur.com/"
 CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ek5NQYw.png", f"{IGR}7Wh2Px0.png", f"{IGR}zRGdYRp.gif", f"{IGR}vL9kR9Y.png"
 BOY, GIRL = f"{IGR}MXiGMEc.png", f"{IGR}GDK3tcT.png"
-CESTF = f"{IGR}QRKt9p8.png"
+CESTF = f"{IGR}am71B72.png"
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
      def __init__(self, imagem, cena):
@@ -36,8 +36,8 @@ class Personagem(Elemento): #dog
     def move(self, evento=None):
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
-        self.x=50
-        self.y=10
+        self.x=15
+        self.y=13
 
 
 class Personagem2(Elemento): #Irma no predio
@@ -48,8 +48,8 @@ class Personagem2(Elemento): #Irma no predio
 
     def move(self, evento=None):
         self.entra(self.destino)
-        self.x=70
-        self.y=5
+        self.x=50
+        self.y=0
 
 class Personagem3(Elemento): #garoto no predio
     def __init__(self, imagem, destino, cena, x=710, y=100):
@@ -59,7 +59,7 @@ class Personagem3(Elemento): #garoto no predio
 
     def move(self, evento=None):
         self.entra(self.destino)
-        self.x=70
+        self.x=80
         self.y=0
 
 
@@ -68,7 +68,7 @@ class Veiculo(Elemento): #cesta da esquerda
         self.nome = "veiculo" 
         super().__init__(imagem, cena=cena, w= 170, x=x, y=y)
         self.fundo = Elemento(img = imagem,cena=self, x=0, y=0, w=170)
-        frente = Elemento(img = CESTF, cena=self, x=-20, y=20, w=200, h =100)
+        frente = Elemento(img = CESTF, cena=self, x=15, y=45, w=140, h =56)
         self.destino = destino
         self.outro = self
         self.vai = self.mover
@@ -87,7 +87,6 @@ class Veiculo(Elemento): #cesta da esquerda
         
     def movimenta(self, destino):
         destino.move(self)
-
 
 
 class Basico:
