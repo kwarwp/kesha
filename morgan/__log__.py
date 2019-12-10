@@ -520,3 +520,10 @@ SyntaxError: non-keyword arg after keyword arg
                                                                    ^
 SyntaxError: non-keyword arg after keyword arg
 '''},
+{'date': 'Tue Dec 10 2019 14:49:20.502 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 103
+  self.cesta2 = Veiculo(CEST, destino= self.base0, cena= self,base1)
+                                                                   ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
