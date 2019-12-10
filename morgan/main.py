@@ -49,7 +49,7 @@ class Personagem2(Elemento): #Irma no predio
     def move(self, evento=None):
         self.entra(self.destino)
         self.x=70
-        self.y=10
+        self.y=5
 
 class Personagem3(Elemento): #garoto no predio
     def __init__(self, imagem, destino, cena, x=710, y=100):
@@ -64,10 +64,10 @@ class Personagem3(Elemento): #garoto no predio
 
 
 class Veiculo(Elemento): #cesta da esquerda
-    def __init__(self, imagem, destino, cena, x=0, y=0):
+    def __init__(self, imagem, destino, cena, x=0, y=10):
         self.nome = "veiculo" 
         super().__init__(imagem, cena=cena, w= 170, x=x, y=y)
-        self.fundo = Elemento(img = CESTF,cena=self, x=-20, y=20, w=200, h =100)
+        self.fundo = Elemento(img = imagem,cena=self, x=0, y=0, w=170)
         frente = Elemento(img = CESTF, cena=self, x=-20, y=20, w=200, h =100)
         self.destino = destino
         self.outro = self
