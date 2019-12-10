@@ -563,3 +563,10 @@ TypeError: __init__ missing 1 positional argument: 'texto'
     self.doggie = Personagem(DOG, destino=self.cesta.fundo, cena=cena)
 TypeError: __init__ missing 1 positional argument: 'texto'
 '''},
+{'date': 'Tue Dec 10 2019 16:36:56.247 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 70
+  self.fundo = Elemento(img = CESTF,cena=self, x=10, y=10, w=100, h = )
+                                                                       ^
+SyntaxError: invalid syntax
+'''},
