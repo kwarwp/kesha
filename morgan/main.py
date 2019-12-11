@@ -12,9 +12,10 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ek5NQYw.png", f"{IGR}7
 BOY, GIRL = f"{IGR}MXiGMEc.png", f"{IGR}GDK3tcT.png"
 CESTF = f"{IGR}am71B72.png"
 
-P1Xa = 540
-P1Ya = 150
-Sw1  = False
+class Elemento(self):
+    self.P1Xa = 540
+    self.P1Ya = 150
+    self.Sw1  = False
 
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
@@ -43,18 +44,19 @@ class Personagem(Elemento): #dog
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
         
-        self.Sw1 = not (self.Sw1)
+        obj = Elemento()
+        obj.Sw1 = not (obj.Sw1)
         
-        print(self.Sw1)
-        print(self.P1Xa)
-        print(self.P1Ya)
+        print(obj.Sw1)
+        print(obj.P1Xa)
+        print(obj.P1Ya)
         
-        if self.Sw1==True:
+        if obj.Sw1==True:
             self.x=15
             self.y=13
         else:
-            self.x = self.P1Xa
-            self.y = self.P1Ya
+            self.x = obj.P1Xa
+            self.y = obj.P1Ya
         
         self.destino = Cena(img =CENA)#cao tá saindo mas some no espaço
         
