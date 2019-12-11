@@ -1,6 +1,7 @@
 # kesha.morgan.main.py
 # sarah.roxanne.main.py
 __autor__ = "Isabel Hortencia Garnica"
+__designer__ = "Marília Campos Galvão"
 __version__ = "05.12.2019"
 from _spy.vitollino.main import Cena, Texto, Elemento, INVENTARIO, STYLE, Musica
 
@@ -38,7 +39,8 @@ class Personagem(Elemento): #dog
         self.entra(self.destino)
         self.x=15
         self.y=13
-
+        self.destino = Cena(img =CENA)#cao tá saindo mas some no espaço
+        
 
 class Personagem2(Elemento): #Irma no predio
     def __init__(self, imagem, destino, cena, x=620, y=120):
