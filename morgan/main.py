@@ -14,7 +14,7 @@ CESTF = f"{IGR}am71B72.png"
 
 P1Xa = 540
 P1Ya = 150
-Sw1 = False
+Sw1  = False
 
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
@@ -43,9 +43,11 @@ class Personagem(Elemento): #dog
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
         
-        Sw1 = not Sw1
+        Sw1 = True
+        
         print(Sw1)
-        if self.Sw1==True:
+        
+        if Sw1==True:
             self.x=15
             self.y=13
         else:
@@ -155,13 +157,11 @@ class Basico:
         self.cesta.outro, self.cesta2.outro = self.cesta2.outro, self.cesta.outro
         
         
-        """        
         self.doggie = Personagem(DOG, destino=self.cesta.fundo, cena=cena)
         self.menina = Personagem2(GIRL, destino=self.cesta.fundo, cena=cena)
         self.menino = Personagem3(BOY, destino=self.cesta.fundo, cena=cena)
 
         cena.vai()
-        """
         
         
 if __name__ == "__main__":
