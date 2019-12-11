@@ -586,3 +586,10 @@ SyntaxError: invalid syntax
     class Personagem(Elemento, x, y): #dog
 NameError: name 'x' is not defined
 '''},
+{'date': 'Wed Dec 11 2019 10:01:35.253 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  super().__init__(imagem, cena=cena,  tit, x=x, y=y, w=80, h=h)
+                                          ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
