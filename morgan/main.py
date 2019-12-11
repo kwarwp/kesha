@@ -43,16 +43,18 @@ class Personagem(Elemento): #dog
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
         
-        Sw1 = !Sw1
+        Sw1 = not (Sw1)
         
         print(Sw1)
+        print(P1Xa)
+        print(P1Ya)
         
         if Sw1==True:
             self.x=15
             self.y=13
         else:
-            self.x=P1Xa
-            self.y=P1Xb
+            self.x = P1Xa
+            self.y = P1Ya
         
         self.destino = Cena(img =CENA)#cao tá saindo mas some no espaço
         
