@@ -639,3 +639,7 @@ SyntaxError: invalid syntax
 'error': '''
 Exception: <TypeError: bases[i].$dict is undefined>
 '''},
+{'date': 'Wed Dec 11 2019 11:40:03.495 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: bases[i].$dict is undefined>
+'''},
