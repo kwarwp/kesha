@@ -93,6 +93,44 @@ class Veiculo(Elemento): #cesta da esquerda
 
 class Basico:
     def __init__(self):
+
+        #cachorro
+        self.Sw1 = False;
+        #menina
+        self.Sw2 = False;
+        #garoto
+        self.Sw3 = False;
+
+
+        #cachorro
+        self.P1Xa = 0;
+        self.P1Ya = 0;
+        self.P1Xb = 0;
+        self.P1Yb = 0;
+        self.P1Xc = 0;
+        self.P1Yc = 0;
+
+        #menina
+        self.P2Xa = 0;
+        self.P2Ya = 0;
+        self.P2Xb = 0;
+        self.P2Yb = 0;
+        self.P2Xc = 0;
+        self.P2Yc = 0;
+
+        #garoto
+        self.P3Xa = 0;
+        self.P3Ya = 0;
+        self.P3Xb = 0;
+        self.P3Yb = 0;
+        self.P3Xc = 0;
+        self.P3Yc = 0;
+
+
+    
+
+
+
         self.cena = cena = Cena(CENA)
         self.casa = Predio(PRED, cena=cena)
         self.casa.entra(self.cena)
