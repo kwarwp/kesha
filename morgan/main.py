@@ -49,7 +49,7 @@ class Personagem(Elemento): #dog
         #obj = VALORES()
         self.Sw1 = not (self.Sw1)
         
-        print(Sw1)
+        print(self.Sw1)
         #print(obj.P1Xa)
         #print(obj.P1Ya)
         
