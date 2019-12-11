@@ -593,3 +593,10 @@ NameError: name 'x' is not defined
                                           ^
 SyntaxError: non-keyword arg after keyword arg
 '''},
+{'date': 'Wed Dec 11 2019 10:01:50.670 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 110
+  self.menina = Personagem(GIRL, destino=self.cesta.fundo, cena=cena, tit = "20kg" x=620, y=120, h=80)
+                                                                                    ^
+SyntaxError: invalid syntax
+'''},
