@@ -142,11 +142,6 @@ class Basico:
         self.P3Xd = 0
         self.P3Yd = 0
 
-
-    
-
-
-
         self.cena = cena = Cena(CENA)
         self.casa = Predio(PRED, cena=cena)
         self.casa.entra(self.cena)
@@ -160,13 +155,15 @@ class Basico:
         self.cesta.outro, self.cesta2.outro = self.cesta2.outro, self.cesta.outro
         
         
+        """        
         self.doggie = Personagem(DOG, destino=self.cesta.fundo, cena=cena)
         self.menina = Personagem2(GIRL, destino=self.cesta.fundo, cena=cena)
         self.menino = Personagem3(BOY, destino=self.cesta.fundo, cena=cena)
 
         cena.vai()
+        """
         
         
 if __name__ == "__main__":
-    #Basico()
-    pass
+    Basico()
+    #print(123)
