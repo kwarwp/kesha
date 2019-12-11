@@ -36,7 +36,7 @@ class Plataforma(Elemento): #retangulo tranparente
 
 
 #Personagem(DOG, destino=self.cesta.fundo, cena=cena)
-class Personagem(self, Elemento): #dog
+class Personagem(Elemento): #dog
     def __init__(self, imagem, destino, cena, x=540, y=150):
         super().__init__(imagem, cena=cena,  tit = "10kg", x=x, y=y, w=80, h=50)
         self.destino = destino
@@ -46,10 +46,10 @@ class Personagem(self, Elemento): #dog
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
         
-        #obj = VALORES()
-        self.Sw1 = not (self.Sw1)
+        super().Sw1 = not (super().Sw1)
         
-        print(self.Sw1)
+        
+        print(super().Sw1)
         #print(obj.P1Xa)
         #print(obj.P1Ya)
         
@@ -166,7 +166,7 @@ class Basico:
         self.cesta.outro, self.cesta2.outro = self.cesta2.outro, self.cesta.outro
         
         
-        self.doggie = Personagem(self,DOG, destino=self.cesta.fundo, cena=cena)
+        self.doggie = Personagem(DOG, destino=self.cesta.fundo, cena=cena)
         self.menina = Personagem2(GIRL, destino=self.cesta.fundo, cena=cena)
         self.menino = Personagem3(BOY, destino=self.cesta.fundo, cena=cena)
 
