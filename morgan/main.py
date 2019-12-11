@@ -37,8 +37,16 @@ class Personagem(Elemento): #dog
     def move(self, evento=None):
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
-        self.x=15
-        self.y=13
+        
+        self.Sw1 = not self.Sw1
+        print(self.Sw1)
+        if self.Sw1==True:
+            self.x=15
+            self.y=13
+        else:
+            self.x=540
+            self.y=150
+        
         self.destino = Cena(img =CENA)#cao tá saindo mas some no espaço
         
 
