@@ -12,7 +12,7 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ek5NQYw.png", f"{IGR}7
 BOY, GIRL = f"{IGR}MXiGMEc.png", f"{IGR}GDK3tcT.png"
 CESTF = f"{IGR}am71B72.png"
 
-class VALORES():
+class zVALORES():
      def __init__(self):
         self.P1Xa = 540
         self.P1Ya = 150
@@ -35,6 +35,7 @@ class Plataforma(Elemento): #retangulo tranparente
         destino.move(self.destino)
 
 
+#Personagem(DOG, destino=self.cesta.fundo, cena=cena)
 class Personagem(Elemento): #dog
     def __init__(self, imagem, destino, cena, x=540, y=150):
         super().__init__(imagem, cena=cena,  tit = "10kg", x=x, y=y, w=80, h=50)
@@ -46,18 +47,18 @@ class Personagem(Elemento): #dog
         self.entra(self.destino)
         
         #obj = VALORES()
-        Sw1 = not (Sw1)
+        self.Sw1 = not (self.Sw1)
         
         print(Sw1)
         #print(obj.P1Xa)
         #print(obj.P1Ya)
         
-        if Sw1==True:
-            self.x=15
-            self.y=13
-        else:
-            self.x = P1Xa
-            self.y = P1Ya
+        #if Sw1==True:
+        self.x=15
+        self.y=13
+        #else:
+        #    self.x = P1Xa
+        #    self.y = P1Ya
         
         self.destino = Cena(img =CENA)#cao tá saindo mas some no espaço
         
@@ -115,6 +116,7 @@ class Basico:
     def __init__(self):
 
         #cachorro
+        self.Sw1  = False
         #menina
         self.Sw2 = False
         #garoto
@@ -122,6 +124,8 @@ class Basico:
 
 
         #cachorro
+        self.P1Xa = 540
+        self.P1Ya = 150
         self.P1Xb = 0
         self.P1Yb = 0
         self.P1Xc = 0
@@ -170,8 +174,5 @@ class Basico:
         
         
 if __name__ == "__main__":
-    self.P1Xa = 540
-    self.P1Ya = 150
-    self.Sw1  = False
     Basico()
     #print(123)
