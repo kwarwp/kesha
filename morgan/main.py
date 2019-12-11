@@ -12,10 +12,11 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ek5NQYw.png", f"{IGR}7
 BOY, GIRL = f"{IGR}MXiGMEc.png", f"{IGR}GDK3tcT.png"
 CESTF = f"{IGR}am71B72.png"
 
-class Elemento(self):
-    self.P1Xa = 540
-    self.P1Ya = 150
-    self.Sw1  = False
+class VALORES():
+     def __init__(self):
+        self.P1Xa = 540
+        self.P1Ya = 150
+        self.Sw1  = False
 
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
@@ -44,7 +45,7 @@ class Personagem(Elemento): #dog
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
         
-        obj = Elemento()
+        obj = VALORES()
         obj.Sw1 = not (obj.Sw1)
         
         print(obj.Sw1)
