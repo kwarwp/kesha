@@ -621,3 +621,10 @@ IndentationError: expected an indented block
            ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Wed Dec 11 2019 10:55:11.392 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 171
+  #Basico()
+           ^
+IndentationError: expected an indented block
+'''},
