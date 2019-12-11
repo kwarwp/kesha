@@ -628,3 +628,10 @@ IndentationError: expected an indented block
            ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Wed Dec 11 2019 11:15:05.439 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  Sw1 = !Sw1
+         ^
+SyntaxError: invalid syntax
+'''},
