@@ -45,19 +45,19 @@ class Personagem(Elemento): #dog
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
         
-        obj = VALORES()
-        obj.Sw1 = not (obj.Sw1)
+        #obj = VALORES()
+        Sw1 = not (Sw1)
         
-        print(obj.Sw1)
-        print(obj.P1Xa)
-        print(obj.P1Ya)
+        print(Sw1)
+        #print(obj.P1Xa)
+        #print(obj.P1Ya)
         
-        if obj.Sw1==True:
+        if Sw1==True:
             self.x=15
             self.y=13
         else:
-            self.x = obj.P1Xa
-            self.y = obj.P1Ya
+            self.x = P1Xa
+            self.y = P1Ya
         
         self.destino = Cena(img =CENA)#cao tá saindo mas some no espaço
         
@@ -170,5 +170,8 @@ class Basico:
         
         
 if __name__ == "__main__":
+    self.P1Xa = 540
+    self.P1Ya = 150
+    self.Sw1  = False
     Basico()
     #print(123)
