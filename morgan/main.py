@@ -12,12 +12,6 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ek5NQYw.png", f"{IGR}7
 BOY, GIRL = f"{IGR}MXiGMEc.png", f"{IGR}GDK3tcT.png"
 CESTF = f"{IGR}am71B72.png"
 
-class zVALORES():
-     def __init__(self):
-        self.P1Xa = 540
-        self.P1Ya = 150
-        self.Sw1  = False
-
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
      def __init__(self, imagem, cena):
@@ -46,19 +40,8 @@ class Personagem(Elemento): #dog
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
         
-        super().Sw1 = not (super().Sw1)
-        
-        
-        print(super().Sw1)
-        #print(obj.P1Xa)
-        #print(obj.P1Ya)
-        
-        #if Sw1==True:
         self.x=15
         self.y=13
-        #else:
-        #    self.x = P1Xa
-        #    self.y = P1Ya
         
         self.destino = Cena(img =CENA)#cao tá saindo mas some no espaço
         
@@ -114,45 +97,6 @@ class Veiculo(Elemento): #cesta da esquerda
 
 class Basico:
     def __init__(self):
-
-        #cachorro
-        self.Sw1  = False
-        #menina
-        self.Sw2 = False
-        #garoto
-        self.Sw3 = False
-
-
-        #cachorro
-        self.P1Xa = 540
-        self.P1Ya = 150
-        self.P1Xb = 0
-        self.P1Yb = 0
-        self.P1Xc = 0
-        self.P1Yc = 0
-        self.P1Xd = 0
-        self.P1Yd = 0
-
-        #menina
-        self.P2Xa = 620
-        self.P2Ya = 120
-        self.P2Xb = 0
-        self.P2Yb = 0
-        self.P2Xc = 0
-        self.P2Yc = 0
-        self.P2Xd = 0
-        self.P2Yd = 0
-
-        #garoto
-        self.P3Xa = 710
-        self.P3Ya = 100
-        self.P3Xb = 0
-        self.P3Yb = 0
-        self.P3Xc = 0
-        self.P3Yc = 0
-        self.P3Xd = 0
-        self.P3Yd = 0
-
         self.cena = cena = Cena(CENA)
         self.casa = Predio(PRED, cena=cena)
         self.casa.entra(self.cena)
@@ -165,7 +109,6 @@ class Basico:
         self.cesta2 = Veiculo(CEST, destino= self.base0, cena= self.base1, x=300)
         self.cesta.outro, self.cesta2.outro = self.cesta2.outro, self.cesta.outro
         
-        
         self.doggie = Personagem(DOG, destino=self.cesta.fundo, cena=cena)
         self.menina = Personagem2(GIRL, destino=self.cesta.fundo, cena=cena)
         self.menino = Personagem3(BOY, destino=self.cesta.fundo, cena=cena)
@@ -175,4 +118,3 @@ class Basico:
         
 if __name__ == "__main__":
     Basico()
-    #print(123)
