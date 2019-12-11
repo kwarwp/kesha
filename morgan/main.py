@@ -14,7 +14,7 @@ CESTF = f"{IGR}am71B72.png"
 
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
      def __init__(self, imagem, cena):
-        super().__init__(imagem, x= 150, y=180, w=650, h=350)
+        super().__init__(imagem, x= 350, y=180, w=650, h=350)
         self.nome = "casa"
 
 #Lado esquerdo
