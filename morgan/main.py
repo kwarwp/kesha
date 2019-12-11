@@ -12,6 +12,11 @@ CEST, DOG, BASE, CENA, PRED = f"{IGR}qtw6IoO.png", f"{IGR}ek5NQYw.png", f"{IGR}7
 BOY, GIRL = f"{IGR}MXiGMEc.png", f"{IGR}GDK3tcT.png"
 CESTF = f"{IGR}am71B72.png"
 
+P1Xa = 540
+P1Ya = 150
+Sw1 = False
+
+
 class Predio(Elemento): #predio que  inicia bom e no fim fica queimado
      def __init__(self, imagem, cena):
         super().__init__(imagem, x= 350, y=180, w=650, h=350)
@@ -38,14 +43,14 @@ class Personagem(Elemento): #dog
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
         
-        self.Sw1 = not self.Sw1
-        print(self.Sw1)
+        Sw1 = not Sw1
+        print(Sw1)
         if self.Sw1==True:
             self.x=15
             self.y=13
         else:
-            self.x=540
-            self.y=150
+            self.x=P1Xa
+            self.y=P1Xb
         
         self.destino = Cena(img =CENA)#cao tá saindo mas some no espaço
         
@@ -103,7 +108,6 @@ class Basico:
     def __init__(self):
 
         #cachorro
-        self.Sw1 = False
         #menina
         self.Sw2 = False
         #garoto
@@ -111,8 +115,6 @@ class Basico:
 
 
         #cachorro
-        self.P1Xa = 540
-        self.P1Ya = 150
         self.P1Xb = 0
         self.P1Yb = 0
         self.P1Xc = 0
