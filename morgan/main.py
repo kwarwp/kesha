@@ -29,7 +29,7 @@ class Plataforma(Elemento): #retangulo tranparente
 
 
 class Personagem(Elemento): #dog
-    def __init__(self, imagem, destino, cena, x=540, y=150):
+    def __init__(self, imagem, destino, cena, x=440, y=150):
         super().__init__(imagem, cena=cena,  tit = "10kg", x=x, y=y, w=80, h=50)
         self.destino = destino
         self.vai = self.move
