@@ -635,3 +635,7 @@ IndentationError: expected an indented block
          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Dec 11 2019 11:27:49.162 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: bases[i].$dict is undefined>
+'''},
