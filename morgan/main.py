@@ -43,7 +43,7 @@ class Personagem(Elemento): #dog
         #input(isinstance(self.destino,Veiculo))
         self.entra(self.destino)
         
-        Sw1 = True
+        Sw1 = !Sw1
         
         print(Sw1)
         
