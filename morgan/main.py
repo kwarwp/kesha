@@ -43,7 +43,7 @@ class Personagem(Elemento): #dog
         
 
 class Personagem2(Elemento): #Irma no predio
-    def __init__(self, imagem, destino, cena, x=320, y=120):
+    def __init__(self, imagem, destino, cena, x=620, y=120):
         super().__init__(imagem, cena=cena,  tit = "20kg", x=x, y=y, w=60, h=80)
         self.destino = destino
         self.vai = self.move
@@ -103,8 +103,8 @@ class Basico:
 
 
         #cachorro
-        self.P1Xa = 0
-        self.P1Ya = 0
+        self.P1Xa = 540
+        self.P1Ya = 150
         self.P1Xb = 0
         self.P1Yb = 0
         self.P1Xc = 0
@@ -113,8 +113,8 @@ class Basico:
         self.P1Yd = 0
 
         #menina
-        self.P2Xa = 0
-        self.P2Ya = 0
+        self.P2Xa = 620
+        self.P2Ya = 120
         self.P2Xb = 0
         self.P2Yb = 0
         self.P2Xc = 0
@@ -123,8 +123,8 @@ class Basico:
         self.P2Yd = 0
 
         #garoto
-        self.P3Xa = 0
-        self.P3Ya = 0
+        self.P3Xa = 710
+        self.P3Ya = 100
         self.P3Xb = 0
         self.P3Yb = 0
         self.P3Xc = 0
