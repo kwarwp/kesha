@@ -715,3 +715,10 @@ NameError: name 'linhaA1' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Sep 23 2024 11:49:24.853 GMt-0300 (Horário da Guiana Francesa) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 111
+  self.cliqueaqui.elt.onclick = resposta
+  ^
+IndentationError: unexpected indent
+'''},
